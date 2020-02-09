@@ -21,7 +21,18 @@ $(function(){
             return true;
         });
         document.querySelector('.section1').style.display = 'block';
-        document.querySelector('.navbar').style.transform = 'translateY(0)';
+        document.querySelector('.itm1').style.transform = 'translateY(0)';
+        document.querySelector('.itm2').style.transform = 'translateY(0)';
+        document.querySelector('.itm3').style.transform = 'translateY(0)';
+        document.querySelector('.itm4').style.transform = 'translateY(0)';
+        document.querySelector('.itm5').style.transform = 'translateY(0)';
+        document.querySelector('.itm1').style.opacity = '1';
+        document.querySelector('.itm2').style.opacity = '1';
+        document.querySelector('.itm3').style.opacity = '1';
+        document.querySelector('.itm4').style.opacity = '1';
+        document.querySelector('.itm5').style.opacity = '1';
+        document.querySelector('.logo').style.transform = 'translateY(0)';
+        document.querySelector('.logo').style.opacity = '1';
     },4300);		
 });
 
