@@ -23,8 +23,12 @@ $(function(){
         document.querySelector('.heading1').style.opacity = '1';
         document.querySelector('.paragraph1').style.opacity = '1';
         document.querySelector('.scrolltostart').style.display = 'block';
+        document.querySelector('.mvo').style.display = 'block';
         setTimeout(function(){
         document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
+        document.querySelector('.mission').style.transform = 'translateY(80%)';
+        document.querySelector('.vision').style.transform = 'translateY(80%)';
+        document.querySelector('.overview').style.transform = 'translateY(80%)';
         },500);
         setTimeout(function(){
             document.querySelector('.itm1').style.transform = 'translateY(0)';
@@ -44,20 +48,30 @@ $(function(){
                 setTimeout(function(){
                     window.addEventListener('wheel', function(event){
                         if (event.deltaY < 0)
-                            {
-                                document.querySelector('.section1').style.transform = 'translateY(100%)';
-                                document.querySelector('.scrolltostart').style.display = 'block';
+                            {   
+                                document.querySelector('.mission').style.transform = 'translateY(80%)';
+                                document.querySelector('.vision').style.transform = 'translateY(80%)';
+                                document.querySelector('.overview').style.transform = 'translateY(80%)';
                                 setTimeout(function(){
-                                    document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
-                                },100);     
+                                    document.querySelector('.section1').style.transform = 'translateY(100%)';
+                                    document.querySelector('.scrolltostart').style.display = 'block';
+                                    setTimeout(function(){
+                                        document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
+                                    },100);
+                                },500);     
                             }
                         else if (event.deltaY > 0)
                             {
-                                document.querySelector('.scrolltostart').style.transition = '.5s';
-                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
-                                document.querySelector('.section1').style.transform = 'translateY(0)';
+                                document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                document.querySelector('.overview').style.transform = 'translateY(100%)';
                                 setTimeout(function(){
-                                    // document.querySelector('.scrolltostart').style.display = 'none';
+                                    document.querySelector('.scrolltostart').style.transition = '.5s';
+                                    document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+                                    document.querySelector('.section1').style.transform = 'translateY(0)';
+                                    setTimeout(function(){
+                                        // document.querySelector('.scrolltostart').style.display = 'none';
+                                    },500);
                                 },500);
                                 
                             }
@@ -71,10 +85,40 @@ $(function(){
     },4100);		
 });
 
+let test1 = document.getElementById("m");
+let test2 = document.getElementById("v");
+let test3 = document.getElementById("o");
+test1.addEventListener("mouseover", function( event ) {   
+  // highlight the mouseover target
+    document.querySelector('.mission').style.transform = 'translateY(0)';
+  // reset the color after a short delay
+}, false);
+
+test2.addEventListener("mouseover", function( event ) {   
+// highlight the mouseover target
+    document.querySelector('.vision').style.transform = 'translateY(0)';
+}, false);
+
+test3.addEventListener("mouseover", function( event ) {   
+// highlight the mouseover target
+    document.querySelector('.overview').style.transform = 'translateY(0)';
+}, false);
 
 
 
 
+test1.addEventListener("mouseout", function( event ) {   
+// highlight the mouseover target
+    document.querySelector('.mission').style.transform = 'translateY(80%)';
+// reset the color after a short delay
+}, false);
 
+test2.addEventListener("mouseout", function( event ) {   
+    // highlight the mouseover target
+    document.querySelector('.vision').style.transform = 'translateY(80%)';
+}, false);
 
-
+test3.addEventListener("mouseout", function( event ) {   
+    // highlight the mouseover target
+    document.querySelector('.overview').style.transform = 'translateY(80%)';
+}, false);
