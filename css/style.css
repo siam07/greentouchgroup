@@ -19,6 +19,18 @@
     font-family: 'nine';
     src: url(../fonts/nine.TTF);
 }
+@font-face{
+    font-family: 'wevli';
+    src: url(../fonts/wevli.TTF);
+}
+@font-face{
+    font-family: 'wevlir';
+    src: url(../fonts/wevlir.TTF);
+}
+
+
+
+
 body{
     overflow-y: hidden;
     background-image: url(../photos/background.jpg);
@@ -44,7 +56,7 @@ body{
 }
 
 .navbar{
-    
+    text-align: center;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: white;
@@ -59,16 +71,18 @@ body{
     text-transform: none;
 } 
 .nav-link::after{
+    position: absolute;
     content: '';
-    display: block;
-    width: 0;
+    width: 0%;
     height: 2px;
     background: white;
-    transition: width .3s;
+    bottom: 0%; left: 50%;
+    border-radius: 10px;
+    transition: all .5s ease;
 } 
-.nav-link:hover::after { 
+.nav-link:hover::after {
+    left: 0%; 
     width: 100%;
-    transition: width .3s;
 } 
 
 /*     #10caca*/
@@ -152,7 +166,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background:green;
+    background:#1b8713;
     background-size: cover;
     transform: translateY(0);
     transition: transform .5s ease-in-out;
@@ -236,7 +250,143 @@ body{
 
 
 
+.heading1{
+    position: absolute;
+    right: 5rem;
+    top: 20rem;
+    color: white;
+    font-family: express;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(150%);
+    transition: .5s ease-in-out;
+}
+.paragraph1{
+    position: absolute;
+    right: 4rem;
+    width: 35rem;
+    top: 25rem;
+    color: white;
+    font-family: wevlir;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    opacity: 0;
+    transform: translateY(150%);
+    transition: .5s ease-in-out;
+    transition-delay: .4s;
+}
 
+
+
+
+
+.scrolltostart{
+    display: none;
+    position: absolute;
+    float: right;
+    height: 13rem;
+    width: 11rem;
+    font-family: express;
+    color: white;
+    background: #1b8713;
+    bottom: 0;
+    right: 5vw;
+    transform: translateY(100%);
+    transition: transform .8s ease-in-out;
+    transition-delay: .5s;
+
+}
+.scrolltostart h1{
+    position: absolute;
+    margin-left: 10px;
+    font-size: .8rem;
+    padding: 10px;
+}
+.indicator{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 4.5rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    animation: animate 3s linear infinite;
+}
+
+.indicator span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    animation: animate2 2s linear infinite;
+}
+
+.indicator span:nth-child(1){
+    top: 10px;
+    left: 10px;
+}
+.indicator span:nth-child(2){
+    top: 25px;
+    left: 25px;
+}
+.indicator span:nth-child(3){
+    top: 40px;
+    left: 40px;
+}
+.indicator span:nth-child(4){
+    top: 55px;
+    left: 55px;
+}
+.indicator span:nth-child(5){
+    top: 70px;
+    left: 70px;
+}
+.indicator span:nth-child(6){
+    top: 85px;
+    left: 85px;
+}
+.indicator span:nth-child(7){
+    top: 100px;
+    left: 100px;
+}
+
+@keyframes animate{
+    0%
+    {
+        top: 0px;
+    }
+    30%
+    {
+        top: 10px;
+    }
+    50%
+    {
+        top: 20px;
+    }
+    70%
+    {
+        top: 10px;
+    }
+    100%
+    {
+        top: 0px;
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        border-color: #fff;
+    }
+    100%
+    {
+        border-color: #222;
+    }
+}
 
 
 
@@ -248,7 +398,7 @@ body{
     width: 25rem;
     font-family: express;
     color: white;
-    background: green;
+    background: #1b8713;
     background-size: cover;
     overflow: hidden;
 
