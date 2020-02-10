@@ -46,11 +46,20 @@ $(function(){
                         if (event.deltaY < 0)
                             {
                                 document.querySelector('.section1').style.transform = 'translateY(100%)';
+                                document.querySelector('.scrolltostart').style.display = 'block';
+                                setTimeout(function(){
+                                    document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
+                                },100);     
                             }
                         else if (event.deltaY > 0)
                             {
-                                
+                                document.querySelector('.scrolltostart').style.transition = '.5s';
+                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                 document.querySelector('.section1').style.transform = 'translateY(0)';
+                                setTimeout(function(){
+                                    // document.querySelector('.scrolltostart').style.display = 'none';
+                                },500);
+                                
                             }
                             else{
                                 document.querySelector('.section1').style.transform = 'translateY(100%)';
