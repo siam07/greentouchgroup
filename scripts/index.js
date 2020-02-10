@@ -26,9 +26,9 @@ $(function(){
         document.querySelector('.mvo').style.display = 'block';
         setTimeout(function(){
         document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
-        document.querySelector('.mission').style.transform = 'translateY(80%)';
-        document.querySelector('.vision').style.transform = 'translateY(80%)';
-        document.querySelector('.overview').style.transform = 'translateY(80%)';
+        document.querySelector('.mission').style.transform = 'translateY(85%)';
+        document.querySelector('.vision').style.transform = 'translateY(85%)';
+        document.querySelector('.overview').style.transform = 'translateY(85%)';
         },500);
         setTimeout(function(){
             document.querySelector('.itm1').style.transform = 'translateY(0)';
@@ -49,9 +49,9 @@ $(function(){
                     window.addEventListener('wheel', function(event){
                         if (event.deltaY < 0)
                             {   
-                                document.querySelector('.mission').style.transform = 'translateY(80%)';
-                                document.querySelector('.vision').style.transform = 'translateY(80%)';
-                                document.querySelector('.overview').style.transform = 'translateY(80%)';
+                                document.querySelector('.mission').style.transform = 'translateY(85%)';
+                                document.querySelector('.vision').style.transform = 'translateY(85%)';
+                                document.querySelector('.overview').style.transform = 'translateY(85%)';
                                 setTimeout(function(){
                                     document.querySelector('.section1').style.transform = 'translateY(100%)';
                                     document.querySelector('.scrolltostart').style.display = 'block';
@@ -91,17 +91,23 @@ let test3 = document.getElementById("o");
 test1.addEventListener("mouseover", function( event ) {   
   // highlight the mouseover target
     document.querySelector('.mission').style.transform = 'translateY(0)';
+    document.querySelector('.mission').style.background = '#1b8713';
+    document.querySelector('.mission').style.color = 'white';
   // reset the color after a short delay
 }, false);
 
 test2.addEventListener("mouseover", function( event ) {   
 // highlight the mouseover target
     document.querySelector('.vision').style.transform = 'translateY(0)';
+    document.querySelector('.vision').style.background = '#1b8713';
+    document.querySelector('.vision').style.color = 'white';
 }, false);
 
 test3.addEventListener("mouseover", function( event ) {   
 // highlight the mouseover target
     document.querySelector('.overview').style.transform = 'translateY(0)';
+    document.querySelector('.overview').style.background = '#1b8713';
+    document.querySelector('.overview').style.color = 'white';
 }, false);
 
 
@@ -109,16 +115,22 @@ test3.addEventListener("mouseover", function( event ) {
 
 test1.addEventListener("mouseout", function( event ) {   
 // highlight the mouseover target
-    document.querySelector('.mission').style.transform = 'translateY(80%)';
+    document.querySelector('.mission').style.transform = 'translateY(85%)';
+    document.querySelector('.mission').style.background = '#81f533';
+    document.querySelector('.mission').style.color = 'black';
 // reset the color after a short delay
 }, false);
 
 test2.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
-    document.querySelector('.vision').style.transform = 'translateY(80%)';
+    document.querySelector('.vision').style.transform = 'translateY(85%)';
+    document.querySelector('.vision').style.background = '#81f533';
+    document.querySelector('.vision').style.color = 'black';
 }, false);
 
 test3.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
-    document.querySelector('.overview').style.transform = 'translateY(80%)';
+    document.querySelector('.overview').style.transform = 'translateY(85%)';
+    document.querySelector('.overview').style.background = '#81f533';
+    document.querySelector('.overview').style.color = 'black';
 }, false);
