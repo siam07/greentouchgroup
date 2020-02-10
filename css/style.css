@@ -328,8 +328,8 @@ body{
     height: 20rem;
     width: 20rem;
     font-family: express;
-    color: white;
-    background: #1b8713;
+    color: black;
+    background: #81f533;
     background-size: cover;
     border:2px solid white;
     border-radius: 5px;
@@ -337,7 +337,7 @@ body{
     bottom: 0;
     left: 7rem;
     transform: translateY(100%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;;
     z-index: 1;
 }
 
@@ -347,8 +347,8 @@ body{
     height: 20rem;
     width: 20rem;
     font-family: express;
-    color: white;
-    background: #1b8713;
+    color: black;
+    background: #81f533;
     background-size: cover;
     border:2px solid white;
     border-radius: 5px;
@@ -357,12 +357,8 @@ body{
     bottom: 0;
     left: 28rem;
     transform: translateY(100%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
     z-index: 2;
-}
-.vision:hover{
-    transform: translateY(0);
-    z-index: 4;
 }
 .overview{
     display: block;
@@ -370,8 +366,8 @@ body{
     height: 20rem;
     width: 20rem;
     font-family: express;
-    color: white;
-    background: #1b8713;
+    color: black;
+    background: #81f533;
     background-size: cover;
     border:2px solid white;
     border-radius: 5px;
@@ -380,14 +376,10 @@ body{
     bottom: 0;
     left: 49rem;
     transform: translateY(100%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
     z-index: 3;
 }
 
-.overview:hover{
-    transform: translateY(0);
-    z-index: 3;
-}
 
 
 
