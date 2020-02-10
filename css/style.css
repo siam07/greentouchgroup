@@ -27,9 +27,20 @@
     font-family: 'wevlir';
     src: url(../fonts/wevlir.TTF);
 }
+@font-face{
+    font-family: 'vitro';
+    src: url(../fonts/vitro.TTF);
+}
 
 
-
+body, html{     
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
 
 body{
     overflow-y: hidden;
@@ -66,7 +77,9 @@ body{
 }
 .nav-link{ 
     color: white; 
-    font-size: 1.2vw;
+    font-size: 1.3rem;
+    margin-top: 1.8rem; 
+    margin-right: 2rem;
     font-family: express;
     text-transform: none;
 } 
@@ -180,6 +193,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    cursor: default;
 }
 .flyin li{
     display: inline-block;
@@ -263,12 +277,12 @@ body{
 }
 .paragraph1{
     position: absolute;
-    right: 4rem;
-    width: 35rem;
+    right: 5rem;
+    width: 43rem;
     top: 25rem;
     color: white;
-    font-family: wevlir;
-    font-weight: lighter;
+    font-family: vitro;
+    font-weight: bold;
     font-size: 1.4rem;
     opacity: 0;
     transform: translateY(150%);
