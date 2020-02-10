@@ -1,7 +1,8 @@
 $(function(){
-    $('body').bind("mousewheel", function() {
+    $(window).on('mousewheel DOMMouseScroll', function() {
         return false;
     });
+    
     document.querySelector('.section1').style.display = 'none';
     setTimeout(function(){
         $('.flyin').removeClass('hidden');
@@ -17,9 +18,6 @@ $(function(){
         },1400);
     },500);
     setTimeout(function(){
-        $('body').bind("mousewheel", function() {
-            return true;
-        });
         document.querySelector('.heading1').style.transform = 'translateY(0)';
         document.querySelector('.paragraph1').style.transform = 'translateY(0)';
         document.querySelector('.heading1').style.opacity = '1';
@@ -43,31 +41,31 @@ $(function(){
             document.querySelector('.logo').style.opacity = '1';
             setTimeout(function(){
                 document.querySelector('.section1').style.display = 'block';
+                setTimeout(function(){
+                    window.addEventListener('wheel', function(event){
+                        if (event.deltaY < 0)
+                            {
+                                document.querySelector('.section1').style.transform = 'translateY(100%)';
+                            }
+                        else if (event.deltaY > 0)
+                            {
+                                
+                                document.querySelector('.section1').style.transform = 'translateY(0)';
+                            }
+                            else{
+                                document.querySelector('.section1').style.transform = 'translateY(100%)';
+                            }
+                    });
+                },100);
             },2000);
         },1000);
     },4100);		
 });
 
 
-window.addEventListener('wheel', function(event){
-    if (event.deltaY < 0)
-        {
-            document.querySelector('.section1').style.transform = 'translateY(100%)';
-        }
-    else if (event.deltaY > 0)
-        {
-            
-            document.querySelector('.section1').style.transform = 'translateY(0)';
-        }
-        else{
-            document.querySelector('.section1').style.transform = 'translateY(100%)';
-        }
-});
 
 
-// $('body').bind("mousewheel", function() {
-//     return false;
-// });
+
 
 
 
