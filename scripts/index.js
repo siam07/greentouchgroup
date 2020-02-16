@@ -54,7 +54,8 @@ $(function(){
 
                     sec.addEventListener('wheel', function(event){
                             if (event.deltaY > 0)
-                            {
+                            {   
+                                
                                 document.querySelector('.mission').style.transform = 'translateY(100%)';
                                 document.querySelector('.vision').style.transform = 'translateY(100%)';
                                 document.querySelector('.overview').style.transform = 'translateY(100%)';
@@ -98,6 +99,7 @@ $(function(){
                         console.log(event.deltaY);
                         if (event.deltaY < 0)
                             {   
+                                
                                 document.querySelector('.transitionp1').style.display = 'block';
                                 document.querySelector('.transitionp2').style.display = 'block';
                                 setTimeout(function(){
@@ -135,6 +137,7 @@ $(function(){
 
                             if (event.deltaY > 0)
                             {
+                                    document.querySelector('.section2').style.transform = 'translateY(100%)';
                                     document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
                                     setTimeout(function(){
@@ -209,7 +212,8 @@ $(function(){
 
                             if (event.deltaY > 0)
                             {
-                                    document.querySelector('.transitionp1').style.display = 'block';
+                                document.querySelector('.section3').style.transform = 'translateY(100%)';    
+                                document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
                                     setTimeout(function(){
                                         document.querySelector('.transitionp1').style.transform = 'translateY(0)';
@@ -242,13 +246,121 @@ $(function(){
 
                     
 
+                    sec3.addEventListener('wheel', function(event){
 
 
 
+                        if (event.deltaY > 0)
+                        {
+                            document.querySelector('.section4').style.transform = 'translateY(100%)';    
+                            document.querySelector('.transitionp1').style.display = 'block';
+                                document.querySelector('.transitionp2').style.display = 'block';
+                                setTimeout(function(){
+                                    document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                                    document.querySelector('.transitionp2').style.transform = 'translateY(0)';
+
+                                    setTimeout(function(){
+                                        document.getElementById('sec3').style.display = 'none';
+                                        body.style.backgroundImage = 'url(../photos/gtscbg.jpg)';
+                                        document.getElementById('sec4').style.display = 'block';
+                                        document.querySelector('.caption1').style.display = 'none';
+                                        document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                                        document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                                        setTimeout(function(){
+                                            
+                                            document.querySelector('.transitionp1').style.display = 'none';
+                                            document.querySelector('.transitionp2').style.display = 'none';
+                                        },600);
+                                    },800);
+                                    setTimeout(function(){
+                                        document.querySelector('.section4').style.transform = 'translateY(0)';
+                                    },1500);
+                                },200);
+                                setTimeout(function(){
+                                    // document.querySelector('.scrolltostart').style.display = 'none';
+                                },500);
+                            
+                        }
+                });
+
+
+                sec4.addEventListener('wheel', function(event){
 
 
 
+                    if (event.deltaY > 0)
+                    {
+                        document.querySelector('.section5').style.transform = 'translateY(100%)';
+                            document.querySelector('.transitionp1').style.display = 'block';
+                            document.querySelector('.transitionp2').style.display = 'block';
+                            setTimeout(function(){
+                                document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                                document.querySelector('.transitionp2').style.transform = 'translateY(0)';
 
+                                setTimeout(function(){
+                                    document.getElementById('sec4').style.display = 'none';
+                                    body.style.backgroundImage = 'url(../photos/gttbg.jpg)';
+                                    document.getElementById('sec5').style.display = 'block';
+                                    document.querySelector('.caption1').style.display = 'none';
+                                    document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                                    document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                                    setTimeout(function(){
+                                        
+                                        document.querySelector('.transitionp1').style.display = 'none';
+                                        document.querySelector('.transitionp2').style.display = 'none';
+                                    },600);
+                                },800);
+                                setTimeout(function(){
+                                    document.querySelector('.section5').style.transform = 'translateY(0)';
+                                },1500);
+                            },200);
+                            setTimeout(function(){
+                                // document.querySelector('.scrolltostart').style.display = 'none';
+                            },500);
+                        
+                    }
+            });
+
+
+
+            
+
+            sec5.addEventListener('wheel', function(event){
+
+
+
+                if (event.deltaY > 0)
+                {
+                        document.querySelector('.section1').style.transform = 'translateY(100%)';
+                        document.querySelector('.transitionp1').style.display = 'block';
+                        document.querySelector('.transitionp2').style.display = 'block';
+                        setTimeout(function(){
+                            document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                            document.querySelector('.transitionp2').style.transform = 'translateY(0)';
+
+                            setTimeout(function(){
+                                document.getElementById('sec5').style.display = 'none';
+                                body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+                                document.getElementById('sec1').style.display = 'block';
+                                document.querySelector('.caption1').style.display = 'none';
+                                document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                                document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                                setTimeout(function(){
+                                    
+                                    document.querySelector('.transitionp1').style.display = 'none';
+                                    document.querySelector('.transitionp2').style.display = 'none';
+                                },600);
+                            },800);
+                            setTimeout(function(){
+                                document.querySelector('.section1').style.transform = 'translateY(0)';
+                            },1500);
+                        },200);
+                        setTimeout(function(){
+                            // document.querySelector('.scrolltostart').style.display = 'none';
+                        },500);
+                    
+                }
+        });
 
 
 
