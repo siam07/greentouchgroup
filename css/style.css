@@ -45,6 +45,8 @@ body, html{
 body{
     overflow-y: hidden;
     background-image: url(../photos/background.jpg);
+    background-size: cover;
+    background-repeat: none;
 } 
 .logo{
     opacity: 0;
@@ -272,8 +274,6 @@ body{
 .flyin2.hidden2 li{
     opacity: 0;
 }
-
-
 
 
 
@@ -522,7 +522,144 @@ body{
     transform: translateY(-100%);
     z-index: 5;
 }
+
+
+
+
+#sec{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+
+#sec1{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+#sec2{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+#sec3{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+#sec4{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+
+#sec5{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:transparent;
+}
+
+
+
 .section1{
+    display: block;
+    position: absolute;
+    height: 27.5rem;
+    width: 36rem;
+    font-family: express;
+    color: white;
+    background: #1b8713;
+    background-size: cover;
+    overflow: hidden;
+
+    bottom: 0;
+    left: 5vw;
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: transform .8s ease-in-out;
+
+}
+
+.section2{
+    display: block;
+    position: absolute;
+    height: 27.5rem;
+    width: 36rem;
+    font-family: express;
+    color: white;
+    background: #1b8713;
+    background-size: cover;
+    overflow: hidden;
+
+    bottom: 0;
+    left: 5vw;
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: transform .8s ease-in-out;
+
+}
+
+.section3{
+    display: block;
+    position: absolute;
+    height: 27.5rem;
+    width: 36rem;
+    font-family: express;
+    color: white;
+    background: #1b8713;
+    background-size: cover;
+    overflow: hidden;
+
+    bottom: 0;
+    left: 5vw;
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: transform .8s ease-in-out;
+
+}
+.section4{
+    display: block;
+    position: absolute;
+    height: 27.5rem;
+    width: 36rem;
+    font-family: express;
+    color: white;
+    background: #1b8713;
+    background-size: cover;
+    overflow: hidden;
+
+    bottom: 0;
+    left: 5vw;
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: transform .8s ease-in-out;
+
+}
+.section5{
     display: block;
     position: absolute;
     height: 27.5rem;
