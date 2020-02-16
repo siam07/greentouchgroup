@@ -167,7 +167,8 @@ $(function(){
 
 
 
-                    sec1.addEventListener('wheel', function(event){
+
+                    sec2.addEventListener('wheel', function(event){
                         console.log(event.deltaY);
                         if (event.deltaY < 0)
                             {   
@@ -215,9 +216,9 @@ $(function(){
                                         document.querySelector('.transitionp2').style.transform = 'translateY(0)';
 
                                         setTimeout(function(){
-                                            document.getElementById('sec1').style.display = 'none';
-                                            body.style.backgroundImage = 'url(../photos/gtebg.jpg)';
-                                            document.getElementById('sec2').style.display = 'block';
+                                            document.getElementById('sec2').style.display = 'none';
+                                            body.style.backgroundImage = 'url(../photos/gtdbg.jpg)';
+                                            document.getElementById('sec3').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                                             document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
@@ -228,7 +229,7 @@ $(function(){
                                             },600);
                                         },800);
                                         setTimeout(function(){
-                                            document.querySelector('.section2').style.transform = 'translateY(0)';
+                                            document.querySelector('.section3').style.transform = 'translateY(0)';
                                         },1500);
                                     },200);
                                     setTimeout(function(){
@@ -237,6 +238,9 @@ $(function(){
                                 
                             }
                     });
+
+
+                    
 
 
 
