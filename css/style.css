@@ -680,3 +680,16 @@ body{
     transition: transform .8s ease-in-out;
 
 }
+
+
+
+
+.txt h1{
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+.txt p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
