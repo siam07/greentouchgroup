@@ -660,11 +660,15 @@ scrollclick.addEventListener("click", function( event ) {
             },800);
             setTimeout(function(){
                 document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                setTimeout(function(){
+                    document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                    document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                    document.querySelector('.companydecriptionH').style.opacity = '1';
+                    document.querySelector('.companydecriptionP').style.opacity = '1';
+                },700);
             },1500);
         },200);
-        setTimeout(function(){
-            // document.querySelector('.scrolltostart').style.display = 'none';
-        },500);
     },500);
 }, false);
 
