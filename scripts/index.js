@@ -148,6 +148,7 @@ $(function(){
                                 document.querySelector('.companydecriptionP').style.transform = 'translateY(100%)';
                                 document.querySelector('.companydecriptionH').style.opacity = '0';
                                 document.querySelector('.companydecriptionP').style.opacity = '0';
+
                                     document.querySelector('.section2').style.transform = 'translateY(100%)';
                                     document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
@@ -176,6 +177,12 @@ $(function(){
                                                 document.querySelector('.companydecriptionP2').style.transform = 'translateY(0)';
                                                 document.querySelector('.companydecriptionH2').style.opacity = '1';
                                                 document.querySelector('.companydecriptionP2').style.opacity = '1';
+
+                                                document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                                document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                                document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                                document.querySelector('.scrolltostart').style.transition = '.5s';
+                                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                             },700);
                                         },1500);
                                     },200);
@@ -269,6 +276,12 @@ $(function(){
                                                 document.querySelector('.companydecriptionP3').style.transform = 'translateY(0)';
                                                 document.querySelector('.companydecriptionH3').style.opacity = '1';
                                                 document.querySelector('.companydecriptionP3').style.opacity = '1';
+
+                                                document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                                document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                                document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                                document.querySelector('.scrolltostart').style.transition = '.5s';
+                                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                             },700);
                                         },1500);
                                     },200);
@@ -360,6 +373,12 @@ $(function(){
                                             document.querySelector('.companydecriptionP4').style.transform = 'translateY(0)';
                                             document.querySelector('.companydecriptionH4').style.opacity = '1';
                                             document.querySelector('.companydecriptionP4').style.opacity = '1';
+
+                                            document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                            document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                            document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                            document.querySelector('.scrolltostart').style.transition = '.5s';
+                                            document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                         },700);
                                     },1500);
                                 },200);
@@ -450,6 +469,12 @@ $(function(){
                                         document.querySelector('.companydecriptionP5').style.transform = 'translateY(0)';
                                         document.querySelector('.companydecriptionH5').style.opacity = '1';
                                         document.querySelector('.companydecriptionP5').style.opacity = '1';
+
+                                        document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                        document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                        document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                        document.querySelector('.scrolltostart').style.transition = '.5s';
+                                        document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                     },700);
                                 },1500);
                             },200);
@@ -540,6 +565,12 @@ $(function(){
                                     document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
                                     document.querySelector('.companydecriptionH').style.opacity = '1';
                                     document.querySelector('.companydecriptionP').style.opacity = '1';
+
+                                    document.querySelector('.mission').style.transform = 'translateY(100%)';
+                                    document.querySelector('.vision').style.transform = 'translateY(100%)';
+                                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                    document.querySelector('.scrolltostart').style.transition = '.5s';
+                                    document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                 },700);
                             },1500);
                         },200);
