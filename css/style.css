@@ -312,21 +312,23 @@ body{
 
 
 .mvo{
-    display: none;
+    display: block;
 }
 
-
+.mvo p{
+    padding: 10px;
+}
 
 .mvo h1{
     text-align: center;
-    padding: 5px;
+    padding: 1vw;
     font-size: 2rem;
 }
 .mission{
     display: block;
     position: absolute;
-    height: 20rem;
-    width: 20rem;
+    height: 55vh;
+    width: 25vw;
     font-family: express;
     color: black;
     background: #81f533;
@@ -335,17 +337,19 @@ body{
     border-radius: 400px;
     overflow: hidden;
     bottom: 0;
-    left: 7rem;
+    left: 5vw;
+    text-align: justify;
     transform: translateY(100%);
     transition: .8s ease-in-out;;
     z-index: 1;
 }
 
+
 .vision{
     display: block;
     position: absolute;
-    height: 20rem;
-    width: 20rem;
+    height: 55vh;
+    width: 25vw;
     font-family: express;
     color: black;
     background: #81f533;
@@ -355,7 +359,8 @@ body{
     overflow: hidden;
 
     bottom: 0;
-    left: 28rem;
+    left: 31vw;
+    text-align: justify;
     transform: translateY(100%);
     transition: .8s ease-in-out;
     z-index: 2;
@@ -363,8 +368,8 @@ body{
 .overview{
     display: block;
     position: absolute;
-    height: 20rem;
-    width: 20rem;
+    height: 55vh;
+    width: 25vw;
     font-family: express;
     color: black;
     background: #81f533;
@@ -374,7 +379,8 @@ body{
     overflow: hidden;
 
     bottom: 0;
-    left: 49rem;
+    left: 57vw;
+    text-align: justify;
     transform: translateY(100%);
     transition: .8s ease-in-out;
     z-index: 3;
@@ -576,8 +582,8 @@ body{
 .section1{
     display: block;
     position: absolute;
-    height: 27.5rem;
-    width: 36rem;
+    height: 58.5vh;
+    width: 37.5vw;
     font-family: express;
     color: white;
     background: #1b8713;
@@ -598,8 +604,8 @@ body{
 .section2{
     display: block;
     position: absolute;
-    height: 27.5rem;
-    width: 36rem;
+    height: 58.5vh;
+    width: 37.5vw;
     font-family: express;
     color: white;
     background: #1b8713;
@@ -620,8 +626,8 @@ body{
 .section3{
     display: block;
     position: absolute;
-    height: 27.5rem;
-    width: 36rem;
+    height: 58.5vh;
+    width: 37.5vw;
     font-family: express;
     color: white;
     background: #1b8713;
@@ -641,8 +647,8 @@ body{
 .section4{
     display: block;
     position: absolute;
-    height: 27.5rem;
-    width: 36rem;
+    height: 58.5vh;
+    width: 37.5vw;
     font-family: express;
     color: white;
     background: #1b8713;
@@ -662,8 +668,8 @@ body{
 .section5{
     display: block;
     position: absolute;
-    height: 27.5rem;
-    width: 36rem;
+    height: 58.5vh;
+    width: 37.5vw;
     font-family: express;
     color: white;
     background: #1b8713;
@@ -685,15 +691,17 @@ body{
 
 
 .companydecriptionH{
-    padding: 3rem;
-    padding-bottom: 1rem;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s ease-in-out;
 }
 .companydecriptionP{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.05vw;
     text-align: justify;
     opacity: 0;
     transform: translateY(100%);
@@ -701,15 +709,17 @@ body{
 }
 
 .companydecriptionH2{
-    padding: 3rem;
-    padding-bottom: 1rem;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s ease-in-out;
 }
 .companydecriptionP2{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.05vw;
     text-align: justify;
     opacity: 0;
     transform: translateY(100%);
@@ -717,15 +727,17 @@ body{
 }
 
 .companydecriptionH3{
-    padding: 3rem;
-    padding-bottom: 1rem;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s ease-in-out;
 }
 .companydecriptionP3{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.05vw;
     text-align: justify;
     opacity: 0;
     transform: translateY(100%);
@@ -733,15 +745,17 @@ body{
 }
 
 .companydecriptionH4{
-    padding: 3rem;
-    padding-bottom: 1rem;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s ease-in-out;
 }
 .companydecriptionP4{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.05vw;
     text-align: justify;
     opacity: 0;
     transform: translateY(100%);
@@ -749,15 +763,17 @@ body{
 }
 
 .companydecriptionH5{
-    padding: 3rem;
-    padding-bottom: 1rem;
+    padding: 3vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s ease-in-out;
 }
 .companydecriptionP5{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.05vw;
     text-align: justify;
     opacity: 0;
     transform: translateY(100%);
