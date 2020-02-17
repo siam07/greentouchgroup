@@ -767,10 +767,16 @@ body{
 
 
 
-/*.txt a{
+.txt{
     text-decoration: none;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: .8s ease-in-out;
+    color: white;
+    padding: 10px;
+    transition: .3s ease-in-out;
 }
-*/
+
+.txt:hover{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
