@@ -684,12 +684,93 @@ body{
 
 
 
-.txt h1{
+.companydecriptionH{
     padding: 3rem;
     padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
 }
-.txt p{
+.companydecriptionP{
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: justify;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
 }
+
+.companydecriptionH2{
+    padding: 3rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
+}
+.companydecriptionP2{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
+}
+
+.companydecriptionH3{
+    padding: 3rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
+}
+.companydecriptionP3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
+}
+
+.companydecriptionH4{
+    padding: 3rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
+}
+.companydecriptionP4{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
+}
+
+.companydecriptionH5{
+    padding: 3rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
+}
+.companydecriptionP5{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
+}
+
+
+
+
+/*.txt a{
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .8s ease-in-out;
+}
+*/

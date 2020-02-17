@@ -82,11 +82,15 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                                            setTimeout(function(){
+                                                document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionH').style.opacity = '1';
+                                                document.querySelector('.companydecriptionP').style.opacity = '1';
+                                            },700);
                                         },1500);
                                     },200);
-                                    setTimeout(function(){
-                                        // document.querySelector('.scrolltostart').style.display = 'none';
-                                    },500);
                                 },500);
                                 
                             }
@@ -96,10 +100,13 @@ $(function(){
 
 
                     sec1.addEventListener('wheel', function(event){
-                        console.log(event.deltaY);
                         if (event.deltaY < 0)
                             {   
                                 
+                                document.querySelector('.companydecriptionH').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionH').style.opacity = '0';
+                                document.querySelector('.companydecriptionP').style.opacity = '0';
                                 document.querySelector('.transitionp1').style.display = 'block';
                                 document.querySelector('.transitionp2').style.display = 'block';
                                 setTimeout(function(){
@@ -137,6 +144,10 @@ $(function(){
 
                             if (event.deltaY > 0)
                             {
+                                document.querySelector('.companydecriptionH').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionH').style.opacity = '0';
+                                document.querySelector('.companydecriptionP').style.opacity = '0';
                                     document.querySelector('.section2').style.transform = 'translateY(100%)';
                                     document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
@@ -159,6 +170,13 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section2').style.transform = 'translateY(0)';
+
+                                            setTimeout(function(){
+                                                document.querySelector('.companydecriptionH2').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionP2').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionH2').style.opacity = '1';
+                                                document.querySelector('.companydecriptionP2').style.opacity = '1';
+                                            },700);
                                         },1500);
                                     },200);
                                     setTimeout(function(){
@@ -175,6 +193,10 @@ $(function(){
                         console.log(event.deltaY);
                         if (event.deltaY < 0)
                             {   
+                                document.querySelector('.companydecriptionH2').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP2').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionH2').style.opacity = '0';
+                                document.querySelector('.companydecriptionP2').style.opacity = '0';
                                 document.querySelector('.section1').style.transform = 'translateY(100%)';    
                                 document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
@@ -197,6 +219,14 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                                            setTimeout(function(){
+                                                document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionH').style.opacity = '1';
+                                                document.querySelector('.companydecriptionP').style.opacity = '1';
+                                            },700);
+
                                         },1500);
                                     },200);
                                     setTimeout(function(){
@@ -207,6 +237,10 @@ $(function(){
 
                             if (event.deltaY > 0)
                             {
+                                document.querySelector('.companydecriptionH2').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP2').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionH2').style.opacity = '0';
+                                document.querySelector('.companydecriptionP2').style.opacity = '0';
                                 document.querySelector('.section3').style.transform = 'translateY(100%)';    
                                 document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
@@ -229,6 +263,13 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section3').style.transform = 'translateY(0)';
+
+                                            setTimeout(function(){
+                                                document.querySelector('.companydecriptionH3').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionP3').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionH3').style.opacity = '1';
+                                                document.querySelector('.companydecriptionP3').style.opacity = '1';
+                                            },700);
                                         },1500);
                                     },200);
                                     setTimeout(function(){
@@ -244,6 +285,10 @@ $(function(){
                     sec3.addEventListener('wheel', function(event){
                         if (event.deltaY < 0)
                             {   
+                                document.querySelector('.companydecriptionH3').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP3').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionH3').style.opacity = '0';
+                                document.querySelector('.companydecriptionP3').style.opacity = '0';
                                 document.querySelector('.section2').style.transform = 'translateY(100%)';    
                                 document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
@@ -266,6 +311,13 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section2').style.transform = 'translateY(0)';
+
+                                            setTimeout(function(){
+                                                document.querySelector('.companydecriptionH2').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionP2').style.transform = 'translateY(0)';
+                                                document.querySelector('.companydecriptionH2').style.opacity = '1';
+                                                document.querySelector('.companydecriptionP2').style.opacity = '1';
+                                            },700);
                                         },1500);
                                     },200);
                                     setTimeout(function(){
@@ -276,6 +328,10 @@ $(function(){
 
                         if (event.deltaY > 0)
                         {
+                            document.querySelector('.companydecriptionH3').style.transform = 'translateY(100%)';
+                            document.querySelector('.companydecriptionP3').style.transform = 'translateY(100%)';
+                            document.querySelector('.companydecriptionH3').style.opacity = '0';
+                            document.querySelector('.companydecriptionP3').style.opacity = '0';
                             document.querySelector('.section4').style.transform = 'translateY(100%)';    
                             document.querySelector('.transitionp1').style.display = 'block';
                                 document.querySelector('.transitionp2').style.display = 'block';
@@ -298,6 +354,13 @@ $(function(){
                                     },800);
                                     setTimeout(function(){
                                         document.querySelector('.section4').style.transform = 'translateY(0)';
+
+                                        setTimeout(function(){
+                                            document.querySelector('.companydecriptionH4').style.transform = 'translateY(0)';
+                                            document.querySelector('.companydecriptionP4').style.transform = 'translateY(0)';
+                                            document.querySelector('.companydecriptionH4').style.opacity = '1';
+                                            document.querySelector('.companydecriptionP4').style.opacity = '1';
+                                        },700);
                                     },1500);
                                 },200);
                                 setTimeout(function(){
@@ -312,6 +375,10 @@ $(function(){
 
                     if (event.deltaY < 0)
                     {   
+                        document.querySelector('.companydecriptionH4').style.transform = 'translateY(100%)';
+                        document.querySelector('.companydecriptionP4').style.transform = 'translateY(100%)';
+                        document.querySelector('.companydecriptionH4').style.opacity = '0';
+                        document.querySelector('.companydecriptionP4').style.opacity = '0';
                         document.querySelector('.section3').style.transform = 'translateY(100%)';    
                         document.querySelector('.transitionp1').style.display = 'block';
                             document.querySelector('.transitionp2').style.display = 'block';
@@ -334,6 +401,13 @@ $(function(){
                                 },800);
                                 setTimeout(function(){
                                     document.querySelector('.section3').style.transform = 'translateY(0)';
+
+                                    setTimeout(function(){
+                                        document.querySelector('.companydecriptionH3').style.transform = 'translateY(0)';
+                                        document.querySelector('.companydecriptionP3').style.transform = 'translateY(0)';
+                                        document.querySelector('.companydecriptionH3').style.opacity = '1';
+                                        document.querySelector('.companydecriptionP3').style.opacity = '1';
+                                    },700);
                                 },1500);
                             },200);
                             setTimeout(function(){
@@ -343,6 +417,11 @@ $(function(){
 
                     if (event.deltaY > 0)
                     {
+
+                        document.querySelector('.companydecriptionH4').style.transform = 'translateY(100%)';
+                        document.querySelector('.companydecriptionP4').style.transform = 'translateY(100%)';
+                        document.querySelector('.companydecriptionH4').style.opacity = '0';
+                        document.querySelector('.companydecriptionP4').style.opacity = '0';
                         document.querySelector('.section5').style.transform = 'translateY(100%)';
                             document.querySelector('.transitionp1').style.display = 'block';
                             document.querySelector('.transitionp2').style.display = 'block';
@@ -365,6 +444,13 @@ $(function(){
                                 },800);
                                 setTimeout(function(){
                                     document.querySelector('.section5').style.transform = 'translateY(0)';
+
+                                    setTimeout(function(){
+                                        document.querySelector('.companydecriptionH5').style.transform = 'translateY(0)';
+                                        document.querySelector('.companydecriptionP5').style.transform = 'translateY(0)';
+                                        document.querySelector('.companydecriptionH5').style.opacity = '1';
+                                        document.querySelector('.companydecriptionP5').style.opacity = '1';
+                                    },700);
                                 },1500);
                             },200);
                             setTimeout(function(){
@@ -381,7 +467,11 @@ $(function(){
             sec5.addEventListener('wheel', function(event){
 
                 if (event.deltaY < 0)
-                {   
+                {
+                    document.querySelector('.companydecriptionH5').style.transform = 'translateY(100%)';
+                    document.querySelector('.companydecriptionP5').style.transform = 'translateY(100%)';
+                    document.querySelector('.companydecriptionH5').style.opacity = '0';
+                    document.querySelector('.companydecriptionP5').style.opacity = '0';   
                     document.querySelector('.section4').style.transform = 'translateY(100%)';    
                     document.querySelector('.transitionp1').style.display = 'block';
                         document.querySelector('.transitionp2').style.display = 'block';
@@ -404,6 +494,11 @@ $(function(){
                             },800);
                             setTimeout(function(){
                                 document.querySelector('.section4').style.transform = 'translateY(0)';
+
+                                document.querySelector('.companydecriptionH4').style.transform = 'translateY(0)';
+                                document.querySelector('.companydecriptionP4').style.transform = 'translateY(0)';
+                                document.querySelector('.companydecriptionH4').style.opacity = '1';
+                                document.querySelector('.companydecriptionP4').style.opacity = '1';
                             },1500);
                         },200);
                         setTimeout(function(){
@@ -413,6 +508,10 @@ $(function(){
 
                 if (event.deltaY > 0)
                 {
+                    document.querySelector('.companydecriptionH5').style.transform = 'translateY(100%)';
+                    document.querySelector('.companydecriptionP5').style.transform = 'translateY(100%)';
+                    document.querySelector('.companydecriptionH5').style.opacity = '0';
+                    document.querySelector('.companydecriptionP5').style.opacity = '0';
                         document.querySelector('.section1').style.transform = 'translateY(100%)';
                         document.querySelector('.transitionp1').style.display = 'block';
                         document.querySelector('.transitionp2').style.display = 'block';
@@ -435,6 +534,13 @@ $(function(){
                             },800);
                             setTimeout(function(){
                                 document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                                setTimeout(function(){
+                                    document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                                    document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                                    document.querySelector('.companydecriptionH').style.opacity = '1';
+                                    document.querySelector('.companydecriptionP').style.opacity = '1';
+                                },700);
                             },1500);
                         },200);
                         setTimeout(function(){
