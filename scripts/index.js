@@ -630,7 +630,7 @@ test1.addEventListener("mouseout", function( event ) {
     document.querySelector('.mission').style.transform = 'translateY(85%)';
     document.querySelector('.mission').style.background = '#81f533';
     document.querySelector('.mission').style.color = 'black';
-    document.querySelector('.mission').style.borderRadius = '400px';
+    document.querySelector('.mission').style.borderRadius = '150px';
 // reset the color after a short delay
 }, false);
 
@@ -639,7 +639,7 @@ test2.addEventListener("mouseout", function( event ) {
     document.querySelector('.vision').style.transform = 'translateY(85%)';
     document.querySelector('.vision').style.background = '#81f533';
     document.querySelector('.vision').style.color = 'black';
-    document.querySelector('.vision').style.borderRadius = '400px';
+    document.querySelector('.vision').style.borderRadius = '150px';
 }, false);
 
 test3.addEventListener("mouseout", function( event ) {   
@@ -647,7 +647,7 @@ test3.addEventListener("mouseout", function( event ) {
     document.querySelector('.overview').style.transform = 'translateY(85%)';
     document.querySelector('.overview').style.background = '#81f533';
     document.querySelector('.overview').style.color = 'black';
-    document.querySelector('.overview').style.borderRadius = '400px';
+    document.querySelector('.overview').style.borderRadius = '150px';
 }, false);
 
 
