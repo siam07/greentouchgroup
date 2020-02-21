@@ -1134,9 +1134,8 @@ body{
     position: relative;
     text-align: justify;
     font-family: express;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     overflow: hidden;
-    height: 80vh;
     width: 32vw;
     top: 20vh;
 }
@@ -1157,6 +1156,7 @@ body{
 #gtCorporationDes{
     display: none;
     opacity: 0;
+    height: 100vh;
     overflow: hidden;
     transition: .5s;
 }
@@ -1180,6 +1180,7 @@ body{
 #gtDesignDes{
     display: none;
     opacity: 0;
+    height: 100vh;
     overflow: hidden;
     transition: .5s;
 }
@@ -1192,6 +1193,7 @@ body{
 #gtScDes{
     display: none;
     opacity: 0;
+    height: 100vh;
     overflow: hidden;
     transition: .5s;
 }
@@ -1204,12 +1206,14 @@ body{
 #gtTransportDes{
     display: none;
     opacity: 0;
+    height: 100vh;
     overflow: hidden;
     transition: .5s;
 }
 #gtTransportImg{
     display: none;
     opacity: 0;
+    height: 100vh;
     transform: translateY(100%);
     transition: .5s;
 }
