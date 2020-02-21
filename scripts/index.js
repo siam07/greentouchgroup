@@ -171,7 +171,6 @@ $(function(){
                     sec.addEventListener('wheel', function(event){
                             if (event.deltaY > 0)
                             {   
-                                
                                 document.querySelector('.mission').style.transform = 'translateY(100%)';
                                 document.querySelector('.vision').style.transform = 'translateY(100%)';
                                 document.querySelector('.overview').style.transform = 'translateY(100%)';
@@ -1794,6 +1793,11 @@ for(var i = 0; i < homePage2.length; i++){
         setTimeout(function(){
             document.querySelector('.transitionp3').style.transform = 'translateY(0)';
             document.querySelector('.transitionp4').style.transform = 'translateY(0)';
+            document.getElementById('sec1').style.display = 'none';
+            document.getElementById('sec2').style.display = 'none';
+            document.getElementById('sec3').style.display = 'none';
+            document.getElementById('sec4').style.display = 'none';
+            document.getElementById('sec5').style.display = 'none';
             document.querySelector('.section1').style.transform = 'translateY(100%)';
             
 
