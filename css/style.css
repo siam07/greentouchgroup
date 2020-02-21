@@ -253,7 +253,7 @@ body{
 .flyin2{
     list-style: none;
     position: absolute;
-    left: 50%;
+    left: 50.1%;
     top: 60%;
     transform: translateX(-50%) translateY(-50%);
 
@@ -321,7 +321,7 @@ body{
 
 .mvo h1{
     text-align: center;
-    padding: 1vw;
+    padding: 0vw;
     font-size: 2rem;
 }
 .mission{
@@ -528,6 +528,112 @@ body{
     transform: translateY(-100%);
     z-index: 5;
 }
+
+
+
+
+
+
+
+.pageIndication{
+    display: none;
+    cursor: pointer;
+    
+}
+
+.pageIndication span{
+    position: absolute;
+    text-align: center;
+    bottom: 5vh;
+    right: 14.5rem;
+    width: 30px;
+    height: 30px;
+    padding-top: 2.8px;
+    background: white;
+    border: 2px solid green;
+    border-radius: 100%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.pageIndication span:nth-child(1){
+    cursor: pointer;
+}
+
+.pageIndication span:nth-child(2){
+    cursor: pointer;
+    right: 12rem;
+}
+.pageIndication span:nth-child(3){
+    cursor: pointer;
+    right: 9.5rem;
+}
+.pageIndication span:nth-child(4){
+    cursor: pointer;
+    right: 7rem;
+}
+.pageIndication span:nth-child(5){
+    cursor: pointer;
+    right: 4.5rem;
+}
+
+.indicatorOn1{
+    display: none;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background: green;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.indicatorOn2{
+    display: none;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background: green;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.indicatorOn3{
+    display: none;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background: green;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.indicatorOn4{
+    display: none;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background: green;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.indicatorOn5{
+    display: none;
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background: green;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
 
 
 
