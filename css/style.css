@@ -183,7 +183,7 @@ body{
     display: ;
     height: 100%;
     width: 100%;
-    background:#1b8713;
+    background: #0f9d58;
     background-size: cover;
     transform: translateY(0);
     transition: transform .5s ease-in-out;
@@ -333,7 +333,7 @@ body{
     width: 25vw;
     font-family: express;
     color: black;
-    background: #81f533;
+    background: #0f9d58;
     background-size: cover;
     border:2px solid white;
     border-radius: 150px;
@@ -354,7 +354,7 @@ body{
     width: 25vw;
     font-family: express;
     color: black;
-    background: #81f533;
+    background: #0f9d58;
     background-size: cover;
     border:2px solid white;
     border-radius: 150px;
@@ -374,7 +374,7 @@ body{
     width: 25vw;
     font-family: express;
     color: black;
-    background: #81f533;
+    background: #0f9d58;
     background-size: cover;
     border:2px solid white;
     border-radius: 150px;
@@ -403,7 +403,7 @@ body{
     width: 11rem;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     bottom: 0;
     right: 5vw;
     -ms-transform: translateY(100%);
@@ -514,7 +514,7 @@ body{
     left: 0;
     width: 50%;
     height: 100%;
-    background:#1b8713;
+    background:#0f9d58;
     transition: .5s;
     transform: translateY(100%);
     z-index: 5;
@@ -525,7 +525,7 @@ body{
     right: 0;
     width: 50%;
     height: 100%;
-    background:#1b8713;
+    background:#0f9d58;
     transition: .5s;
     transform: translateY(-100%);
     z-index: 5;
@@ -552,7 +552,7 @@ body{
     height: 30px;
     padding-top: 2.8px;
     background: white;
-    border: 2px solid green;
+    border: 2px solid #0f9d58;
     border-radius: 100%;
     z-index: 5;
     cursor: pointer;
@@ -586,7 +586,7 @@ body{
     width: 20px;
     height: 20px;
 
-    background: green;
+    background: #0f9d58;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -597,7 +597,7 @@ body{
     width: 20px;
     height: 20px;
 
-    background: green;
+    background: #0f9d58;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -608,7 +608,7 @@ body{
     width: 20px;
     height: 20px;
 
-    background: green;
+    background: #0f9d58;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -619,7 +619,7 @@ body{
     width: 20px;
     height: 20px;
 
-    background: green;
+    background: #0f9d58;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -630,7 +630,7 @@ body{
     width: 20px;
     height: 20px;
 
-    background: green;
+    background: #0f9d58;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -694,7 +694,7 @@ body{
     width: 37.5vw;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
@@ -716,7 +716,7 @@ body{
     width: 37.5vw;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
@@ -738,7 +738,7 @@ body{
     width: 37.5vw;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
@@ -759,7 +759,7 @@ body{
     width: 37.5vw;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
@@ -780,7 +780,7 @@ body{
     width: 37.5vw;
     font-family: express;
     color: white;
-    background: #1b8713;
+    background: #0f9d58;
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
@@ -938,7 +938,7 @@ body{
     left: 0;
     width: 50%;
     height: 100%;
-    background:#1b8713;
+    background:#0f9d58;
     transition: .5s;
     transform: translateY(100%);
     z-index: 5;
@@ -949,7 +949,7 @@ body{
     right: 0;
     width: 50%;
     height: 100%;
-    background:#1b8713;
+    background:#0f9d58;
     transition: .5s;
     transform: translateY(-100%);
     z-index: 5;
