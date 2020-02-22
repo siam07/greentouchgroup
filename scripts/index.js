@@ -58,6 +58,12 @@ for(var i = 0; i < homePage.length; i++){
             document.querySelector('.transitionp1').style.transform = 'translateY(0)';
             document.querySelector('.transitionp2').style.transform = 'translateY(0)';
             document.querySelector('.section1').style.transform = 'translateY(100%)';
+
+            document.getElementById('sec1').style.display = 'none';
+            document.getElementById('sec2').style.display = 'none';
+            document.getElementById('sec3').style.display = 'none';
+            document.getElementById('sec4').style.display = 'none';
+            document.getElementById('sec5').style.display = 'none';
             
 
             document.querySelector('.mission').style.transform = 'translateY(100%)';
@@ -1308,7 +1314,7 @@ test3.addEventListener("mouseover", function( event ) {
 test1.addEventListener("mouseout", function( event ) {   
 // highlight the mouseover target
     document.querySelector('.mission').style.transform = 'translateY(90%)';
-    document.querySelector('.mission').style.background = '#81f533';
+    document.querySelector('.mission').style.background = '#0f9d58';
     document.querySelector('.mission').style.color = 'black';
     document.querySelector('.mission').style.borderRadius = '150px';
 // reset the color after a short delay
@@ -1317,7 +1323,7 @@ test1.addEventListener("mouseout", function( event ) {
 test2.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
     document.querySelector('.vision').style.transform = 'translateY(90%)';
-    document.querySelector('.vision').style.background = '#81f533';
+    document.querySelector('.vision').style.background = '#0f9d58';
     document.querySelector('.vision').style.color = 'black';
     document.querySelector('.vision').style.borderRadius = '150px';
 }, false);
@@ -1325,7 +1331,7 @@ test2.addEventListener("mouseout", function( event ) {
 test3.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
     document.querySelector('.overview').style.transform = 'translateY(90%)';
-    document.querySelector('.overview').style.background = '#81f533';
+    document.querySelector('.overview').style.background = '#0f9d58';
     document.querySelector('.overview').style.color = 'black';
     document.querySelector('.overview').style.borderRadius = '150px';
 }, false);
@@ -1400,7 +1406,7 @@ scrollclick.addEventListener("click", function( event ) {
 
 
 document.getElementById('indicator1').style.opacity='1';  
-document.getElementById('cgtc').style.color = 'green';
+document.getElementById('cgtc').style.color = '#0f9d58';
 gtCorporationDes.style.display = 'block';
 gtCorporationImg.style.display = 'block';
 setTimeout(function(){
@@ -1465,7 +1471,7 @@ gt1.addEventListener("click", function( event ) {
     document.getElementById('indicator4').style.opacity='0';
     document.getElementById('indicator5').style.opacity='0';
 
-    document.getElementById('cgtc').style.color = 'green';
+    document.getElementById('cgtc').style.color = '#0f9d58';
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
@@ -1530,7 +1536,7 @@ gt2.addEventListener("click", function( event ) {
     document.getElementById('indicator5').style.opacity='0';
 
     document.getElementById('cgtc').style.color = 'black';
-    document.getElementById('cgte').style.color = 'green';
+    document.getElementById('cgte').style.color = '#0f9d58';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
     document.getElementById('cgtt').style.color = 'black';
@@ -1595,7 +1601,7 @@ gt3.addEventListener("click", function( event ) {
 
     document.getElementById('cgtc').style.color = 'black';
     document.getElementById('cgte').style.color = 'black';
-    document.getElementById('cgtd').style.color = 'green';  
+    document.getElementById('cgtd').style.color = '#0f9d58';  
     document.getElementById('cgtsc').style.color = 'black';
     document.getElementById('cgtt').style.color = 'black';
     
@@ -1662,7 +1668,7 @@ gt4.addEventListener("click", function( event ) {
     document.getElementById('cgtc').style.color = 'black';
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
-    document.getElementById('cgtsc').style.color = 'green';
+    document.getElementById('cgtsc').style.color = '#0f9d58';
     document.getElementById('cgtt').style.color = 'black';
     
     gtScDes.style.display = 'block';
@@ -1728,7 +1734,7 @@ gt5.addEventListener("click", function( event ) {
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
-    document.getElementById('cgtt').style.color = 'green';   
+    document.getElementById('cgtt').style.color = '#0f9d58';   
 
     gtTransportDes.style.display = 'block';
     gtTransportImg.style.display = 'block';
@@ -1793,11 +1799,13 @@ for(var i = 0; i < homePage2.length; i++){
         setTimeout(function(){
             document.querySelector('.transitionp3').style.transform = 'translateY(0)';
             document.querySelector('.transitionp4').style.transform = 'translateY(0)';
+
             document.getElementById('sec1').style.display = 'none';
             document.getElementById('sec2').style.display = 'none';
             document.getElementById('sec3').style.display = 'none';
             document.getElementById('sec4').style.display = 'none';
             document.getElementById('sec5').style.display = 'none';
+           
             document.querySelector('.section1').style.transform = 'translateY(100%)';
             
 
@@ -1914,7 +1922,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
-                document.getElementById('cgtt').style.color = 'green';
+                document.getElementById('cgtt').style.color = '#0f9d58';
             
                 gtTransportDes.style.display = 'block';
                 gtTransportImg.style.display = 'block';
@@ -1976,7 +1984,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('indicator5').style.opacity='0';
             
                 document.getElementById('cgtc').style.color = 'black';
-                document.getElementById('cgte').style.color = 'green';
+                document.getElementById('cgte').style.color = '#0f9d58';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
@@ -2043,7 +2051,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('indicator4').style.opacity='0';
                 document.getElementById('indicator5').style.opacity='0';
             
-                document.getElementById('cgtc').style.color = 'green';
+                document.getElementById('cgtc').style.color = '#0f9d58';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
@@ -2111,7 +2119,7 @@ for(var i = 0; i < gtCorporation.length; i++){
             
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
-                document.getElementById('cgtd').style.color = 'green';  
+                document.getElementById('cgtd').style.color = '#0f9d58';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
                 
@@ -2179,7 +2187,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('indicator5').style.opacity='0';
             
                 document.getElementById('cgtc').style.color = 'black';
-                document.getElementById('cgte').style.color = 'green';
+                document.getElementById('cgte').style.color = '#0f9d58';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
@@ -2246,7 +2254,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
-                document.getElementById('cgtsc').style.color = 'green';
+                document.getElementById('cgtsc').style.color = '#0f9d58';
                 document.getElementById('cgtt').style.color = 'black';
                 
                 gtScDes.style.display = 'block';
@@ -2313,7 +2321,7 @@ for(var i = 0; i < gtCorporation.length; i++){
             
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
-                document.getElementById('cgtd').style.color = 'green';  
+                document.getElementById('cgtd').style.color = '#0f9d58';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
             
@@ -2380,7 +2388,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
-                document.getElementById('cgtt').style.color = 'green';   
+                document.getElementById('cgtt').style.color = '#0f9d58';   
             
                 gtTransportDes.style.display = 'block';
                 gtTransportImg.style.display = 'block';
@@ -2447,7 +2455,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
-                document.getElementById('cgtsc').style.color = 'green';
+                document.getElementById('cgtsc').style.color = '#0f9d58';
                 document.getElementById('cgtt').style.color = 'black';
             
                 gtScDes.style.display = 'block';
@@ -2508,7 +2516,7 @@ for(var i = 0; i < gtCorporation.length; i++){
                 document.getElementById('indicator4').style.opacity='0';
                 document.getElementById('indicator5').style.opacity='0';
             
-                document.getElementById('cgtc').style.color = 'green';
+                document.getElementById('cgtc').style.color = '#0f9d58';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
