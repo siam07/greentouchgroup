@@ -66,9 +66,9 @@ for(var i = 0; i < homePage.length; i++){
             document.getElementById('sec5').style.display = 'none';
             
 
-            document.querySelector('.mission').style.transform = 'translateY(100%)';
-            document.querySelector('.vision').style.transform = 'translateY(100%)';
-            document.querySelector('.overview').style.transform = 'translateY(100%)';
+            document.querySelector('.mission').style.transform = 'translateX(-110%)';
+            document.querySelector('.vision').style.transform = 'translateX(-110%)';
+            document.querySelector('.overview').style.transform = 'translateX(-110%)';
 
             document.querySelector('.heading1').style.transform = 'translateY(100%)';
             document.querySelector('.paragraph1').style.transform = 'translateY(100%)';
@@ -77,7 +77,7 @@ for(var i = 0; i < homePage.length; i++){
             setTimeout(function(){
                 document.querySelector('.pageIndication').style.display = 'none';
                 document.querySelector('.indicatorOn1').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/background.jpg)';
+                body.style.backgroundImage = 'url(photos/background.jpg)';
                 document.getElementById('sec').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'block';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -99,9 +99,9 @@ for(var i = 0; i < homePage.length; i++){
         setTimeout(function(){
             document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
             document.querySelector('.scrolltostart').style.transitionDelay = '.5s';
-            document.querySelector('.mission').style.transform = 'translateY(90%)';
-            document.querySelector('.vision').style.transform = 'translateY(90%)';
-            document.querySelector('.overview').style.transform = 'translateY(90%)';
+            document.querySelector('.mission').style.transform = 'translateX(-63%)';
+            document.querySelector('.vision').style.transform = 'translateX(-63%)';
+            document.querySelector('.overview').style.transform = 'translateX(-63%)';
             setTimeout(function(){
                 document.querySelector('.section1').style.transform = 'translateY(100%)';
                 document.querySelector('.scrolltostart').style.display = 'block';
@@ -153,9 +153,9 @@ $(function(){
         document.querySelector('.mvo').style.display = 'block';
         setTimeout(function(){
         document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
-        document.querySelector('.mission').style.transform = 'translateY(90%)';
-        document.querySelector('.vision').style.transform = 'translateY(90%)';
-        document.querySelector('.overview').style.transform = 'translateY(90%)';
+        document.querySelector('.mission').style.transform = 'translateX(-63%)';
+        document.querySelector('.vision').style.transform = 'translateX(-63%)';
+        document.querySelector('.overview').style.transform = 'translateX(-63%)';
         },500);
         setTimeout(function(){
             document.querySelector('.itm1').style.transform = 'translateY(0)';
@@ -177,9 +177,9 @@ $(function(){
                     sec.addEventListener('wheel', function(event){
                             if (event.deltaY > 0)
                             {   
-                                document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                 setTimeout(function(){
                                     document.querySelector('.scrolltostart').style.transition = '.5s';
                                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
@@ -198,7 +198,7 @@ $(function(){
                                             document.querySelector('.pageIndication').style.display = 'block';
                                             document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
-                                            body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+                                            body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                                             document.getElementById('sec1').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -245,7 +245,7 @@ $(function(){
                                     setTimeout(function(){
                                         document.querySelector('.pageIndication').style.display = 'none';
                                         document.querySelector('.indicatorOn1').style.display = 'none';
-                                        body.style.backgroundImage = 'url(../photos/background.jpg)';
+                                        body.style.backgroundImage = 'url(photos/background.jpg)';
                                         document.getElementById('sec').style.display = 'block';
                                         document.querySelector('.caption1').style.display = 'block';
                                         document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -259,9 +259,9 @@ $(function(){
                                 },200);
 
                                 setTimeout(function(){
-                                    document.querySelector('.mission').style.transform = 'translateY(90%)';
-                                    document.querySelector('.vision').style.transform = 'translateY(90%)';
-                                    document.querySelector('.overview').style.transform = 'translateY(90%)';
+                                    document.querySelector('.mission').style.transform = 'translateX(-63%)';
+                                    document.querySelector('.vision').style.transform = 'translateX(-63%)';
+                                    document.querySelector('.overview').style.transform = 'translateX(-63%)';
                                     setTimeout(function(){
                                         document.querySelector('.section1').style.transform = 'translateY(100%)';
                                         document.querySelector('.scrolltostart').style.display = 'block';
@@ -274,26 +274,69 @@ $(function(){
 
 
                             if (event.deltaY > 0)
-                            {
+                            {   
+                                document.querySelector('.companydecriptionH').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP').style.transform = 'translateY(100%)';
+                            
+                                document.querySelector('.companydecriptionH2').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP2').style.transform = 'translateY(100%)';
+                                
+                                document.querySelector('.companydecriptionH3').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP3').style.transform = 'translateY(100%)';
+                            
+                                document.querySelector('.companydecriptionH4').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP4').style.transform = 'translateY(100%)';
+                            
+                                document.querySelector('.companydecriptionH5').style.transform = 'translateY(100%)';
+                                document.querySelector('.companydecriptionP5').style.transform = 'translateY(100%)';
+                                
+                                document.querySelector('.companydecriptionH').style.opacity = '0';
+                                document.querySelector('.companydecriptionP').style.opacity = '0';
+                            
+                                document.querySelector('.companydecriptionH2').style.opacity = '0';
+                                document.querySelector('.companydecriptionP2').style.opacity = '0';
+                            
+                                document.querySelector('.companydecriptionH3').style.opacity = '0';
+                                document.querySelector('.companydecriptionP3').style.opacity = '0';
+                            
+                                document.querySelector('.companydecriptionH4').style.opacity = '0';
+                                document.querySelector('.companydecriptionP4').style.opacity = '0';
+                            
+                                document.querySelector('.companydecriptionH5').style.opacity = '0';
+                                document.querySelector('.companydecriptionP5').style.opacity = '0';
+                            
+                            
                                 document.querySelector('.companydecriptionH').style.transform = 'translateY(100%)';
                                 document.querySelector('.companydecriptionP').style.transform = 'translateY(100%)';
                                 document.querySelector('.companydecriptionH').style.opacity = '0';
                                 document.querySelector('.companydecriptionP').style.opacity = '0';
-
+                            
                                     document.querySelector('.section2').style.transform = 'translateY(100%)';
                                     document.querySelector('.transitionp1').style.display = 'block';
                                     document.querySelector('.transitionp2').style.display = 'block';
                                     setTimeout(function(){
                                         document.querySelector('.transitionp1').style.transform = 'translateY(0)';
                                         document.querySelector('.transitionp2').style.transform = 'translateY(0)';
-
+                            
+                                            
+                                        document.querySelector('.section1').style.transform = 'translateY(100%)';
+                                        document.querySelector('.section2').style.transform = 'translateY(100%)';
+                                        document.querySelector('.section3').style.transform = 'translateY(100%)';
+                                        document.querySelector('.section4').style.transform = 'translateY(100%)';
+                                        document.querySelector('.section5').style.transform = 'translateY(100%)';
+                            
                                         setTimeout(function(){
+                                            document.querySelector('.indicatorOn1').style.display = 'none';
+                                            document.querySelector('.indicatorOn3').style.display = 'none';
+                                            document.querySelector('.indicatorOn4').style.display = 'none';
+                                            document.querySelector('.indicatorOn5').style.display = 'none';
+                            
                                             document.querySelector('.pageIndication').style.display = 'block';
                                             document.querySelector('.indicatorOn1').style.display = 'none';
                                             document.querySelector('.indicatorOn2').style.display = 'inline-block';
-
+                            
                                             document.getElementById('sec1').style.display = 'none';
-                                            body.style.backgroundImage = 'url(../photos/gtebg.jpg)';
+                                            body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                                             document.getElementById('sec2').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -306,16 +349,16 @@ $(function(){
                                         },800);
                                         setTimeout(function(){
                                             document.querySelector('.section2').style.transform = 'translateY(0)';
-
+                            
                                             setTimeout(function(){
                                                 document.querySelector('.companydecriptionH2').style.transform = 'translateY(0)';
                                                 document.querySelector('.companydecriptionP2').style.transform = 'translateY(0)';
                                                 document.querySelector('.companydecriptionH2').style.opacity = '1';
                                                 document.querySelector('.companydecriptionP2').style.opacity = '1';
-
-                                                document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                                document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                                document.querySelector('.overview').style.transform = 'translateY(100%)';
+                            
+                                                document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                                document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                                document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                                 document.querySelector('.scrolltostart').style.transition = '.5s';
                                                 document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                             },700);
@@ -352,7 +395,7 @@ $(function(){
                                             document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
                                             document.getElementById('sec2').style.display = 'none';
-                                            body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+                                            body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                                             document.getElementById('sec1').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -400,7 +443,7 @@ $(function(){
                                             document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
                                             document.getElementById('sec2').style.display = 'none';
-                                            body.style.backgroundImage = 'url(../photos/gtdbg.jpg)';
+                                            body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                                             document.getElementById('sec3').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -420,11 +463,11 @@ $(function(){
                                                 document.querySelector('.companydecriptionH3').style.opacity = '1';
                                                 document.querySelector('.companydecriptionP3').style.opacity = '1';
 
-                                                document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                                document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                                document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                                document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                                document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                                document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                                 document.querySelector('.scrolltostart').style.transition = '.5s';
-                                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+                                                document.querySelector('.scrolltostart').style.transform = 'translateY(110%)';
                                             },700);
                                         },1500);
                                     },200);
@@ -458,7 +501,7 @@ $(function(){
                                             document.querySelector('.indicatorOn2').style.display = 'inline-block';
 
                                             document.getElementById('sec3').style.display = 'none';
-                                            body.style.backgroundImage = 'url(../photos/gtebg.jpg)';
+                                            body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                                             document.getElementById('sec2').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
                                             document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -505,7 +548,7 @@ $(function(){
                                         document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
                                         document.getElementById('sec3').style.display = 'none';
-                                        body.style.backgroundImage = 'url(../photos/gtscbg.jpg)';
+                                        body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                                         document.getElementById('sec4').style.display = 'block';
                                         document.querySelector('.caption1').style.display = 'none';
                                         document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -525,11 +568,11 @@ $(function(){
                                             document.querySelector('.companydecriptionH4').style.opacity = '1';
                                             document.querySelector('.companydecriptionP4').style.opacity = '1';
 
-                                            document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                            document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                            document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                            document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                            document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                            document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                             document.querySelector('.scrolltostart').style.transition = '.5s';
-                                            document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+                                            document.querySelector('.scrolltostart').style.transform = 'translateX(-110%)';
                                         },700);
                                     },1500);
                                 },200);
@@ -562,7 +605,7 @@ $(function(){
                                     document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
                                     document.getElementById('sec4').style.display = 'none';
-                                    body.style.backgroundImage = 'url(../photos/gtdbg.jpg)';
+                                    body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                                     document.getElementById('sec3').style.display = 'block';
                                     document.querySelector('.caption1').style.display = 'none';
                                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -609,7 +652,7 @@ $(function(){
                                     document.querySelector('.indicatorOn5').style.display = 'inline-block';
 
                                     document.getElementById('sec4').style.display = 'none';
-                                    body.style.backgroundImage = 'url(../photos/gttbg.jpg)';
+                                    body.style.backgroundImage = 'url(photos/gttbg.jpg)';
                                     document.getElementById('sec5').style.display = 'block';
                                     document.querySelector('.caption1').style.display = 'none';
                                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -629,9 +672,9 @@ $(function(){
                                         document.querySelector('.companydecriptionH5').style.opacity = '1';
                                         document.querySelector('.companydecriptionP5').style.opacity = '1';
 
-                                        document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                        document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                        document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                        document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                        document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                        document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                         document.querySelector('.scrolltostart').style.transition = '.5s';
                                         document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                     },700);
@@ -669,7 +712,7 @@ $(function(){
                                 document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
                                 document.getElementById('sec5').style.display = 'none';
-                                body.style.backgroundImage = 'url(../photos/gtscbg.jpg)';
+                                body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                                 document.getElementById('sec4').style.display = 'block';
                                 document.querySelector('.caption1').style.display = 'none';
                                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -696,11 +739,13 @@ $(function(){
 
                 if (event.deltaY > 0)
                 {
+
+
                     document.querySelector('.companydecriptionH5').style.transform = 'translateY(100%)';
                     document.querySelector('.companydecriptionP5').style.transform = 'translateY(100%)';
                     document.querySelector('.companydecriptionH5').style.opacity = '0';
                     document.querySelector('.companydecriptionP5').style.opacity = '0';
-                        document.querySelector('.section1').style.transform = 'translateY(100%)';
+                    document.querySelector('.section5').style.transform = 'translateY(100%)';
                         document.querySelector('.transitionp1').style.display = 'block';
                         document.querySelector('.transitionp2').style.display = 'block';
                         setTimeout(function(){
@@ -708,12 +753,12 @@ $(function(){
                             document.querySelector('.transitionp2').style.transform = 'translateY(0)';
 
                             setTimeout(function(){
-                                document.getElementById('sec5').style.d
                                 document.querySelector('.pageIndication').style.display = 'block';
                                 document.querySelector('.indicatorOn5').style.display = 'none';
                                 document.querySelector('.indicatorOn1').style.display = 'inline-block';
-                                isplay = 'none';
-                                body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+
+                                document.getElementById('sec5').style.display = 'none';
+                                body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                                 document.getElementById('sec1').style.display = 'block';
                                 document.querySelector('.caption1').style.display = 'none';
                                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -733,9 +778,9 @@ $(function(){
                                     document.querySelector('.companydecriptionH').style.opacity = '1';
                                     document.querySelector('.companydecriptionP').style.opacity = '1';
 
-                                    document.querySelector('.mission').style.transform = 'translateY(100%)';
-                                    document.querySelector('.vision').style.transform = 'translateY(100%)';
-                                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                     document.querySelector('.scrolltostart').style.transition = '.5s';
                                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                 },700);
@@ -743,8 +788,7 @@ $(function(){
                         },200);
                         setTimeout(function(){
                             // document.querySelector('.scrolltostart').style.display = 'none';
-                        },500);
-                    
+                        },500);              
                 }
         });
 
@@ -806,9 +850,9 @@ indicatorOn1.addEventListener("click", function( event ) {
     document.querySelector('.companydecriptionH5').style.opacity = '0';
     document.querySelector('.companydecriptionP5').style.opacity = '0';
 
-    document.querySelector('.mission').style.transform = 'translateY(100%)';
-    document.querySelector('.vision').style.transform = 'translateY(100%)';
-    document.querySelector('.overview').style.transform = 'translateY(100%)';
+    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+    document.querySelector('.overview').style.transform = 'translateX(-110%)';
     setTimeout(function(){
         document.querySelector('.scrolltostart').style.transition = '.5s';
         document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
@@ -833,7 +877,7 @@ indicatorOn1.addEventListener("click", function( event ) {
                 document.querySelector('.pageIndication').style.display = 'block';
                 document.querySelector('.indicatorOn1').style.display = 'inline-block';
                 
-                body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+                body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                 document.getElementById('sec1').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -924,7 +968,7 @@ indicatorOn1.addEventListener("click", function( event ) {
                 document.querySelector('.indicatorOn2').style.display = 'inline-block';
 
                 document.getElementById('sec1').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/gtebg.jpg)';
+                body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                 document.getElementById('sec2').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -944,9 +988,9 @@ indicatorOn1.addEventListener("click", function( event ) {
                     document.querySelector('.companydecriptionH2').style.opacity = '1';
                     document.querySelector('.companydecriptionP2').style.opacity = '1';
 
-                    document.querySelector('.mission').style.transform = 'translateY(100%)';
-                    document.querySelector('.vision').style.transform = 'translateY(100%)';
-                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
                     document.querySelector('.scrolltostart').style.transition = '.5s';
                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                 },700);
@@ -1019,7 +1063,7 @@ indicatorOn3.addEventListener("click", function( event ) {
                 document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
                 document.getElementById('sec2').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/gtdbg.jpg)';
+                body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                 document.getElementById('sec3').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -1039,9 +1083,9 @@ indicatorOn3.addEventListener("click", function( event ) {
                     document.querySelector('.companydecriptionH3').style.opacity = '1';
                     document.querySelector('.companydecriptionP3').style.opacity = '1';
 
-                    document.querySelector('.mission').style.transform = 'translateY(100%)';
-                    document.querySelector('.vision').style.transform = 'translateY(100%)';
-                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
                     document.querySelector('.scrolltostart').style.transition = '.5s';
                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                 },700);
@@ -1113,7 +1157,7 @@ indicatorOn4.addEventListener("click", function( event ) {
                 document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
                 document.getElementById('sec3').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/gtscbg.jpg)';
+                body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                 document.getElementById('sec4').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -1133,9 +1177,9 @@ indicatorOn4.addEventListener("click", function( event ) {
                     document.querySelector('.companydecriptionH4').style.opacity = '1';
                     document.querySelector('.companydecriptionP4').style.opacity = '1';
 
-                    document.querySelector('.mission').style.transform = 'translateY(100%)';
-                    document.querySelector('.vision').style.transform = 'translateY(100%)';
-                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
                     document.querySelector('.scrolltostart').style.transition = '.5s';
                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                 },700);
@@ -1208,7 +1252,7 @@ indicatorOn5.addEventListener("click", function( event ) {
                 document.querySelector('.indicatorOn5').style.display = 'inline-block';
 
                 document.getElementById('sec4').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/gttbg.jpg)';
+                body.style.backgroundImage = 'url(photos/gttbg.jpg)';
                 document.getElementById('sec5').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -1228,9 +1272,9 @@ indicatorOn5.addEventListener("click", function( event ) {
                     document.querySelector('.companydecriptionH5').style.opacity = '1';
                     document.querySelector('.companydecriptionP5').style.opacity = '1';
 
-                    document.querySelector('.mission').style.transform = 'translateY(100%)';
-                    document.querySelector('.vision').style.transform = 'translateY(100%)';
-                    document.querySelector('.overview').style.transform = 'translateY(100%)';
+                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
                     document.querySelector('.scrolltostart').style.transition = '.5s';
                     document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                 },700);
@@ -1285,27 +1329,45 @@ let test3 = document.getElementById("o");
 
 test1.addEventListener("mouseover", function( event ) {   
   // highlight the mouseover target
-    document.querySelector('.mission').style.transform = 'translateY(0)';
+    document.querySelector('.mission').style.transform = 'translateX(0)';
     document.querySelector('.mission').style.background = '#1b8713';
     document.querySelector('.mission').style.color = 'white';
     document.querySelector('.mission').style.borderRadius = '5px';
+
+    document.getElementById("mp1").style.opacity = '1';
+    document.querySelector('.mission').style.paddingLeft = '0';
+    document.querySelector('.mission').style.height = '55vh';
+    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+    document.querySelector('.overview').style.transform = 'translateX(-110%)';
   // reset the color after a short delay
 }, false);
 
 test2.addEventListener("mouseover", function( event ) {   
 // highlight the mouseover target
-    document.querySelector('.vision').style.transform = 'translateY(0)';
+    document.querySelector('.vision').style.transform = 'translateX(0)';
     document.querySelector('.vision').style.background = '#1b8713';
     document.querySelector('.vision').style.color = 'white';
     document.querySelector('.vision').style.borderRadius = '5px';
+
+    document.getElementById("vp1").style.opacity = '1';
+    document.querySelector('.vision').style.paddingLeft = '0';
+    document.querySelector('.vision').style.height = '30vh';
+    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+    document.querySelector('.overview').style.transform = 'translateX(-110%)';
 }, false);
 
 test3.addEventListener("mouseover", function( event ) {   
 // highlight the mouseover target
-    document.querySelector('.overview').style.transform = 'translateY(0)';
+    document.querySelector('.overview').style.transform = 'translateX(0)';
     document.querySelector('.overview').style.background = '#1b8713';
     document.querySelector('.overview').style.color = 'white';
     document.querySelector('.overview').style.borderRadius = '5px';
+
+    document.getElementById("op1").style.opacity = '1';
+    document.querySelector('.overview').style.paddingLeft = '0';
+    document.querySelector('.overview').style.height = '55vh';
+    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+    document.querySelector('.vision').style.transform = 'translateX(-110%)';
 }, false);
 
 
@@ -1313,27 +1375,45 @@ test3.addEventListener("mouseover", function( event ) {
 
 test1.addEventListener("mouseout", function( event ) {   
 // highlight the mouseover target
-    document.querySelector('.mission').style.transform = 'translateY(90%)';
+    document.querySelector('.mission').style.transform = 'translateX(-63%)';
     document.querySelector('.mission').style.background = '#0f9d58';
-    document.querySelector('.mission').style.color = 'black';
-    document.querySelector('.mission').style.borderRadius = '150px';
+    document.querySelector('.mission').style.color = 'white';
+    document.querySelector('.mission').style.borderRadius = '10px';
+
+    document.getElementById("mp1").style.opacity = '0';
+    document.querySelector('.mission').style.paddingLeft = '16rem';
+    document.querySelector('.mission').style.height = '6vh';
+    document.querySelector('.vision').style.transform = 'translateX(-63%)';
+    document.querySelector('.overview').style.transform = 'translateX(-63%)';
 // reset the color after a short delay
 }, false);
 
 test2.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
-    document.querySelector('.vision').style.transform = 'translateY(90%)';
+    document.querySelector('.vision').style.transform = 'translateX(-63%)';
     document.querySelector('.vision').style.background = '#0f9d58';
-    document.querySelector('.vision').style.color = 'black';
-    document.querySelector('.vision').style.borderRadius = '150px';
+    document.querySelector('.vision').style.color = 'white';
+    document.querySelector('.vision').style.borderRadius = '10px';
+
+    document.getElementById("vp1").style.opacity = '0';
+    document.querySelector('.vision').style.paddingLeft = '17rem';
+    document.querySelector('.vision').style.height = '6vh';
+    document.querySelector('.mission').style.transform = 'translateX(-63%)';
+    document.querySelector('.overview').style.transform = 'translateX(-63%)';
 }, false);
 
 test3.addEventListener("mouseout", function( event ) {   
     // highlight the mouseover target
-    document.querySelector('.overview').style.transform = 'translateY(90%)';
+    document.querySelector('.overview').style.transform = 'translateX(-63%)';
     document.querySelector('.overview').style.background = '#0f9d58';
-    document.querySelector('.overview').style.color = 'black';
-    document.querySelector('.overview').style.borderRadius = '150px';
+    document.querySelector('.overview').style.color = 'white';
+    document.querySelector('.overview').style.borderRadius = '10px';
+
+    document.getElementById("op1").style.opacity = '0';
+    document.querySelector('.overview').style.paddingLeft = '14rem';
+    document.querySelector('.overview').style.height = '6vh';
+    document.querySelector('.mission').style.transform = 'translateX(-63%)';
+    document.querySelector('.vision').style.transform = 'translateX(-63%)';
 }, false);
 
 
@@ -1345,15 +1425,16 @@ function myFunction(event) {
 
 
 
+
 let scrollclick = document.getElementById("scrollclick");
 
 
 
 
 scrollclick.addEventListener("click", function( event ) {   
-    document.querySelector('.mission').style.transform = 'translateY(100%)';
-    document.querySelector('.vision').style.transform = 'translateY(100%)';
-    document.querySelector('.overview').style.transform = 'translateY(100%)';
+    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+    document.querySelector('.overview').style.transform = 'translateX(-110%)';
     setTimeout(function(){
         document.querySelector('.scrolltostart').style.transition = '.5s';
         document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
@@ -1372,7 +1453,7 @@ scrollclick.addEventListener("click", function( event ) {
                 document.querySelector('.pageIndication').style.display = 'block';
                 document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
-                body.style.backgroundImage = 'url(../photos/gtcbg.jpg)';
+                body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                 document.getElementById('sec1').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
@@ -1396,6 +1477,16 @@ scrollclick.addEventListener("click", function( event ) {
         },200);
     },500);
 }, false);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1809,9 +1900,9 @@ for(var i = 0; i < homePage2.length; i++){
             document.querySelector('.section1').style.transform = 'translateY(100%)';
             
 
-            document.querySelector('.mission').style.transform = 'translateY(100%)';
-            document.querySelector('.vision').style.transform = 'translateY(100%)';
-            document.querySelector('.overview').style.transform = 'translateY(100%)';
+            document.querySelector('.mission').style.transform = 'translateX(-110%)';
+            document.querySelector('.vision').style.transform = 'translateX(-110%)';
+            document.querySelector('.overview').style.transform = 'translateX(-110%)';
 
             document.querySelector('.heading1').style.transform = 'translateY(100%)';
             document.querySelector('.paragraph1').style.transform = 'translateY(100%)';
@@ -1823,7 +1914,7 @@ for(var i = 0; i < homePage2.length; i++){
                 
                 document.querySelector('.pageIndication').style.display = 'none';
                 document.querySelector('.indicatorOn1').style.display = 'none';
-                body.style.backgroundImage = 'url(../photos/background.jpg)';
+                body.style.backgroundImage = 'url(photos/background.jpg)';
                 document.getElementById('sec').style.display = 'block';
                 document.querySelector('.caption1').style.display = 'block';
                 document.querySelector('.transitionp3').style.transform = 'translateY(100%)';
@@ -1845,9 +1936,9 @@ for(var i = 0; i < homePage2.length; i++){
         setTimeout(function(){
             document.querySelector('.scrolltostart').style.transform = 'translateY(0)';
             document.querySelector('.scrolltostart').style.transitionDelay = '.5s';
-            document.querySelector('.mission').style.transform = 'translateY(90%)';
-            document.querySelector('.vision').style.transform = 'translateY(90%)';
-            document.querySelector('.overview').style.transform = 'translateY(90%)';
+            document.querySelector('.mission').style.transform = 'translateX(-63%)';
+            document.querySelector('.vision').style.transform = 'translateX(-63%)';
+            document.querySelector('.overview').style.transform = 'translateX(-63%)';
             setTimeout(function(){
                 document.querySelector('.section1').style.transform = 'translateY(100%)';
                 document.querySelector('.scrolltostart').style.display = 'block';
@@ -2535,3 +2626,314 @@ for(var i = 0; i < gtCorporation.length; i++){
     });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+let cgtc = document.getElementById("cgtc");
+let cgte = document.getElementById("cgte");
+let cgtd = document.getElementById("cgtd");
+let cgtsc = document.getElementById("cgtsc");
+let cgtt = document.getElementById("cgtt");
+
+
+
+cgtc.addEventListener("click", function( event ) {
+    gtCorporationDes.style.display = 'none';
+    gtCorporationImg.style.display = 'none';
+    gtCorporationImg.style.transform = 'translateY(100%)';
+
+    gtCorporationDes.style.opacity = '0';
+    gtCorporationImg.style.opacity = '0';
+
+    gtEximDes.style.display = 'none';
+    gtEximImg.style.display = 'none';
+    gtEximImg.style.transform = 'translateY(100%)';
+
+    gtEximDes.style.opacity = '0';
+    gtEximImg.style.opacity = '0';
+    
+    gtDesignDes.style.display = 'none';
+    gtDesignImg.style.display = 'none';
+    gtDesignImg.style.transform = 'translateY(100%)';
+    
+    gtDesignDes.style.opacity = '0';
+    gtDesignImg.style.opacity = '0';
+
+    gtScDes.style.display = 'none';
+    gtScImg.style.display = 'none';
+    gtScImg.style.transform = 'translateY(100%)';
+
+    gtScDes.style.opacity = '0';
+    gtScImg.style.opacity = '0';
+
+    gtTransportDes.style.display = 'none';
+    gtTransportImg.style.display = 'none';
+    gtTransportImg.style.transform = 'translateY(100%)';
+
+    gtTransportDes.style.opacity = '0';
+    gtTransportImg.style.opacity = '0';
+
+    document.getElementById('indicator1').style.opacity='1'; 
+    document.getElementById('indicator2').style.opacity='0';
+    document.getElementById('indicator3').style.opacity='0';
+    document.getElementById('indicator4').style.opacity='0';
+    document.getElementById('indicator5').style.opacity='0';
+
+    document.getElementById('cgtc').style.color = 'green';
+    document.getElementById('cgte').style.color = 'black';
+    document.getElementById('cgtd').style.color = 'black';  
+    document.getElementById('cgtsc').style.color = 'black';
+    document.getElementById('cgtt').style.color = 'black';
+    gtCorporationDes.style.display = 'block';
+    gtCorporationImg.style.display = 'block';
+    setTimeout(function(){
+
+        gtCorporationImg.style.transform = 'translateY(0)';
+        gtCorporationDes.style.opacity = '1';
+        gtCorporationImg.style.opacity = '1';
+    },100);
+});
+
+cgte.addEventListener("click", function( event ) {
+    gtCorporationDes.style.display = 'none';
+    gtCorporationImg.style.display = 'none';
+    gtCorporationImg.style.transform = 'translateY(100%)';
+
+    gtCorporationDes.style.opacity = '0';
+    gtCorporationImg.style.opacity = '0';
+
+    gtEximDes.style.display = 'none';
+    gtEximImg.style.display = 'none';
+    gtEximImg.style.transform = 'translateY(100%)';
+
+    gtEximDes.style.opacity = '0';
+    gtEximImg.style.opacity = '0';
+    
+    gtDesignDes.style.display = 'none';
+    gtDesignImg.style.display = 'none';
+    gtDesignImg.style.transform = 'translateY(100%)';
+    
+    gtDesignDes.style.opacity = '0';
+    gtDesignImg.style.opacity = '0';
+
+    gtScDes.style.display = 'none';
+    gtScImg.style.display = 'none';
+    gtScImg.style.transform = 'translateY(100%)';
+
+    gtScDes.style.opacity = '0';
+    gtScImg.style.opacity = '0';
+
+    gtTransportDes.style.display = 'none';
+    gtTransportImg.style.display = 'none';
+    gtTransportImg.style.transform = 'translateY(100%)';
+
+    gtTransportDes.style.opacity = '0';
+    gtTransportImg.style.opacity = '0';
+
+    document.getElementById('indicator1').style.opacity='0'; 
+    document.getElementById('indicator2').style.opacity='1';
+    document.getElementById('indicator3').style.opacity='0';
+    document.getElementById('indicator4').style.opacity='0';
+    document.getElementById('indicator5').style.opacity='0';
+
+    document.getElementById('cgtc').style.color = 'black';
+    document.getElementById('cgte').style.color = 'green';
+    document.getElementById('cgtd').style.color = 'black';  
+    document.getElementById('cgtsc').style.color = 'black';
+    document.getElementById('cgtt').style.color = 'black';
+
+    gtEximDes.style.display = 'block';
+    gtEximImg.style.display = 'block';
+
+    setTimeout(function(){
+        gtEximImg.style.transform = 'translateY(0)';
+        gtEximDes.style.opacity = '1';
+        gtEximImg.style.opacity = '1';
+    },100);  
+});
+
+cgtd.addEventListener("click", function( event ) {
+    gtCorporationDes.style.display = 'none';
+    gtCorporationImg.style.display = 'none';
+    gtCorporationImg.style.transform = 'translateY(100%)';
+
+    gtCorporationDes.style.opacity = '0';
+    gtCorporationImg.style.opacity = '0';
+
+    gtEximDes.style.display = 'none';
+    gtEximImg.style.display = 'none';
+    gtEximImg.style.transform = 'translateY(100%)';
+
+    gtEximDes.style.opacity = '0';
+    gtEximImg.style.opacity = '0';
+    
+    gtDesignDes.style.display = 'none';
+    gtDesignImg.style.display = 'none';
+    gtDesignImg.style.transform = 'translateY(100%)';
+    
+    gtDesignDes.style.opacity = '0';
+    gtDesignImg.style.opacity = '0';
+
+    gtScDes.style.display = 'none';
+    gtScImg.style.display = 'none';
+    gtScImg.style.transform = 'translateY(100%)';
+
+    gtScDes.style.opacity = '0';
+    gtScImg.style.opacity = '0';
+
+    gtTransportDes.style.display = 'none';
+    gtTransportImg.style.display = 'none';
+    gtTransportImg.style.transform = 'translateY(100%)';
+
+    gtTransportDes.style.opacity = '0';
+    gtTransportImg.style.opacity = '0';
+
+ 
+    document.getElementById('indicator1').style.opacity='0'; 
+    document.getElementById('indicator2').style.opacity='0';
+    document.getElementById('indicator3').style.opacity='1';
+    document.getElementById('indicator4').style.opacity='0';
+    document.getElementById('indicator5').style.opacity='0';
+
+    document.getElementById('cgtc').style.color = 'black';
+    document.getElementById('cgte').style.color = 'black';
+    document.getElementById('cgtd').style.color = 'green';  
+    document.getElementById('cgtsc').style.color = 'black';
+    document.getElementById('cgtt').style.color = 'black';
+    
+
+    gtDesignDes.style.display = 'block';
+    gtDesignImg.style.display = 'block';
+
+    setTimeout(function(){
+        gtDesignImg.style.transform = 'translateY(0)';
+        gtDesignDes.style.opacity = '1';
+        gtDesignImg.style.opacity = '1';
+    },100);  
+});
+
+cgtsc.addEventListener("click", function( event ) {
+    gtCorporationDes.style.display = 'none';
+    gtCorporationImg.style.display = 'none';
+    gtCorporationImg.style.transform = 'translateY(100%)';
+
+    gtCorporationDes.style.opacity = '0';
+    gtCorporationImg.style.opacity = '0';
+
+    gtEximDes.style.display = 'none';
+    gtEximImg.style.display = 'none';
+    gtEximImg.style.transform = 'translateY(100%)';
+
+    gtEximDes.style.opacity = '0';
+    gtEximImg.style.opacity = '0';
+    
+    gtDesignDes.style.display = 'none';
+    gtDesignImg.style.display = 'none';
+    gtDesignImg.style.transform = 'translateY(100%)';
+    
+    gtDesignDes.style.opacity = '0';
+    gtDesignImg.style.opacity = '0';
+
+    gtScDes.style.display = 'none';
+    gtScImg.style.display = 'none';
+    gtScImg.style.transform = 'translateY(100%)';
+
+    gtScDes.style.opacity = '0';
+    gtScImg.style.opacity = '0';
+
+    gtTransportDes.style.display = 'none';
+    gtTransportImg.style.display = 'none';
+    gtTransportImg.style.transform = 'translateY(100%)';
+
+    gtTransportDes.style.opacity = '0';
+    gtTransportImg.style.opacity = '0';
+
+ 
+    document.getElementById('indicator1').style.opacity='0'; 
+    document.getElementById('indicator2').style.opacity='0';
+    document.getElementById('indicator3').style.opacity='0';
+    document.getElementById('indicator4').style.opacity='1';
+    document.getElementById('indicator5').style.opacity='0';
+
+    document.getElementById('cgtc').style.color = 'black';
+    document.getElementById('cgte').style.color = 'black';
+    document.getElementById('cgtd').style.color = 'black';  
+    document.getElementById('cgtsc').style.color = 'green';
+    document.getElementById('cgtt').style.color = 'black';
+    
+    gtScDes.style.display = 'block';
+    gtScImg.style.display = 'block';
+
+    setTimeout(function(){
+        gtScImg.style.transform = 'translateY(0)';
+        gtScDes.style.opacity = '1';
+        gtScImg.style.opacity = '1';
+    },100);  
+});
+
+cgtt.addEventListener("click", function( event ) {
+    gtCorporationDes.style.display = 'none';
+    gtCorporationImg.style.display = 'none';
+    gtCorporationImg.style.transform = 'translateY(100%)';
+
+    gtCorporationDes.style.opacity = '0';
+    gtCorporationImg.style.opacity = '0';
+
+    gtEximDes.style.display = 'none';
+    gtEximImg.style.display = 'none';
+    gtEximImg.style.transform = 'translateY(100%)';
+
+    gtEximDes.style.opacity = '0';
+    gtEximImg.style.opacity = '0';
+    
+    gtDesignDes.style.display = 'none';
+    gtDesignImg.style.display = 'none';
+    gtDesignImg.style.transform = 'translateY(100%)';
+    
+    gtDesignDes.style.opacity = '0';
+    gtDesignImg.style.opacity = '0';
+
+    gtScDes.style.display = 'none';
+    gtScImg.style.display = 'none';
+    gtScImg.style.transform = 'translateY(100%)';
+
+    gtScDes.style.opacity = '0';
+    gtScImg.style.opacity = '0';
+
+    gtTransportDes.style.display = 'none';
+    gtTransportImg.style.display = 'none';
+    gtTransportImg.style.transform = 'translateY(100%)';
+
+    gtTransportDes.style.opacity = '0';
+    gtTransportImg.style.opacity = '0';
+
+ 
+    document.getElementById('indicator1').style.opacity='0';
+    document.getElementById('indicator2').style.opacity='0';
+    document.getElementById('indicator3').style.opacity='0';
+    document.getElementById('indicator4').style.opacity='0';
+    document.getElementById('indicator5').style.opacity='1';
+
+    document.getElementById('cgtc').style.color = 'black';
+    document.getElementById('cgte').style.color = 'black';
+    document.getElementById('cgtd').style.color = 'black';  
+    document.getElementById('cgtsc').style.color = 'black';
+    document.getElementById('cgtt').style.color = 'green';   
+
+    gtTransportDes.style.display = 'block';
+    gtTransportImg.style.display = 'block';
+
+    setTimeout(function(){
+        gtTransportImg.style.transform = 'translateY(0)';
+        gtTransportDes.style.opacity = '1';
+        gtTransportImg.style.opacity = '1';
+    },100);  
+});

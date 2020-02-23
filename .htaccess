@@ -1,0 +1,8 @@
+# mod_rewrite starts here
+
+RewriteEngine on
+
+RewriteRule ^Home?$ index.html
+RewriteRule ^companies?$ companies.html
+RewriteRule ^about?$ about.html
+

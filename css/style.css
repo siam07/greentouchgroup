@@ -54,7 +54,7 @@ body{
     top: 1rem;
     height: 8vh;
     border-radius: 10px;
-    background-color: white;
+    background-color: transparent;
     transition: .3s;
     overflow: hidden;
     opacity: 0;
@@ -64,7 +64,7 @@ body{
 
 .logo:hover{
     transform: scale(1.3);
-    background: transparent;
+    background: white;
 
 }
 
@@ -329,20 +329,21 @@ body{
 .mission{
     display: block;
     position: absolute;
-    height: 55vh;
-    width: 25vw;
+    padding-left: 16rem;
+    height: 6vh;
+    width: 24rem;
     font-family: express;
-    color: black;
+    color: white;
     background: #0f9d58;
     background-size: cover;
     border:2px solid white;
-    border-radius: 150px;
+    border-radius: 10px;
     overflow: hidden;
-    bottom: 0;
-    left: 5vw;
+    top: 30vh;
+    left: .5vw;
     text-align: justify;
-    transform: translateY(100%);
-    transition: .8s ease-in-out;;
+    transform: translateX(-110%);
+    transition: .5s ease-in-out;;
     z-index: 1;
 }
 
@@ -350,47 +351,61 @@ body{
 .vision{
     display: block;
     position: absolute;
-    height: 55vh;
-    width: 25vw;
+    padding-left: 17rem;
+    height: 6vh;
+    width: 24rem;
     font-family: express;
-    color: black;
+    color: white;
     background: #0f9d58;
     background-size: cover;
     border:2px solid white;
-    border-radius: 150px;
+    border-radius: 10px;
     overflow: hidden;
 
-    bottom: 0;
-    left: 31vw;
+    top: 40vh;
+    left: .5vw;
     text-align: justify;
-    transform: translateY(100%);
-    transition: .8s ease-in-out;
+    transform: translateX(-110%);
+    transition: .5s ease-in-out;
     z-index: 2;
 }
 .overview{
     display: block;
     position: absolute;
-    height: 55vh;
-    width: 25vw;
+    padding-left: 14rem;
+    height: 6vh;
+    width: 24rem;
     font-family: express;
-    color: black;
+    color: white;
     background: #0f9d58;
     background-size: cover;
     border:2px solid white;
-    border-radius: 150px;
+    border-radius: 10px;
     overflow: hidden;
 
-    bottom: 0;
-    left: 57vw;
+    top: 50vh;
+    left: .5vw;
     text-align: justify;
-    transform: translateY(100%);
-    transition: .8s ease-in-out;
+    transform: translateX(-110%);
+    transition: .5s ease-in-out;
     z-index: 3;
 }
 
-
-
-
+#mp1{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .3s;
+}
+#vp1{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .3s;
+}
+#op1{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .3s;
+}
 
 
 
@@ -970,18 +985,18 @@ body{
 
 .logoCompanies{
     position: fixed;
-    top: 1rem;
+    top: 2rem;
     left: 8vw;
     height: 8vh;
     border-radius: 10px;
-    background-color: white;
+    background-color: transparent;
     transition: .3s;
     overflow: hidden;
 }
 
 .logoCompanies:hover{
     transform: scale(1.3);
-    background: transparent;
+    background: white;
 
 }
 
@@ -1218,3 +1233,18 @@ body{
     transition: .5s;
 }
 /*<----Companies Page Ends---->*/
+
+
+
+
+/*<----About Page Starts---->*/
+
+
+
+
+
+
+
+
+
+/*<----About Page Ends---->*/
