@@ -9,10 +9,10 @@
   let companyPage = document.getElementById("companyPage");
   document.querySelector('.indexHomePage').style.display = 'block';
   document.querySelector('.indexCompanyPage').style.display = 'none';
-//   let sec2 = document.getElementById("sec2");
-//   let sec3 = document.getElementById("sec3");
-//   let sec4 = document.getElementById("sec4");
-//   let sec5 = document.getElementById("sec5");
+  let sec2 = document.getElementById("sec2");
+  let sec3 = document.getElementById("sec3");
+  let sec4 = document.getElementById("sec4");
+  let sec5 = document.getElementById("sec5");
 for(var i = 0; i < homePage.length; i++){
     homePage[i].addEventListener("click", function( event ) {
         document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';

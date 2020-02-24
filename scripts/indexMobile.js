@@ -1,10 +1,13 @@
+
+
+
+
 $(function(){
     document.querySelector('.mvo').style.display = 'none';
     document.querySelector('.section1').style.display = 'none';
 
-    sec.addEventListener('swiped-down', function(e) {
-        if (event.deltaY > 0)
-        {   
+
+    $(".sec").on("swiperight",function(){  
             document.querySelector('.mission').style.transform = 'translateX(-110%)';
             document.querySelector('.vision').style.transform = 'translateX(-110%)';
             document.querySelector('.overview').style.transform = 'translateX(-110%)';
@@ -49,8 +52,6 @@ $(function(){
                     },1500);
                 },200);
             },500);
-            
-        }
 });
 
 
