@@ -6,53 +6,90 @@ $(function(){
     document.querySelector('.mvo').style.display = 'none';
     document.querySelector('.section1').style.display = 'none';
 
-
-    $(".sec").on("swiperight",function(){  
-            document.querySelector('.mission').style.transform = 'translateX(-110%)';
-            document.querySelector('.vision').style.transform = 'translateX(-110%)';
-            document.querySelector('.overview').style.transform = 'translateX(-110%)';
-            setTimeout(function(){
-                document.querySelector('.scrolltostart').style.transition = '.5s';
-                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
-                document.querySelector('.transitionp1').style.display = 'block';
-                document.querySelector('.transitionp2').style.display = 'block';
+    sec.addEventListener('touchstart', handleTouchStart, false);        
+    sec.addEventListener('touchmove', handleTouchMove, false);
+    
+    var xDown = null;                                                        
+    var yDown = null;                                                        
+    
+    function handleTouchStart(evt) {                                         
+        xDown = evt.originalEvent.touches[0].clientX;                                      
+        yDown = evt.originalEvent.touches[0].clientY;                                      
+    };                                                
+    
+    function handleTouchMove(evt) {
+        if ( ! xDown || ! yDown ) {
+            return;
+        }
+    
+        var xUp = evt.originalEvent.touches[0].clientX;                                    
+        var yUp = evt.originalEvent.touches[0].clientY;
+    
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+    
+        if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+            if ( xDiff > 0 ) {
+                /* left swipe */
+                document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                document.querySelector('.overview').style.transform = 'translateX(-110%)';
                 setTimeout(function(){
-                    document.querySelector('.transitionp1').style.transform = 'translateY(0)';
-                    document.querySelector('.transitionp2').style.transform = 'translateY(0)';
-
+                    document.querySelector('.scrolltostart').style.transition = '.5s';
+                    document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+                    document.querySelector('.transitionp1').style.display = 'block';
+                    document.querySelector('.transitionp2').style.display = 'block';
                     setTimeout(function(){
-                        document.querySelector('.indicatorOn2').style.display = 'none';
-                        document.querySelector('.indicatorOn3').style.display = 'none';
-                        document.querySelector('.indicatorOn4').style.display = 'none';
-                        document.querySelector('.indicatorOn5').style.display = 'none';
-                        
-                        document.querySelector('.pageIndication').style.display = 'block';
-                        document.querySelector('.indicatorOn1').style.display = 'inline-block';
-
-                        body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
-                        document.getElementById('sec1').style.display = 'block';
-                        document.querySelector('.caption1').style.display = 'none';
-                        document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
-                        document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                        document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                        document.querySelector('.transitionp2').style.transform = 'translateY(0)';
+    
                         setTimeout(function(){
-                            document.getElementById('sec').style.display = 'none';
-                            document.querySelector('.transitionp1').style.display = 'none';
-                            document.querySelector('.transitionp2').style.display = 'none';
-                        },600);
-                    },800);
-                    setTimeout(function(){
-                        document.querySelector('.section1').style.transform = 'translateY(0)';
-
+                            document.querySelector('.indicatorOn2').style.display = 'none';
+                            document.querySelector('.indicatorOn3').style.display = 'none';
+                            document.querySelector('.indicatorOn4').style.display = 'none';
+                            document.querySelector('.indicatorOn5').style.display = 'none';
+                            
+                            document.querySelector('.pageIndication').style.display = 'block';
+                            document.querySelector('.indicatorOn1').style.display = 'inline-block';
+    
+                            body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
+                            document.getElementById('sec1').style.display = 'block';
+                            document.querySelector('.caption1').style.display = 'none';
+                            document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                            document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                            setTimeout(function(){
+                                document.getElementById('sec').style.display = 'none';
+                                document.querySelector('.transitionp1').style.display = 'none';
+                                document.querySelector('.transitionp2').style.display = 'none';
+                            },600);
+                        },800);
                         setTimeout(function(){
-                            document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
-                            document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
-                            document.querySelector('.companydecriptionH').style.opacity = '1';
-                            document.querySelector('.companydecriptionP').style.opacity = '1';
-                        },700);
-                    },1500);
-                },200);
-            },500);
-});
+                            document.querySelector('.section1').style.transform = 'translateY(0)';
+    
+                            setTimeout(function(){
+                                document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                                document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                                document.querySelector('.companydecriptionH').style.opacity = '1';
+                                document.querySelector('.companydecriptionP').style.opacity = '1';
+                            },700);
+                        },1500);
+                    },200);
+                },500); 
+            } else {
+                /* right swipe */
+            }                       
+        } else {
+            if ( yDiff > 0 ) {
+                /* up swipe */ 
+            } else { 
+                /* down swipe */
+            }                                                                 
+        }
+        /* reset values */
+        xDown = null;
+        yDown = null;                                             
+    };
+
 
 
 
