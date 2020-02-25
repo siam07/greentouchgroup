@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="photos/favicon.ico">
+	<title>Greetouch Ltd.</title>
+
+<!-- 	<script type="text/javascript">
+		if (screen.width <=768) {
+		document.location = "indexmobile.html";
+		}
+	</script> -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+				<!-- Swiper -->
+		<div class="swiper-container s2 col-sm-5 contentImgCompanies gtExim" id="gtEximImg">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+				<div class="swiper-slide">Slide 7</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+				<div class="swiper-slide">Slide 10</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination2"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next swiper-button-next2"></div>
+			<div class="swiper-button-prev swiper-button-prev2"></div>
+		</div>
+						<!-- Swiper -->
+		<div class="swiper-container s3 col-sm-5 contentImgCompanies gtDesign" id="gtDesignImg">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"></div>
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+				<div class="swiper-slide">Slide 7</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+				<div class="swiper-slide">Slide 10</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination3"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next swiper-button-next3"></div>
+			<div class="swiper-button-prev swiper-button-prev3"></div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="scripts/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper1 = new Swiper('.s1', {
+		  spaceBetween: 30,
+		  centeredSlides: true,
+		  autoplay: {
+		    delay: 5000,
+		    disableOnInteraction: false,
+		  },
+		  pagination: {
+		    el: '.swiper-pagination1',
+		    clickable: true,
+		  },
+		  navigation: {
+		    nextEl: '.swiper-button-next1',
+		    prevEl: '.swiper-button-prev1',
+		  },
+		});
+		var swiper2 = new Swiper('.s2', {
+		  spaceBetween: 30,
+		  centeredSlides: true,
+		  autoplay: {
+		    delay: 5000,
+		    disableOnInteraction: false,
+		  },
+		  pagination: {
+		    el: '.swiper-pagination2',
+		    clickable: true,
+		  },
+		  navigation: {
+		    nextEl: '.swiper-button-next2',
+		    prevEl: '.swiper-button-prev2',
+		  },
+		});
+		var swiper3 = new Swiper('.s3', {
+		  spaceBetween: 30,
+		  centeredSlides: true,
+		  autoplay: {
+		    delay: 5000,
+		    disableOnInteraction: false,
+		  },
+		  pagination: {
+		    el: '.swiper-pagination3',
+		    clickable: true,
+		  },
+		  navigation: {
+		    nextEl: '.swiper-button-next3',
+		    prevEl: '.swiper-button-prev3',
+		  },
+		});
+		</script>
+</body>
+
+</html>

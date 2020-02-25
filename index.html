@@ -31,7 +31,7 @@
 </head>
 <body>
 		<div class="indexHomePage">
-	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+	<nav class="navbar navbar-dark bg-dark navbar-expand fixed-top">
 		<a class="navbar-brand" href="#"><img class="logo homePage" src="photos/logo.png"></a>
 		<div class="container-fluid">
 			<a class="navbar-brand" href=""><img id="logo" src=""></a>
@@ -137,14 +137,14 @@
 	  	<div class="transitionp2">
 	  		
 	  	</div>
-	  	<div id="sec1">
+	  	<div class="secM" id="sec1">
 		  	<div class="container-fluid section1" id="section1">
 		  		<h1 class="companydecriptionH">Greentouch Corporation</h1>
 		  		<p class="companydecriptionP">Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh. Greentouch Corporation Ltd. focuses completely on innovative activities through stone innovations that are taking place all over the world and so to make our country also proud.<br><br><br><a class="txt" id="gt1" href="#">EXPLORE MORE</a></p>
 		  	</div>
 		 </div>
 
-	  	<div id="sec2">
+	  	<div class="secM" id="sec2">
 		  	<div class="container-fluid section2" id="section2">
 		  		<h1 class="companydecriptionH2">Greentouch EXIM</h1>
 		  		<p class="companydecriptionP2">Export-Import is also one of the fastest-growing business segments of Greentouch Group. Our core expertise is in producing or outsourcing the most suitable quality products as per the requirements of the customer at the best possible price. Delivering personal service through coordinated teamwork is the backbone of our sales commitment.<br><br><br><a class="txt" id="gt2" href="#">EXPLORE MORE</a></p>
@@ -152,7 +152,7 @@
 		 </div>
 
 
-		 <div id="sec3">
+		 <div class="secM" id="sec3">
 		  	<div class="container-fluid section3" id="section3">
 		  		<h1 class="companydecriptionH3">Greentouch Design</h1>
 		  		<p class="companydecriptionP3">Behind every engineering feat, there is an idea, an architectural design, an interior design, a construction, and a development project. When a project is conceived, we can help make the plans a reality by ensuring processes run effectively.<br><br><br><a class="txt" id="gt3" href="#">EXPLORE MORE</a></p>
@@ -160,7 +160,7 @@
 		 </div>
 
 
-		 <div id="sec4">
+		 <div class="secM" id="sec4">
 		  	<div class="container-fluid section4" id="section4">
 		  		<h1 class="companydecriptionH4">Greentouch Stone Crusher</h1>
 		  		<p class="companydecriptionP4">Housing is a basic need of society. Hence it is receiving increased focus. All the building constructions whether it is housing or industrial constriction activities require a crushed stone. Crushed stones are also required for cement based products like RCC pipes, PSC poles, cement concrete hollow blocks, precast cement concrete slabs, we ting, window & door frames and road laying.<br><br><br><a class="txt" id="gt4" href="#">EXPLORE MORE</a></p>
@@ -168,7 +168,7 @@
 		 </div>
 
 
-		 <div id="sec5">
+		 <div class="secM" id="sec5">
 		  	<div class="container-fluid section5" id="section5">
 		  		<h1 class="companydecriptionH5">Greentouch Transport</h1>
 		  		<p class="companydecriptionP5">Greentouch Transport is a transport equipment provider dedicated to the customers to provide them with quality services regarding transportation in terms of safety and reliability. We are well acquainted with providing service in time as per our customers' demands. Greentouch Transport is well established with its own transportation.<br><br><br><a class="txt" id="gt5" href="#">EXPLORE MORE</a></p>
@@ -241,9 +241,58 @@
 				<h1>Greentouch Corporation</h1>
 				<p>Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh. Greentouch Corporation Ltd. focuses completely on innovative activities through stone innovations that are taking place all over the world and so to make our country also proud. Also to generate avenues for the employment of thousands of people and services that will bring happiness in the lives of thousands of people. We are assisted and maintained with proper planning, analytical thinking, and contemporary technological advancement. Our deep insight and understanding of environmental responsibility aid us to accomplish this level of superiority. We believe in a high level of creativity, integrity, responsibility and understanding the need of the world in a way that touches the very heart and soul of the people strengthening long term relations. Our vision is to exemplify the core values in the sector we operate and become the leading company as a trade business, who buys and sells different types of products.</p>
 			</div>
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+					<div class="swiper-slide">Slide 7</div>
+					<div class="swiper-slide">Slide 8</div>
+					<div class="swiper-slide">Slide 9</div>
+					<div class="swiper-slide">Slide 10</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+			<!-- Swiper JS -->
+			<script src="../package/js/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+			  spaceBetween: 30,
+			  centeredSlides: true,
+			  autoplay: {
+			    delay: 2500,
+			    disableOnInteraction: false,
+			  },
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+			});
+			</script>
 			<div class="col-sm-5 contentImgCompanies gtCorporation" id="gtCorporationImg">
 				<img src="photos/company/gtc.jpg">
 			</div>
+
+
+
+
+
+
 
 			<div class="col-sm-4 contentTxtCompanies" id="gtEximDes">
 				<h1>Greentouch EXIM</h1>
@@ -302,7 +351,6 @@
 
   	<script src="scripts/index.js"></script>
   	<script src="scripts/indexMobile.js"></script>
-  	<script src="scripts/companies.js"></script>
 
 </body>
 

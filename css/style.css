@@ -1131,6 +1131,22 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .row{
     width: 100vw;
     transition: .5s;
@@ -1154,16 +1170,68 @@ body{
     width: 32vw;
     top: 20vh;
 }
-.contentImgCompanies{
+
+
+
+
+
+
+
+
+
+
+.swiper-container {
     position: fixed;
-    left: 54vw;
-}
-.contentImgCompanies img{
-    position: relative;
+    left: 56vw;
     top: 30vh;
-    margin-left: 1vw;
+    width:39vw;
+    height: 22vw;
+
+}
+
+.contentImgCompanies img{
     height: 22vw;
 }
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1187,7 +1255,7 @@ body{
     transition: .5s;
 }
 #gtEximImg{
-    display: none;
+
     opacity: 0;
     transform: translateY(100%);
     transition: .5s;
@@ -1200,7 +1268,7 @@ body{
     transition: .5s;
 }
 #gtDesignImg{
-    display: none;
+
     opacity: 0;
     transform: translateY(100%);
     transition: .5s;
@@ -1213,7 +1281,7 @@ body{
     transition: .5s;
 }
 #gtScImg{
-    display: none;
+
     opacity: 0;
     transform: translateY(100%);
     transition: .5s;
@@ -1226,9 +1294,9 @@ body{
     transition: .5s;
 }
 #gtTransportImg{
-    display: none;
+
     opacity: 0;
-    height: 100vh;
+    height: 22vw;
     transform: translateY(100%);
     transition: .5s;
 }

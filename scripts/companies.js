@@ -84,7 +84,7 @@ cgtc.addEventListener("click", function( event ) {
     gtCorporationDes.style.display = 'block';
     gtCorporationImg.style.display = 'block';
     setTimeout(function(){
-
+        gtCorporationImg.style.display = 'block';
         gtCorporationImg.style.transform = 'translateY(0)';
         gtCorporationDes.style.opacity = '1';
         gtCorporationImg.style.opacity = '1';
@@ -143,6 +143,7 @@ cgte.addEventListener("click", function( event ) {
     gtEximImg.style.display = 'block';
 
     setTimeout(function(){
+        gtEximImg.style.display = 'block';
         gtEximImg.style.transform = 'translateY(0)';
         gtEximDes.style.opacity = '1';
         gtEximImg.style.opacity = '1';

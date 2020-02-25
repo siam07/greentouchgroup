@@ -31,8 +31,6 @@
     font-family: 'vitro';
     src: url(../fonts/vitro.ttf);
 }
-
-
 body, html{     
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -43,6 +41,7 @@ body, html{
 }
 
 body{
+    position: fixed;
     overflow-y: hidden;
     background-image: url(../photos/background.jpg);
     height: 100vh;
@@ -709,8 +708,20 @@ body{
 
 
 
+
+.secM{
+    display: block;
+    position: absolute;
+    height: 40vh;
+    width: 80vw;
+    overflow: hidden;
+    bottom: 20vh;
+}
+
+
 .section1{
     display: block;
+    opacity: 0;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -720,19 +731,20 @@ body{
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
-    bottom: 10vh;
+    bottom: 0vh;
     left: 10vw;
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -o-transform: translateY(100%);
     transform: translateY(150%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 
 .section2{
     display: block;
+    opacity: 0;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -742,19 +754,20 @@ body{
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
-    bottom: 10vh;
+    bottom: 0vh;
     left: 10vw;
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -o-transform: translateY(100%);
     transform: translateY(150%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 
 .section3{
     display: block;
+    opacity: 0;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -764,18 +777,19 @@ body{
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
-    bottom: 10vh;
+    bottom: 0vh;
     left: 10vw;
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -o-transform: translateY(100%);
     transform: translateY(150%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 .section4{
     display: block;
+    opacity: 0;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -785,18 +799,19 @@ body{
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
-    bottom: 10vh;
+    bottom: 0vh;
     left: 10vw;
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -o-transform: translateY(100%);
     transform: translateY(150%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 .section5{
     display: block;
+    opacity: 0;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -806,14 +821,14 @@ body{
     background-size: cover;
     overflow: hidden;
     border-radius: 5px;
-    bottom: 10vh;
+    bottom: 0vh;
     left: 10vw;
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -o-transform: translateY(100%);
     transform: translateY(150%);
-    transition: transform .8s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 
