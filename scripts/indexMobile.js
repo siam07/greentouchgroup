@@ -1290,6 +1290,82 @@ function handleTouchMove5(evt) {
 
 
 
+
+
+
+
+
+
+
+let mission = document.getElementById("mp1");
+let vision = document.getElementById("vp1");
+let overview = document.getElementById("op1");
+
+
+
+mission.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {   
+        // highlight the mouseover target
+            document.querySelector('.mission').style.transform = 'translateX(-70%)';
+            document.querySelector('.mission').style.background = '#0f9d58';
+            document.querySelector('.mission').style.color = 'white';
+            document.querySelector('.mission').style.borderRadius = '10px';
+    
+            document.getElementById("mp1").style.opacity = '0';
+            document.querySelector('.mission').style.paddingLeft = '70vw';
+            document.querySelector('.mission').style.height = '4vh';
+            document.querySelector('.vision').style.transform = 'translateX(-70%)';
+            document.querySelector('.overview').style.transform = 'translateX(-70%)';
+    // reset the color after a short delay
+        }
+}, false);
+
+vision.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {   
+    // highlight the mouseover target
+        document.querySelector('.vision').style.transform = 'translateX(-70%)';
+        document.querySelector('.vision').style.background = '#0f9d58';
+        document.querySelector('.vision').style.color = 'white';
+        document.querySelector('.vision').style.borderRadius = '10px';
+
+        document.getElementById("vp1").style.opacity = '0';
+        document.querySelector('.vision').style.paddingLeft = '73vw';
+        document.querySelector('.vision').style.height = '4vh';
+        document.querySelector('.mission').style.transform = 'translateX(-70%)';
+        document.querySelector('.overview').style.transform = 'translateX(-70%)';
+    }
+}, false);
+
+overview.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {   
+        // highlight the mouseover target
+        document.querySelector('.overview').style.transform = 'translateX(-70%)';
+        document.querySelector('.overview').style.background = '#0f9d58';
+        document.querySelector('.overview').style.color = 'white';
+        document.querySelector('.overview').style.borderRadius = '10px';
+
+        document.getElementById("op1").style.opacity = '0';
+        document.querySelector('.overview').style.paddingLeft = '65vw';
+        document.querySelector('.overview').style.height = '4vh';
+        document.querySelector('.mission').style.transform = 'translateX(-70%)';
+        document.querySelector('.vision').style.transform = 'translateX(-70%)';
+    }
+}, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 indicatorOn1.addEventListener("click", function( event ) {
     if(window.innerWidth < 500){
         document.querySelector('.companydecriptionH').style.transform = 'translateY(100%)';
