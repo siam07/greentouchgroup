@@ -1166,6 +1166,7 @@ body{
 .contentTxtCompanies p{
     position: relative;
     text-align: justify;
+    padding: .3vw;
     font-family: express;
     font-size: 1.1vw;
     overflow: hidden;
@@ -1246,7 +1247,6 @@ body{
     transition: .5s;
 }
 #gtCorporationImg{
-    display: none;
     opacity: 0;
     transform: translateY(100%);
     transition: .5s;
