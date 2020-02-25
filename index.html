@@ -18,7 +18,7 @@
 			if (window.innerWidth < 500 ) {
 				styleLink.setAttribute("href", "css/styleMobile.css");
 			}
-			if (window.innerWidth > 600 ) {
+			if (window.innerWidth > 500 ) {
 				styleLink.setAttribute("href", "css/style.css");
 			}
 			
@@ -110,7 +110,8 @@
 		  	</div>
 
 		  	<div class="scrolltostart" id="scrolltostart">
-		  		<h1>SWIPE TO DISCOVER</h1>
+		  		<h1 id="scrollToD">SCROLL TO DISCOVER</h1>
+		  		<h1 id="swipeToD">SWIPE TO DISCOVER</h1>
 		  		<div class="indicator" id="scrollclick">
 		  			<span></span>
 		  			<span></span>
@@ -121,6 +122,18 @@
 		  			<span></span>
 		  		</div>
 		  	</div>
+		  	<script type="text/javascript">
+		  	var scroll = document.getElementById("scrollToD");
+		  	var swip = document.getElementById("swipeToD");
+			if (window.innerWidth < 500 ) {
+				scroll.style.dsplay = 'none';
+				swip.style.dsplay = 'block';
+			}
+			if (window.innerWidth > 500 ) {
+				scroll.style.dsplay = 'block';
+				swip.style.dsplay = 'none';
+			}
+		  	</script>
 
 		</div>
 	  		<div class="pageIndication">

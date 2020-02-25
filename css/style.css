@@ -409,7 +409,9 @@ body{
 
 
 
-
+#swipeToD{
+    display: none;
+}
 .scrolltostart{
     display: none;
     position: absolute;
