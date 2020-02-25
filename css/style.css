@@ -344,7 +344,7 @@ body{
     text-align: justify;
     transform: translateX(-110%);
     transition: .5s ease-in-out;;
-    z-index: 1;
+    z-index: 3;
 }
 
 
@@ -367,7 +367,7 @@ body{
     text-align: justify;
     transform: translateX(-110%);
     transition: .5s ease-in-out;
-    z-index: 2;
+    z-index: 3;
 }
 .overview{
     display: block;
