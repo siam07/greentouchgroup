@@ -133,6 +133,13 @@ for(var i = 0; i < homePagem.length; i++){
               setTimeout(function(){
                   document.querySelector('.pageIndication').style.display = 'none';
                   document.querySelector('.indicatorOn1').style.display = 'none';
+                  document.querySelector('.indicatorOn2').style.display = 'none';
+                  document.querySelector('.indicatorOn3').style.display = 'none';
+                  document.querySelector('.indicatorOn4').style.display = 'none';
+                  document.querySelector('.indicatorOn5').style.display = 'none';
+
+                  
+                  
                   body.style.backgroundImage = 'url(photos/background.jpg)';
                   document.getElementById('sec').style.display = 'block';
                   document.querySelector('.caption1').style.display = 'block';
@@ -284,6 +291,14 @@ function handleTouchMove(evt) {
                         document.querySelector('.indicatorOn5').style.display = 'none';
                         
                         document.querySelector('.pageIndication').style.display = 'block';
+
+                        document.querySelector('.indicatorOn2').style.display = 'none';
+                        document.querySelector('.indicatorOn3').style.display = 'none';
+                        document.querySelector('.indicatorOn4').style.display = 'none';
+                        document.querySelector('.indicatorOn5').style.display = 'none';
+
+                        
+                        
                         document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
                         body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
@@ -418,7 +433,14 @@ function handleTouchMove1(evt) {
                         document.querySelector('.indicatorOn5').style.display = 'none';
 
                         document.querySelector('.pageIndication').style.display = 'block';
+
                         document.querySelector('.indicatorOn1').style.display = 'none';
+                        document.querySelector('.indicatorOn3').style.display = 'none';
+                        document.querySelector('.indicatorOn4').style.display = 'none';
+                        document.querySelector('.indicatorOn5').style.display = 'none';
+
+                        
+                        
                         document.querySelector('.indicatorOn2').style.display = 'inline-block';
 
                         document.getElementById('sec1').style.display = 'none';
@@ -482,6 +504,12 @@ function handleTouchMove1(evt) {
                 setTimeout(function(){
                     document.querySelector('.pageIndication').style.display = 'none';
                     document.querySelector('.indicatorOn1').style.display = 'none';
+                    document.querySelector('.indicatorOn2').style.display = 'none';
+                    document.querySelector('.indicatorOn3').style.display = 'none';
+                    document.querySelector('.indicatorOn4').style.display = 'none';
+                    document.querySelector('.indicatorOn5').style.display = 'none';
+
+                    
                     body.style.backgroundImage = 'url(photos/background.jpg)';
                     document.getElementById('sec').style.display = 'block';
                     document.querySelector('.caption1').style.display = 'block';
@@ -584,7 +612,14 @@ function handleTouchMove2(evt) {
 
                                         setTimeout(function(){
                                             document.querySelector('.pageIndication').style.display = 'block';
+
+                                            document.querySelector('.indicatorOn1').style.display = 'none';
                                             document.querySelector('.indicatorOn2').style.display = 'none';
+                                            document.querySelector('.indicatorOn4').style.display = 'none';
+                                            document.querySelector('.indicatorOn5').style.display = 'none';
+                    
+                                            
+                                            
                                             document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
                                             document.getElementById('sec2').style.display = 'none';
@@ -648,7 +683,14 @@ function handleTouchMove2(evt) {
 
             setTimeout(function(){
             document.querySelector('.pageIndication').style.display = 'block';
+
             document.querySelector('.indicatorOn2').style.display = 'none';
+            document.querySelector('.indicatorOn3').style.display = 'none';
+            document.querySelector('.indicatorOn4').style.display = 'none';
+            document.querySelector('.indicatorOn5').style.display = 'none';
+
+            
+            
             document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
             document.getElementById('sec2').style.display = 'none';
@@ -747,7 +789,14 @@ function handleTouchMove3(evt) {
 
                                     setTimeout(function(){
                                         document.querySelector('.pageIndication').style.display = 'block';
+
+                                        document.querySelector('.indicatorOn1').style.display = 'none';
+                                        document.querySelector('.indicatorOn2').style.display = 'none';
                                         document.querySelector('.indicatorOn3').style.display = 'none';
+                                        document.querySelector('.indicatorOn5').style.display = 'none';
+                
+                                        
+                                        
                                         document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
                                         document.getElementById('sec3').style.display = 'none';
@@ -811,7 +860,14 @@ function handleTouchMove3(evt) {
 
                                         setTimeout(function(){
                                             document.querySelector('.pageIndication').style.display = 'block';
+
+                                            document.querySelector('.indicatorOn1').style.display = 'none';
                                             document.querySelector('.indicatorOn3').style.display = 'none';
+                                            document.querySelector('.indicatorOn4').style.display = 'none';
+                                            document.querySelector('.indicatorOn5').style.display = 'none';
+                    
+                                            
+                                            
                                             document.querySelector('.indicatorOn2').style.display = 'inline-block';
 
                                             document.getElementById('sec3').style.display = 'none';
@@ -914,7 +970,14 @@ function handleTouchMove4(evt) {
 
                                 setTimeout(function(){
                                     document.querySelector('.pageIndication').style.display = 'block';
+
+                                    document.querySelector('.indicatorOn1').style.display = 'none';
+                                    document.querySelector('.indicatorOn2').style.display = 'none';
+                                    document.querySelector('.indicatorOn3').style.display = 'none';
                                     document.querySelector('.indicatorOn4').style.display = 'none';
+            
+                                    
+                                    
                                     document.querySelector('.indicatorOn5').style.display = 'inline-block';
 
                                     document.getElementById('sec4').style.display = 'none';
@@ -978,7 +1041,14 @@ function handleTouchMove4(evt) {
 
                                 setTimeout(function(){
                                     document.querySelector('.pageIndication').style.display = 'block';
+
+                                    document.querySelector('.indicatorOn1').style.display = 'none';
+                                    document.querySelector('.indicatorOn2').style.display = 'none';
                                     document.querySelector('.indicatorOn4').style.display = 'none';
+                                    document.querySelector('.indicatorOn5').style.display = 'none';
+            
+                                    
+                                    
                                     document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
                                     document.getElementById('sec4').style.display = 'none';
@@ -1080,7 +1150,13 @@ function handleTouchMove5(evt) {
 
                     setTimeout(function(){
                         document.querySelector('.pageIndication').style.display = 'block';
+
+                        document.querySelector('.indicatorOn2').style.display = 'none';
+                        document.querySelector('.indicatorOn3').style.display = 'none';
+                        document.querySelector('.indicatorOn4').style.display = 'none';
                         document.querySelector('.indicatorOn5').style.display = 'none';
+
+                        
                         document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
                         document.getElementById('sec5').style.display = 'none';
@@ -1144,7 +1220,12 @@ function handleTouchMove5(evt) {
 
                     setTimeout(function(){
                         document.querySelector('.pageIndication').style.display = 'block';
+
+                        document.querySelector('.indicatorOn1').style.display = 'none';
+                        document.querySelector('.indicatorOn2').style.display = 'none';
+                        document.querySelector('.indicatorOn3').style.display = 'none';
                         document.querySelector('.indicatorOn5').style.display = 'none';
+
                         document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
                         document.getElementById('sec5').style.display = 'none';
@@ -1265,6 +1346,12 @@ indicatorOn1.addEventListener("click", function( event ) {
                 document.querySelector('.section4').style.opacity = '0';
                 document.querySelector('.section5').style.opacity = '0';
 
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec2').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
+
                 setTimeout(function(){
                     document.querySelector('.indicatorOn2').style.display = 'none';
                     document.querySelector('.indicatorOn3').style.display = 'none';
@@ -1361,6 +1448,12 @@ indicatorOn1.addEventListener("click", function( event ) {
                 document.querySelector('.section4').style.opacity = '0';
                 document.querySelector('.section5').style.opacity = '0';
 
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec2').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
+
                 setTimeout(function(){
                     document.querySelector('.indicatorOn1').style.display = 'none';
                     document.querySelector('.indicatorOn3').style.display = 'none';
@@ -1455,6 +1548,12 @@ indicatorOn3.addEventListener("click", function( event ) {
                 document.querySelector('.section4').style.opacity = '0';
                 document.querySelector('.section5').style.opacity = '0';
 
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec2').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
+
                 setTimeout(function(){
                     document.querySelector('.indicatorOn1').style.display = 'none';
                     document.querySelector('.indicatorOn2').style.display = 'none';
@@ -1546,6 +1645,12 @@ indicatorOn4.addEventListener("click", function( event ) {
                 document.querySelector('.section3').style.opacity = '0';
                 document.querySelector('.section4').style.opacity = '0';
                 document.querySelector('.section5').style.opacity = '0';
+
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec2').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
 
                 setTimeout(function(){
                     document.querySelector('.indicatorOn1').style.display = 'none';
@@ -1639,6 +1744,12 @@ indicatorOn5.addEventListener("click", function( event ) {
                 document.querySelector('.section4').style.opacity = '0';
                 document.querySelector('.section5').style.opacity = '0';
 
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec2').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
+
                 setTimeout(function(){
                     document.querySelector('.indicatorOn1').style.display = 'none';
                     document.querySelector('.indicatorOn2').style.display = 'none';
@@ -1675,4 +1786,18 @@ indicatorOn5.addEventListener("click", function( event ) {
     }
     
 }, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
