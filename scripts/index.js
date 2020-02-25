@@ -216,7 +216,14 @@ $(function(){
                                                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                                                 document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
                                                 setTimeout(function(){
-                                                    document.getElementById('sec').style.display = 'none';
+                                                    
+
+        
+                                                    document.getElementById('sec2').style.display = 'none';
+                                                    document.getElementById('sec3').style.display = 'none';
+                                                    document.getElementById('sec4').style.display = 'none';
+                                                    document.getElementById('sec5').style.display = 'none';
+                                                            
                                                     document.querySelector('.transitionp1').style.display = 'none';
                                                     document.querySelector('.transitionp2').style.display = 'none';
                                                 },600);
@@ -229,6 +236,12 @@ $(function(){
                                                     document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
                                                     document.querySelector('.companydecriptionH').style.opacity = '1';
                                                     document.querySelector('.companydecriptionP').style.opacity = '1';
+
+                                                    document.querySelector('.mission').style.transform = 'translateX(-110%)';
+                                                    document.querySelector('.vision').style.transform = 'translateX(-110%)';
+                                                    document.querySelector('.overview').style.transform = 'translateX(-110%)';
+                                                    document.querySelector('.scrolltostart').style.transition = '.5s';
+                                                    document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                                 },700);
                                             },1500);
                                         },200);
@@ -256,7 +269,13 @@ $(function(){
                                         document.querySelector('.section1').style.transform = 'translateY(100%)';
                                         setTimeout(function(){
                                             document.querySelector('.pageIndication').style.display = 'none';
+
                                             document.querySelector('.indicatorOn1').style.display = 'none';
+                                            document.querySelector('.indicatorOn2').style.display = 'none';
+                                            document.querySelector('.indicatorOn3').style.display = 'none';
+                                            document.querySelector('.indicatorOn4').style.display = 'none';
+                                            document.querySelector('.indicatorOn5').style.display = 'none';
+                                            
                                             body.style.backgroundImage = 'url(photos/background.jpg)';
                                             document.getElementById('sec').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'block';
@@ -265,7 +284,15 @@ $(function(){
                                             setTimeout(function(){
                                                 document.querySelector('.transitionp1').style.display = 'none';
                                                 document.querySelector('.transitionp2').style.display = 'none';
+
                                                 document.getElementById('sec1').style.display = 'none';
+                                                document.getElementById('sec2').style.display = 'none';
+                                                document.getElementById('sec3').style.display = 'none';
+                                                document.getElementById('sec4').style.display = 'none';
+                                                document.getElementById('sec5').style.display = 'none';
+            
+                                                
+                                                
                                             },600);
                                         },800);
                                     },200);
@@ -346,8 +373,15 @@ $(function(){
                                                 document.querySelector('.pageIndication').style.display = 'block';
                                                 document.querySelector('.indicatorOn1').style.display = 'none';
                                                 document.querySelector('.indicatorOn2').style.display = 'inline-block';
-                                
+
                                                 document.getElementById('sec1').style.display = 'none';
+                                                document.getElementById('sec2').style.display = 'none';
+                                                document.getElementById('sec3').style.display = 'none';
+                                                document.getElementById('sec4').style.display = 'none';
+                                                document.getElementById('sec5').style.display = 'none';
+            
+                                                
+                                                
                                                 body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                                                 document.getElementById('sec2').style.display = 'block';
                                                 document.querySelector('.caption1').style.display = 'none';
@@ -403,10 +437,22 @@ $(function(){
 
                                             setTimeout(function(){
                                                 document.querySelector('.pageIndication').style.display = 'block';
+
                                                 document.querySelector('.indicatorOn2').style.display = 'none';
+                                                document.querySelector('.indicatorOn3').style.display = 'none';
+                                                document.querySelector('.indicatorOn4').style.display = 'none';
+                                                document.querySelector('.indicatorOn5').style.display = 'none';
+
                                                 document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
+                                                document.getElementById('sec1').style.display = 'none';
                                                 document.getElementById('sec2').style.display = 'none';
+                                                document.getElementById('sec3').style.display = 'none';
+                                                document.getElementById('sec4').style.display = 'none';
+                                                document.getElementById('sec5').style.display = 'none';
+            
+                                                
+                                                
                                                 body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                                                 document.getElementById('sec1').style.display = 'block';
                                                 document.querySelector('.caption1').style.display = 'none';
@@ -451,10 +497,23 @@ $(function(){
 
                                             setTimeout(function(){
                                                 document.querySelector('.pageIndication').style.display = 'block';
+
+                                                document.querySelector('.indicatorOn1').style.display = 'none';
                                                 document.querySelector('.indicatorOn2').style.display = 'none';
+                                                document.querySelector('.indicatorOn4').style.display = 'none';
+                                                document.querySelector('.indicatorOn5').style.display = 'none';
+                                                
+                                                
                                                 document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
+                                                document.getElementById('sec1').style.display = 'none';
                                                 document.getElementById('sec2').style.display = 'none';
+                                                document.getElementById('sec3').style.display = 'none';
+                                                document.getElementById('sec4').style.display = 'none';
+                                                document.getElementById('sec5').style.display = 'none';
+            
+                                                
+                                                
                                                 body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                                                 document.getElementById('sec3').style.display = 'block';
                                                 document.querySelector('.caption1').style.display = 'none';
@@ -509,10 +568,23 @@ $(function(){
 
                                             setTimeout(function(){
                                                 document.querySelector('.pageIndication').style.display = 'block';
+
+                                                document.querySelector('.indicatorOn1').style.display = 'none';
                                                 document.querySelector('.indicatorOn3').style.display = 'none';
+                                                document.querySelector('.indicatorOn4').style.display = 'none';
+                                                document.querySelector('.indicatorOn5').style.display = 'none';
+                                                
+                                                
                                                 document.querySelector('.indicatorOn2').style.display = 'inline-block';
 
+                                                document.getElementById('sec1').style.display = 'none';
+                                                document.getElementById('sec2').style.display = 'none';
                                                 document.getElementById('sec3').style.display = 'none';
+                                                document.getElementById('sec4').style.display = 'none';
+                                                document.getElementById('sec5').style.display = 'none';
+            
+                                                
+                                                
                                                 body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                                                 document.getElementById('sec2').style.display = 'block';
                                                 document.querySelector('.caption1').style.display = 'none';
@@ -556,10 +628,23 @@ $(function(){
 
                                         setTimeout(function(){
                                             document.querySelector('.pageIndication').style.display = 'block';
+
+                                            document.querySelector('.indicatorOn1').style.display = 'none';
+                                            document.querySelector('.indicatorOn2').style.display = 'none';
                                             document.querySelector('.indicatorOn3').style.display = 'none';
+                                            document.querySelector('.indicatorOn5').style.display = 'none';
+                                            
+                                            
                                             document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
+                                            document.getElementById('sec1').style.display = 'none';
+                                            document.getElementById('sec2').style.display = 'none';
                                             document.getElementById('sec3').style.display = 'none';
+                                            document.getElementById('sec4').style.display = 'none';
+                                            document.getElementById('sec5').style.display = 'none';
+        
+                                            
+                                            
                                             body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                                             document.getElementById('sec4').style.display = 'block';
                                             document.querySelector('.caption1').style.display = 'none';
@@ -584,7 +669,7 @@ $(function(){
                                                 document.querySelector('.vision').style.transform = 'translateX(-110%)';
                                                 document.querySelector('.overview').style.transform = 'translateX(-110%)';
                                                 document.querySelector('.scrolltostart').style.transition = '.5s';
-                                                document.querySelector('.scrolltostart').style.transform = 'translateX(-110%)';
+                                                document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
                                             },700);
                                         },1500);
                                     },200);
@@ -613,10 +698,23 @@ $(function(){
 
                                     setTimeout(function(){
                                         document.querySelector('.pageIndication').style.display = 'block';
+
+                                        document.querySelector('.indicatorOn1').style.display = 'none';
+                                        document.querySelector('.indicatorOn2').style.display = 'none';
                                         document.querySelector('.indicatorOn4').style.display = 'none';
+                                        document.querySelector('.indicatorOn5').style.display = 'none';
+                                        
+                                        
                                         document.querySelector('.indicatorOn3').style.display = 'inline-block';
 
+                                        document.getElementById('sec1').style.display = 'none';
+                                        document.getElementById('sec2').style.display = 'none';
+                                        document.getElementById('sec3').style.display = 'none';
                                         document.getElementById('sec4').style.display = 'none';
+                                        document.getElementById('sec5').style.display = 'none';
+    
+                                        
+                                        
                                         body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                                         document.getElementById('sec3').style.display = 'block';
                                         document.querySelector('.caption1').style.display = 'none';
@@ -660,10 +758,23 @@ $(function(){
 
                                     setTimeout(function(){
                                         document.querySelector('.pageIndication').style.display = 'block';
+
+                                        document.querySelector('.indicatorOn1').style.display = 'none';
+                                        document.querySelector('.indicatorOn2').style.display = 'none';
+                                        document.querySelector('.indicatorOn3').style.display = 'none';
                                         document.querySelector('.indicatorOn4').style.display = 'none';
+                                        
+                                        
                                         document.querySelector('.indicatorOn5').style.display = 'inline-block';
 
+                                        document.getElementById('sec1').style.display = 'none';
+                                        document.getElementById('sec2').style.display = 'none';
+                                        document.getElementById('sec3').style.display = 'none';
                                         document.getElementById('sec4').style.display = 'none';
+                                        document.getElementById('sec5').style.display = 'none';
+    
+                                        
+                                        
                                         body.style.backgroundImage = 'url(photos/gttbg.jpg)';
                                         document.getElementById('sec5').style.display = 'block';
                                         document.querySelector('.caption1').style.display = 'none';
@@ -720,10 +831,23 @@ $(function(){
 
                                 setTimeout(function(){
                                     document.querySelector('.pageIndication').style.display = 'block';
+
+                                    document.querySelector('.indicatorOn1').style.display = 'none';
+                                    document.querySelector('.indicatorOn2').style.display = 'none';
+                                    document.querySelector('.indicatorOn3').style.display = 'none';
                                     document.querySelector('.indicatorOn5').style.display = 'none';
+                                    
+                                    
                                     document.querySelector('.indicatorOn4').style.display = 'inline-block';
 
+                                    document.getElementById('sec1').style.display = 'none';
+                                    document.getElementById('sec2').style.display = 'none';
+                                    document.getElementById('sec3').style.display = 'none';
+                                    document.getElementById('sec4').style.display = 'none';
                                     document.getElementById('sec5').style.display = 'none';
+
+                                    
+                                    
                                     body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                                     document.getElementById('sec4').style.display = 'block';
                                     document.querySelector('.caption1').style.display = 'none';
@@ -766,10 +890,22 @@ $(function(){
 
                                 setTimeout(function(){
                                     document.querySelector('.pageIndication').style.display = 'block';
+
+                                    document.querySelector('.indicatorOn2').style.display = 'none';
+                                    document.querySelector('.indicatorOn3').style.display = 'none';
+                                    document.querySelector('.indicatorOn4').style.display = 'none';
                                     document.querySelector('.indicatorOn5').style.display = 'none';
+                                    
+                                    
                                     document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
+                                    document.getElementById('sec1').style.display = 'none';
+                                    document.getElementById('sec2').style.display = 'none';
+                                    document.getElementById('sec3').style.display = 'none';
+                                    document.getElementById('sec4').style.display = 'none';
                                     document.getElementById('sec5').style.display = 'none';
+
+
                                     body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                                     document.getElementById('sec1').style.display = 'block';
                                     document.querySelector('.caption1').style.display = 'none';
@@ -893,6 +1029,12 @@ indicatorOn1.addEventListener("click", function( event ) {
                     
                     body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                     document.getElementById('sec1').style.display = 'block';
+
+                    document.getElementById('sec2').style.display = 'none';
+                    document.getElementById('sec3').style.display = 'none';
+                    document.getElementById('sec4').style.display = 'none';
+                    document.getElementById('sec5').style.display = 'none';
+
                     document.querySelector('.caption1').style.display = 'none';
                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                     document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
@@ -986,6 +1128,13 @@ indicatorOn1.addEventListener("click", function( event ) {
                 document.getElementById('sec1').style.display = 'none';
                 body.style.backgroundImage = 'url(photos/gtebg.jpg)';
                 document.getElementById('sec2').style.display = 'block';
+                    
+                document.getElementById('sec1').style.display = 'none';
+                document.getElementById('sec3').style.display = 'none';
+                document.getElementById('sec4').style.display = 'none';
+                document.getElementById('sec5').style.display = 'none';
+                
+                
                 document.querySelector('.caption1').style.display = 'none';
                 document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                 document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
@@ -1084,6 +1233,13 @@ indicatorOn3.addEventListener("click", function( event ) {
                     document.getElementById('sec2').style.display = 'none';
                     body.style.backgroundImage = 'url(photos/gtdbg.jpg)';
                     document.getElementById('sec3').style.display = 'block';
+                    
+                    document.getElementById('sec1').style.display = 'none';
+                    document.getElementById('sec2').style.display = 'none';
+                    document.getElementById('sec4').style.display = 'none';
+                    document.getElementById('sec5').style.display = 'none';
+                    
+                    
                     document.querySelector('.caption1').style.display = 'none';
                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                     document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
@@ -1180,6 +1336,13 @@ indicatorOn4.addEventListener("click", function( event ) {
                     document.getElementById('sec3').style.display = 'none';
                     body.style.backgroundImage = 'url(photos/gtscbg.jpg)';
                     document.getElementById('sec4').style.display = 'block';
+                    
+                    document.getElementById('sec1').style.display = 'none';
+                    document.getElementById('sec2').style.display = 'none';
+                    document.getElementById('sec3').style.display = 'none';
+                    document.getElementById('sec5').style.display = 'none';
+                    
+                    
                     document.querySelector('.caption1').style.display = 'none';
                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                     document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
@@ -1278,6 +1441,13 @@ indicatorOn5.addEventListener("click", function( event ) {
                     document.getElementById('sec4').style.display = 'none';
                     body.style.backgroundImage = 'url(photos/gttbg.jpg)';
                     document.getElementById('sec5').style.display = 'block';
+                    
+                    document.getElementById('sec1').style.display = 'none';
+                    document.getElementById('sec2').style.display = 'none';
+                    document.getElementById('sec3').style.display = 'none';
+                    document.getElementById('sec4').style.display = 'none';
+                    
+                    
                     document.querySelector('.caption1').style.display = 'none';
                     document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
                     document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
