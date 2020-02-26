@@ -39,7 +39,7 @@ body, html{
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;  
+    user-select: none;
 }
 
 body{
@@ -47,6 +47,7 @@ body{
     background-image: url(../photos/background.jpg);
     background-size: cover;
     background-repeat: none;
+    height: 100vh;
 } 
 .logo{
     opacity: 0;
@@ -927,7 +928,7 @@ body{
 
 
 .indexHomePage{
-    display: none; 
+    display: none;
 }
 
 .indexCompanyPage{
