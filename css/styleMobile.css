@@ -567,7 +567,7 @@ body{
 .pageIndication span{
     position: absolute;
     text-align: center;
-    bottom: 5vh;
+    bottom: 16vh;
     right: 14.5rem;
     width: 30px;
     height: 30px;
