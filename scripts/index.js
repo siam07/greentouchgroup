@@ -133,12 +133,12 @@ companyPage.addEventListener("click", function( event ) {
 
 $(function(){
     let vh = window.innerHeight * 0.01;
-    sec.style.setProperty('--vh',`${vh}px`);
-    sec1.style.setProperty('--vh',`${vh}px`);
-    sec2.style.setProperty('--vh',`${vh}px`);
-    sec3.style.setProperty('--vh',`${vh}px`);
-    sec4.style.setProperty('--vh',`${vh}px`);
-    sec5.style.setProperty('--vh',`${vh}px`);
+    sec.style.setProperty('--vh1',`${vh}px`);
+    sec1.style.setProperty('--vh2',`${vh}px`);
+    sec2.style.setProperty('--vh3',`${vh}px`);
+    sec3.style.setProperty('--vh4',`${vh}px`);
+    sec4.style.setProperty('--vh5',`${vh}px`);
+    sec5.style.setProperty('--vh6',`${vh}px`);
     if(window.innerWidth > 500){
         document.querySelector('.mvo').style.display = 'none';
         document.querySelector('.section1').style.display = 'none';
