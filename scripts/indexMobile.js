@@ -7,6 +7,15 @@ $(function(){
         document.querySelector('.mvo').style.display = 'none';
         document.querySelector('.section1').style.display = 'none';
 
+        if (window.innerWidth < 500 ) {
+            document.getElementById("sec1Mobile").innerHTML = "Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh......<br><a class=\"txt\" id=\"gt1\" href=\"#\">EXPLORE MORE</a>";
+            document.getElementById("sec2Mobile").innerHTML = "Export-Import is also one of the fastest-growing business segments of Greentouch Group......<br><a class=\"txt\" id=\"gt2\" href=\"#\">EXPLORE MORE</a>";
+            document.getElementById("sec3Mobile").innerHTML = "Behind every engineering feat, there is an idea, an architectural design, an interior design, a construction, and a development project.......<br><a class=\"txt\" id=\"gt3\" href=\"#\">EXPLORE MORE</a>";
+            document.getElementById("sec4Mobile").innerHTML = "Housing is a basic need of society. Hence it is receiving increased focus........<br><a class=\"txt\" id=\"gt4\" href=\"#\">EXPLORE MORE</a>";
+            document.getElementById("sec5Mobile").innerHTML = "Greentouch Transport is a transport equipment provider dedicated to the customers to provide them with quality services........<br><a class=\"txt\" id=\"gt5\" href=\"#\">EXPLORE MORE</a>";
+        }
+
+        
         setTimeout(function(){
             $('.flyin').removeClass('hidden');
             setTimeout(function(){
