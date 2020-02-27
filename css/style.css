@@ -1390,14 +1390,14 @@ body{
 .companiesNameAbout l{
   color: #a1a1a1;
   padding-left: 10px;
-  font-size: 1.1rem;
+  font-size: 1.1vw;
   cursor: default;
 }
 .companiesNameAbout l1{
   padding-top: 10px;
   margin-left: 20px; 
   color: #cccbca;
-  font-size: 1.1rem;
+  font-size: 1.1vw;
   cursor: default;
 }
 #namesAbout:hover{
