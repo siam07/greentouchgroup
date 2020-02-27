@@ -1369,7 +1369,7 @@ body{
 .companiesNameAbout{
     position: relative;
     color: black;
-    top: 15vh;
+    top: 20vh;
     left: 0;
     padding-left:15px;
     
@@ -1387,16 +1387,9 @@ body{
     margin-left: 2rem;
 }
 
-.companiesNameAbout l{
+.companiesNameAbout l1{
   color: #a1a1a1;
   padding-left: 10px;
-  font-size: 1.1vw;
-  cursor: default;
-}
-.companiesNameAbout l1{
-  padding-top: 10px;
-  margin-left: 20px; 
-  color: #cccbca;
   font-size: 1.1vw;
   cursor: default;
 }
