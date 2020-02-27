@@ -17,7 +17,7 @@ let gtTransportDes = document.getElementById("gtTransportDes");
 
 $(function(){
     document.getElementById('indicator1').style.opacity='1';  
-    document.getElementById('cgtc').style.color = 'green';
+    document.getElementById('cgtc').style.color = '#0f9d58';
     gtCorporationDes.style.display = 'block';
     
     setTimeout(function(){
@@ -68,7 +68,7 @@ cgtc.addEventListener("click", function( event ) {
     document.getElementById('indicator4').style.opacity='0';
     document.getElementById('indicator5').style.opacity='0';
 
-    document.getElementById('cgtc').style.color = 'green';
+    document.getElementById('cgtc').style.color = '#0f9d58';
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
@@ -123,7 +123,7 @@ cgte.addEventListener("click", function( event ) {
     document.getElementById('indicator5').style.opacity='0';
 
     document.getElementById('cgtc').style.color = 'black';
-    document.getElementById('cgte').style.color = 'green';
+    document.getElementById('cgte').style.color = '#0f9d58';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
     document.getElementById('cgtt').style.color = 'black';
@@ -180,7 +180,7 @@ cgtd.addEventListener("click", function( event ) {
 
     document.getElementById('cgtc').style.color = 'black';
     document.getElementById('cgte').style.color = 'black';
-    document.getElementById('cgtd').style.color = 'green';  
+    document.getElementById('cgtd').style.color = '#0f9d58';  
     document.getElementById('cgtsc').style.color = 'black';
     document.getElementById('cgtt').style.color = 'black';
     
@@ -238,7 +238,7 @@ cgtsc.addEventListener("click", function( event ) {
     document.getElementById('cgtc').style.color = 'black';
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
-    document.getElementById('cgtsc').style.color = 'green';
+    document.getElementById('cgtsc').style.color = '#0f9d58';
     document.getElementById('cgtt').style.color = 'black';
     
     gtScDes.style.display = 'block';
@@ -292,7 +292,7 @@ cgtt.addEventListener("click", function( event ) {
     document.getElementById('cgte').style.color = 'black';
     document.getElementById('cgtd').style.color = 'black';  
     document.getElementById('cgtsc').style.color = 'black';
-    document.getElementById('cgtt').style.color = 'green';   
+    document.getElementById('cgtt').style.color = '#0f9d58';   
 
     gtTransportDes.style.display = 'block';
 
@@ -363,7 +363,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
-                document.getElementById('cgtt').style.color = 'green';
+                document.getElementById('cgtt').style.color = '#0f9d58';
             
                 gtTransportDes.style.display = 'block';
 
@@ -421,7 +421,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('indicator5').style.opacity='0';
             
                 document.getElementById('cgtc').style.color = 'black';
-                document.getElementById('cgte').style.color = 'green';
+                document.getElementById('cgte').style.color = '#0f9d58';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
@@ -483,7 +483,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('indicator4').style.opacity='0';
                 document.getElementById('indicator5').style.opacity='0';
             
-                document.getElementById('cgtc').style.color = 'green';
+                document.getElementById('cgtc').style.color = '#0f9d58';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
@@ -548,7 +548,7 @@ let gtTransport = document.querySelector('.gtTransport');
             
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
-                document.getElementById('cgtd').style.color = 'green';  
+                document.getElementById('cgtd').style.color = '#0f9d58';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
                 
@@ -611,7 +611,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('indicator5').style.opacity='0';
             
                 document.getElementById('cgtc').style.color = 'black';
-                document.getElementById('cgte').style.color = 'green';
+                document.getElementById('cgte').style.color = '#0f9d58';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
@@ -675,7 +675,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
-                document.getElementById('cgtsc').style.color = 'green';
+                document.getElementById('cgtsc').style.color = '#0f9d58';
                 document.getElementById('cgtt').style.color = 'black';
                 
                 gtScDes.style.display = 'block';
@@ -739,7 +739,7 @@ let gtTransport = document.querySelector('.gtTransport');
             
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
-                document.getElementById('cgtd').style.color = 'green';  
+                document.getElementById('cgtd').style.color = '#0f9d58';  
                 document.getElementById('cgtsc').style.color = 'black';
                 document.getElementById('cgtt').style.color = 'black';
             
@@ -803,7 +803,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';
-                document.getElementById('cgtt').style.color = 'green';   
+                document.getElementById('cgtt').style.color = '#0f9d58';   
             
                 gtTransportDes.style.display = 'block';
 
@@ -867,7 +867,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('cgtc').style.color = 'black';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
-                document.getElementById('cgtsc').style.color = 'green';
+                document.getElementById('cgtsc').style.color = '#0f9d58';
                 document.getElementById('cgtt').style.color = 'black';
             
                 gtScDes.style.display = 'block';
@@ -921,7 +921,7 @@ let gtTransport = document.querySelector('.gtTransport');
                 document.getElementById('indicator4').style.opacity='0';
                 document.getElementById('indicator5').style.opacity='0';
             
-                document.getElementById('cgtc').style.color = 'green';
+                document.getElementById('cgtc').style.color = '#0f9d58';
                 document.getElementById('cgte').style.color = 'black';
                 document.getElementById('cgtd').style.color = 'black';  
                 document.getElementById('cgtsc').style.color = 'black';

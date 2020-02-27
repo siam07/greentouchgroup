@@ -1169,7 +1169,7 @@ body{
     position: relative;
     font-family: express;
     font-size: 2.5vw;
-    color: green;
+    color: #0f9d58;
     top: 20vh;
 }
 .contentTxtCompanies p{
@@ -1348,7 +1348,7 @@ body{
     text-align: justify;
     padding: .3vw;
     font-family: express;
-    font-size: 1.1vw;
+    font-size: 1.4vw;
     overflow: hidden;
     top: 20vh;
     width: 70vw;
@@ -1369,11 +1369,12 @@ body{
 .companiesNameAbout{
     position: relative;
     color: black;
-    top: 30vh;
+    top: 15vh;
     left: 0;
     padding-left:15px;
     
 }
+
 .companiesNameAbout li{
     list-style: none;
     margin-bottom: 1rem;
@@ -1386,4 +1387,22 @@ body{
     margin-left: 2rem;
 }
 
+.companiesNameAbout l{
+  color: #a1a1a1;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  cursor: default;
+}
+.companiesNameAbout l1{
+  padding-top: 10px;
+  margin-left: 20px; 
+  color: #cccbca;
+  font-size: 1.1rem;
+  cursor: default;
+}
+#namesAbout:hover{
+    transform: scale(1.05);  
+    transition: .5s;
+    color: #0f9d58;
+}
 /*<----About Page Ends---->*/
