@@ -951,6 +951,14 @@ body{
 }
 
 .indexCompanyPage{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background:#f0f0f0;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+.indexCompanyPageMobile{
     display: block;
     height: 100vh;
     width: 100vw;
@@ -1063,32 +1071,34 @@ body{
 
 
 
-.sidebar{
+.sidebarMobile{
     position: fixed;
-    width: 20vw;
-    height: 100vh;
+    width: 100vw;
+    height: 20vh;
     background: white;
 }
-.companiesName{
+.companiesNameMobile{
     position: relative;
     color: black;
-    top: 30vh;
+    top: 15vh;
     left: 0;
     padding-left:15px;
     
 }
-.companiesName li{
+.companiesNameMobile span{
+    position: absolute;
+    float: left;
+    padding-left: 1rem;
     list-style: none;
-    margin-bottom: 1rem;
     text-decoration: none;
     font-family: express;
     font-size: 1.2vw;
     cursor: pointer;
 }
-.companiesName p{
+.companiesNameMobile p{
     margin-left: 2rem;
 }
-#indicator1{
+#indicator1Mobile{
     opacity: 0;
     position: relative;
     content: '';
@@ -1100,7 +1110,7 @@ body{
     border-radius: 10px;
     transition: all .5s ease;
 }
-#indicator2{
+#indicator2Mobile{
     opacity: 0;
     position: relative;
     content: '';
@@ -1112,7 +1122,7 @@ body{
     border-radius: 10px;
     transition: all .5s ease;
 }
-#indicator3{
+#indicator3Mobile{
     opacity: 0;
     position: relative;
     content: '';
@@ -1124,7 +1134,7 @@ body{
     border-radius: 10px;
     transition: all .5s ease;
 }
-#indicator4{
+#indicator4Mobile{
     opacity: 0;
     position: relative;
     content: '';
@@ -1136,7 +1146,7 @@ body{
     border-radius: 10px;
     transition: all .5s ease;
 }
-#indicator5{
+#indicator5Mobile{
     opacity: 0;
     position: relative;
     content: '';

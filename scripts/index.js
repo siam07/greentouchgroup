@@ -1698,51 +1698,53 @@ let scrollclick = document.getElementById("scrollclick");
 
 
 
-scrollclick.addEventListener("click", function( event ) {   
-    document.querySelector('.mission').style.transform = 'translateX(-110%)';
-    document.querySelector('.vision').style.transform = 'translateX(-110%)';
-    document.querySelector('.overview').style.transform = 'translateX(-110%)';
-    setTimeout(function(){
-        document.querySelector('.scrolltostart').style.transition = '.5s';
-        document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
-        document.querySelector('.transitionp1').style.display = 'block';
-        document.querySelector('.transitionp2').style.display = 'block';
+scrollclick.addEventListener("click", function( event ) {
+    if (window.innerWidth > 500 ) {  
+        document.querySelector('.mission').style.transform = 'translateX(-110%)';
+        document.querySelector('.vision').style.transform = 'translateX(-110%)';
+        document.querySelector('.overview').style.transform = 'translateX(-110%)';
         setTimeout(function(){
-            document.querySelector('.transitionp1').style.transform = 'translateY(0)';
-            document.querySelector('.transitionp2').style.transform = 'translateY(0)';
-
+            document.querySelector('.scrolltostart').style.transition = '.5s';
+            document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+            document.querySelector('.transitionp1').style.display = 'block';
+            document.querySelector('.transitionp2').style.display = 'block';
             setTimeout(function(){
-                document.querySelector('.indicatorOn2').style.display = 'none';
-                document.querySelector('.indicatorOn3').style.display = 'none';
-                document.querySelector('.indicatorOn4').style.display = 'none';
-                document.querySelector('.indicatorOn5').style.display = 'none';
-                
-                document.querySelector('.pageIndication').style.display = 'block';
-                document.querySelector('.indicatorOn1').style.display = 'inline-block';
-
-                body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
-                document.getElementById('sec1').style.display = 'block';
-                document.querySelector('.caption1').style.display = 'none';
-                document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
-                document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
-                setTimeout(function(){
-                    document.getElementById('sec').style.display = 'none';
-                    document.querySelector('.transitionp1').style.display = 'none';
-                    document.querySelector('.transitionp2').style.display = 'none';
-                },600);
-            },800);
-            setTimeout(function(){
-                document.querySelector('.section1').style.transform = 'translateY(0)';
+                document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                document.querySelector('.transitionp2').style.transform = 'translateY(0)';
 
                 setTimeout(function(){
-                    document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
-                    document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
-                    document.querySelector('.companydecriptionH').style.opacity = '1';
-                    document.querySelector('.companydecriptionP').style.opacity = '1';
-                },700);
-            },1500);
-        },200);
-    },500);
+                    document.querySelector('.indicatorOn2').style.display = 'none';
+                    document.querySelector('.indicatorOn3').style.display = 'none';
+                    document.querySelector('.indicatorOn4').style.display = 'none';
+                    document.querySelector('.indicatorOn5').style.display = 'none';
+                    
+                    document.querySelector('.pageIndication').style.display = 'block';
+                    document.querySelector('.indicatorOn1').style.display = 'inline-block';
+
+                    body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
+                    document.getElementById('sec1').style.display = 'block';
+                    document.querySelector('.caption1').style.display = 'none';
+                    document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                    document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                    setTimeout(function(){
+                        document.getElementById('sec').style.display = 'none';
+                        document.querySelector('.transitionp1').style.display = 'none';
+                        document.querySelector('.transitionp2').style.display = 'none';
+                    },600);
+                },800);
+                setTimeout(function(){
+                    document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                    setTimeout(function(){
+                        document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                        document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                        document.querySelector('.companydecriptionH').style.opacity = '1';
+                        document.querySelector('.companydecriptionP').style.opacity = '1';
+                    },700);
+                },1500);
+            },200);
+        },500);
+    }
 }, false);
 
 
@@ -1777,6 +1779,14 @@ setTimeout(function(){
     gtCorporationImg.style.opacity = '1';
 },100); 
 
+if (window.innerWidth < 500 ) {
+    document.getElementById("sec1Mobile").innerHTML = 'Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh......<br><a class="txt" id="gt1" href="#">EXPLORE MORE</a>';
+    document.getElementById("sec2Mobile").innerHTML = "Export-Import is also one of the fastest-growing business segments of Greentouch Group......<br><a class=\"txt\" id=\"gt2\" href=\"#\">EXPLORE MORE</a>";
+    document.getElementById("sec3Mobile").innerHTML = "Behind every engineering feat, there is an idea, an architectural design, an interior design, a construction, and a development project.......<br><a class=\"txt\" id=\"gt3\" href=\"#\">EXPLORE MORE</a>";
+    document.getElementById("sec4Mobile").innerHTML = "Housing is a basic need of society. Hence it is receiving increased focus........<br><a class=\"txt\" id=\"gt4\" href=\"#\">EXPLORE MORE</a>";
+    document.getElementById("sec5Mobile").innerHTML = "Greentouch Transport is a transport equipment provider dedicated to the customers to provide them with quality services........<br><a class=\"txt\" id=\"gt5\" href=\"#\">EXPLORE MORE</a>";
+}
+
 
 let gt1 = document.getElementById("gt1");
 let gt2 = document.getElementById("gt2");
@@ -1787,64 +1797,66 @@ let gt5 = document.getElementById("gt5");
 
 
 gt1.addEventListener("click", function( event ) {
-    
-    document.querySelector('.indexHomePage').style.display = 'none';
-    document.querySelector('.indexCompanyPage').style.display = 'block';
+    if (window.innerWidth > 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'block';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'none';
 
-    gtCorporationDes.style.display = 'none';
-    gtCorporationImg.style.display = 'none';
-    gtCorporationImg.style.transform = 'translateY(100%)';
+        gtCorporationDes.style.display = 'none';
+        gtCorporationImg.style.display = 'none';
+        gtCorporationImg.style.transform = 'translateY(100%)';
 
-    gtCorporationDes.style.opacity = '0';
-    gtCorporationImg.style.opacity = '0';
+        gtCorporationDes.style.opacity = '0';
+        gtCorporationImg.style.opacity = '0';
 
-    gtEximDes.style.display = 'none';
-    gtEximImg.style.display = 'none';
-    gtEximImg.style.transform = 'translateY(100%)';
+        gtEximDes.style.display = 'none';
+        gtEximImg.style.display = 'none';
+        gtEximImg.style.transform = 'translateY(100%)';
 
-    gtEximDes.style.opacity = '0';
-    gtEximImg.style.opacity = '0';
-    
-    gtDesignDes.style.display = 'none';
-    gtDesignImg.style.display = 'none';
-    gtDesignImg.style.transform = 'translateY(100%)';
-    
-    gtDesignDes.style.opacity = '0';
-    gtDesignImg.style.opacity = '0';
+        gtEximDes.style.opacity = '0';
+        gtEximImg.style.opacity = '0';
+        
+        gtDesignDes.style.display = 'none';
+        gtDesignImg.style.display = 'none';
+        gtDesignImg.style.transform = 'translateY(100%)';
+        
+        gtDesignDes.style.opacity = '0';
+        gtDesignImg.style.opacity = '0';
 
-    gtScDes.style.display = 'none';
-    gtScImg.style.display = 'none';
-    gtScImg.style.transform = 'translateY(100%)';
+        gtScDes.style.display = 'none';
+        gtScImg.style.display = 'none';
+        gtScImg.style.transform = 'translateY(100%)';
 
-    gtScDes.style.opacity = '0';
-    gtScImg.style.opacity = '0';
+        gtScDes.style.opacity = '0';
+        gtScImg.style.opacity = '0';
 
-    gtTransportDes.style.display = 'none';
-    gtTransportImg.style.display = 'none';
-    gtTransportImg.style.transform = 'translateY(100%)';
+        gtTransportDes.style.display = 'none';
+        gtTransportImg.style.display = 'none';
+        gtTransportImg.style.transform = 'translateY(100%)';
 
-    gtTransportDes.style.opacity = '0';
-    gtTransportImg.style.opacity = '0';
+        gtTransportDes.style.opacity = '0';
+        gtTransportImg.style.opacity = '0';
 
-    document.getElementById('indicator1').style.opacity='1'; 
-    document.getElementById('indicator2').style.opacity='0';
-    document.getElementById('indicator3').style.opacity='0';
-    document.getElementById('indicator4').style.opacity='0';
-    document.getElementById('indicator5').style.opacity='0';
+        document.getElementById('indicator1').style.opacity='1'; 
+        document.getElementById('indicator2').style.opacity='0';
+        document.getElementById('indicator3').style.opacity='0';
+        document.getElementById('indicator4').style.opacity='0';
+        document.getElementById('indicator5').style.opacity='0';
 
-    document.getElementById('cgtc').style.color = '#0f9d58';
-    document.getElementById('cgte').style.color = 'black';
-    document.getElementById('cgtd').style.color = 'black';  
-    document.getElementById('cgtsc').style.color = 'black';
-    document.getElementById('cgtt').style.color = 'black';
-    gtCorporationDes.style.display = 'block';
-    gtCorporationImg.style.display = 'block';
-    setTimeout(function(){
+        document.getElementById('cgtc').style.color = '#0f9d58';
+        document.getElementById('cgte').style.color = 'black';
+        document.getElementById('cgtd').style.color = 'black';  
+        document.getElementById('cgtsc').style.color = 'black';
+        document.getElementById('cgtt').style.color = 'black';
+        gtCorporationDes.style.display = 'block';
+        gtCorporationImg.style.display = 'block';
+        setTimeout(function(){
 
-        gtCorporationImg.style.transform = 'translateY(0)';
-        gtCorporationDes.style.opacity = '1';
-        gtCorporationImg.style.opacity = '1';
-    },100);
+            gtCorporationImg.style.transform = 'translateY(0)';
+            gtCorporationDes.style.opacity = '1';
+            gtCorporationImg.style.opacity = '1';
+        },100);
+    }
 }, false);
 
 

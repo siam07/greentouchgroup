@@ -7,13 +7,7 @@ $(function(){
         document.querySelector('.mvo').style.display = 'none';
         document.querySelector('.section1').style.display = 'none';
 
-        if (window.innerWidth < 500 ) {
-            document.getElementById("sec1Mobile").innerHTML = "Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh......<br><a class=\"txt\" id=\"gt1\" href=\"#\">EXPLORE MORE</a>";
-            document.getElementById("sec2Mobile").innerHTML = "Export-Import is also one of the fastest-growing business segments of Greentouch Group......<br><a class=\"txt\" id=\"gt2\" href=\"#\">EXPLORE MORE</a>";
-            document.getElementById("sec3Mobile").innerHTML = "Behind every engineering feat, there is an idea, an architectural design, an interior design, a construction, and a development project.......<br><a class=\"txt\" id=\"gt3\" href=\"#\">EXPLORE MORE</a>";
-            document.getElementById("sec4Mobile").innerHTML = "Housing is a basic need of society. Hence it is receiving increased focus........<br><a class=\"txt\" id=\"gt4\" href=\"#\">EXPLORE MORE</a>";
-            document.getElementById("sec5Mobile").innerHTML = "Greentouch Transport is a transport equipment provider dedicated to the customers to provide them with quality services........<br><a class=\"txt\" id=\"gt5\" href=\"#\">EXPLORE MORE</a>";
-        }
+
 
         
         setTimeout(function(){
@@ -1881,8 +1875,423 @@ indicatorOn5.addEventListener("click", function( event ) {
 
 
 
+scrollclick.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {  
+        document.querySelector('.mission').style.transform = 'translateX(-110%)';
+        document.querySelector('.vision').style.transform = 'translateX(-110%)';
+        document.querySelector('.overview').style.transform = 'translateX(-110%)';
+        setTimeout(function(){
+            document.querySelector('.scrolltostart').style.transition = '.5s';
+            document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
+            document.querySelector('.transitionp1').style.display = 'block';
+            document.querySelector('.transitionp2').style.display = 'block';
+            setTimeout(function(){
+                document.querySelector('.transitionp1').style.transform = 'translateY(0)';
+                document.querySelector('.transitionp2').style.transform = 'translateY(0)';
+
+                setTimeout(function(){
+                    document.querySelector('.indicatorOn2').style.display = 'none';
+                    document.querySelector('.indicatorOn3').style.display = 'none';
+                    document.querySelector('.indicatorOn4').style.display = 'none';
+                    document.querySelector('.indicatorOn5').style.display = 'none';
+                    
+                    document.querySelector('.pageIndication').style.display = 'block';
+                    document.querySelector('.indicatorOn1').style.display = 'inline-block';
+
+                    body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
+                    document.getElementById('sec1').style.display = 'block';
+                    document.querySelector('.caption1').style.display = 'none';
+                    document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
+                    document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                    setTimeout(function(){
+                        document.getElementById('sec').style.display = 'none';
+                        document.querySelector('.transitionp1').style.display = 'none';
+                        document.querySelector('.transitionp2').style.display = 'none';
+                    },600);
+                },800);
+                setTimeout(function(){
+                    document.querySelector('.section1').style.transform = 'translateY(0)';
+
+                    setTimeout(function(){
+                        document.querySelector('.companydecriptionH').style.transform = 'translateY(0)';
+                        document.querySelector('.companydecriptionP').style.transform = 'translateY(0)';
+                        document.querySelector('.companydecriptionH').style.opacity = '1';
+                        document.querySelector('.companydecriptionP').style.opacity = '1';
+                    },700);
+                },1500);
+            },200);
+        },500);
+    }
+}, false);
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// <---COMPANY PAGE SCRIPT--->
+
+
+
+let cgtcMobile = document.getElementById("cgtcMobile");
+let cgteMobile = document.getElementById("cgteMobile");
+let cgtdMobile = document.getElementById("cgtdMobile");
+let cgtscMobile = document.getElementById("cgtscMobile");
+let cgttMobile = document.getElementById("cgttMobile");
+
+let gtCorporationDesMobile = document.getElementById("gtCorporationDesMobile");
+let gtCorporationImgMobile = document.getElementById("gtCorporationImgMobile");
+
+let gEximDesMobile = document.getElementById("gEximDesMobile");
+let gtEximImgMobile = document.getElementById("gtEximImgMobile");
+
+let gtDesignDesMobile = document.getElementById("gtDesignDesMobile");
+let gtDesignImgMobile = document.getElementById("gtDesignImgMobile");
+
+let gtScDesMobile = document.getElementById("gtScDesMobile");
+let gtScImgMobile = document.getElementById("gtScImgMobile");
+
+let gtTransportDesMobile = document.getElementById("gtTransportDesMobile");
+let gtTransportImgMobile = document.getElementById("gtTransportImgMobile");
+
+
+
+
+
+gt1.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'none';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'block';
+
+        gtCorporationDesMobile.style.display = 'none';
+        gtCorporationImgMobile.style.display = 'none';
+        gtCorporationImgMobile.style.transform = 'translateY(100%)';
+
+        gtCorporationDesMobile.style.opacity = '0';
+        gtCorporationImgMobile.style.opacity = '0';
+
+        gtEximDesMobile.style.display = 'none';
+        gtEximImgMobile.style.display = 'none';
+        gtEximImgMobile.style.transform = 'translateY(100%)';
+
+        gtEximDesMobile.style.opacity = '0';
+        gtEximImgMobile.style.opacity = '0';
+        
+        gtDesignDesMobile.style.display = 'none';
+        gtDesignImgMobile.style.display = 'none';
+        gtDesignImgMobile.style.transform = 'translateY(100%)';
+        
+        gtDesignDesMobile.style.opacity = '0';
+        gtDesignImgMobile.style.opacity = '0';
+
+        gtScDesMobile.style.display = 'none';
+        gtScImgMobile.style.display = 'none';
+        gtScImgMobile.style.transform = 'translateY(100%)';
+
+        gtScDesMobile.style.opacity = '0';
+        gtScImgMobile.style.opacity = '0';
+
+        gtTransportDesMobile.style.display = 'none';
+        gtTransportImgMobile.style.display = 'none';
+        gtTransportImgMobile.style.transform = 'translateY(100%)';
+
+        gtTransportDesMobile.style.opacity = '0';
+        gtTransportImgMobile.style.opacity = '0';
+
+        document.getElementById('indicator1Mobile').style.opacity='1'; 
+        document.getElementById('indicator2Mobile').style.opacity='0';
+        document.getElementById('indicator3Mobile').style.opacity='0';
+        document.getElementById('indicator4Mobile').style.opacity='0';
+        document.getElementById('indicator5Mobile').style.opacity='0';
+
+        document.getElementById('cgtcMobile').style.color = '#0f9d58';
+        document.getElementById('cgteMobile').style.color = 'black';
+        document.getElementById('cgtdMobile').style.color = 'black';  
+        document.getElementById('cgtscMobile').style.color = 'black';
+        document.getElementById('cgttMobile').style.color = 'black';
+        gtCorporationDesMobile.style.display = 'block';
+        gtCorporationImgMobile.style.display = 'block';
+        setTimeout(function(){
+
+            gtCorporationImgMobile.style.transform = 'translateY(0)';
+            gtCorporationDesMobile.style.opacity = '1';
+            gtCorporationImgMobile.style.opacity = '1';
+        },100);
+    }
+}, false);
+
+
+
+gt2.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'none';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'block';
+
+        gtCorporationDesMobile.style.display = 'none';
+        gtCorporationImgMobile.style.display = 'none';
+        gtCorporationImgMobile.style.transform = 'translateY(100%)';
+
+        gtCorporationDesMobile.style.opacity = '0';
+        gtCorporationImgMobile.style.opacity = '0';
+
+        gtEximDesMobile.style.display = 'none';
+        gtEximImgMobile.style.display = 'none';
+        gtEximImgMobile.style.transform = 'translateY(100%)';
+
+        gtEximDesMobile.style.opacity = '0';
+        gtEximImgMobile.style.opacity = '0';
+        
+        gtDesignDesMobile.style.display = 'none';
+        gtDesignImgMobile.style.display = 'none';
+        gtDesignImgMobile.style.transform = 'translateY(100%)';
+        
+        gtDesignDesMobile.style.opacity = '0';
+        gtDesignImgMobile.style.opacity = '0';
+
+        gtScDesMobile.style.display = 'none';
+        gtScImgMobile.style.display = 'none';
+        gtScImgMobile.style.transform = 'translateY(100%)';
+
+        gtScDesMobile.style.opacity = '0';
+        gtScImgMobile.style.opacity = '0';
+
+        gtTransportDeMobile.style.display = 'none';
+        gtTransportImMobile.style.display = 'none';
+        gtTransportImMobile.style.transform = 'translateY(100%)';
+
+        gtTransportDesMobile.style.opacity = '0';
+        gtTransportImgMobile.style.opacity = '0';
+
+        document.getElementById('indicator1Mobile').style.opacity='0'; 
+        document.getElementById('indicator2Mobile').style.opacity='1';
+        document.getElementById('indicator3Mobile').style.opacity='0';
+        document.getElementById('indicator4Mobile').style.opacity='0';
+        document.getElementById('indicator5Mobile').style.opacity='0';
+
+        document.getElementById('cgtcMobile').style.color = 'black';
+        document.getElementById('cgteMobile').style.color = '#0f9d58';
+        document.getElementById('cgtdMobile').style.color = 'black';  
+        document.getElementById('cgtscMobile').style.color = 'black';
+        document.getElementById('cgttMobile').style.color = 'black';
+
+        gtEximDesMobile.style.display = 'block';
+        gtEximImgMobile.style.display = 'block';
+
+        setTimeout(function(){
+            gtEximImgMobile.style.transform = 'translateY(0)';
+            gtEximDesMobile.style.opacity = '1';
+            gtEximImgMobile.style.opacity = '1';
+        },100); 
+    } 
+}, false);
+
+
+gt3.addEventListener("click", function( event ) { 
+    if (window.innerWidth < 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'none';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'block';
+
+        gtCorporationDesMobile.style.display = 'none';
+        gtCorporationImgMobile.style.display = 'none';
+        gtCorporationImgMobile.style.transform = 'translateY(100%)';
+
+        gtCorporationDesMobile.style.opacity = '0';
+        gtCorporationImgMobile.style.opacity = '0';
+
+        gtEximDesMobile.style.display = 'none';
+        gtEximImgMobile.style.display = 'none';
+        gtEximImgMobile.style.transform = 'translateY(100%)';
+
+        gtEximDesMobile.style.opacity = '0';
+        gtEximImgMobile.style.opacity = '0';
+        
+        gtDesignDesMobile.style.display = 'none';
+        gtDesignImgMobile.style.display = 'none';
+        gtDesignImgMobile.style.transform = 'translateY(100%)';
+        
+        gtDesignDesMobile.style.opacity = '0';
+        gtDesignImgMobile.style.opacity = '0';
+
+        gtScDesMobile.style.display = 'none';
+        gtScImgMobile.style.display = 'none';
+        gtScImgMobile.style.transform = 'translateY(100%)';
+
+        gtScDesMobile.style.opacity = '0';
+        gtScImgMobile.style.opacity = '0';
+
+        gtTransportDesMobile.style.display = 'none';
+        gtTransportImgMobile.style.display = 'none';
+        gtTransportImgMobile.style.transform = 'translateY(100%)';
+
+        gtTransportDesMobile.style.opacity = '0';
+        gtTransportImgMobile.style.opacity = '0';
+
+    
+        document.getElementById('indicator1Mobile').style.opacity='0'; 
+        document.getElementById('indicator2Mobile').style.opacity='0';
+        document.getElementById('indicator3Mobile').style.opacity='1';
+        document.getElementById('indicator4Mobile').style.opacity='0';
+        document.getElementById('indicator5Mobile').style.opacity='0';
+
+        document.getElementById('cgtcMobile').style.color = 'black';
+        document.getElementById('cgteMobile').style.color = 'black';
+        document.getElementById('cgtdMobile').style.color = '#0f9d58';  
+        document.getElementById('cgtscMobile').style.color = 'black';
+        document.getElementById('cgttMobile').style.color = 'black';
+        
+
+        gtDesignDesMobile.style.display = 'block';
+        gtDesignImgMobile.style.display = 'block';
+
+        setTimeout(function(){
+            gtDesignImgMobile.style.transform = 'translateY(0)';
+            gtDesignDesMobile.style.opacity = '1';
+            gtDesignImgMobile.style.opacity = '1';
+        },100);  
+    }
+}, false);
+
+
+gt4.addEventListener("click", function( event ) { 
+    if (window.innerWidth < 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'none';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'block';
+
+        gtCorporationDesMobile.style.display = 'none';
+        gtCorporationImgMobile.style.display = 'none';
+        gtCorporationImgMobile.style.transform = 'translateY(100%)';
+
+        gtCorporationDesMobile.style.opacity = '0';
+        gtCorporationImgMobile.style.opacity = '0';
+
+        gtEximDesMobile.style.display = 'none';
+        gtEximImgMobile.style.display = 'none';
+        gtEximImgMobile.style.transform = 'translateY(100%)';
+
+        gtEximDesMobile.style.opacity = '0';
+        gtEximImgMobile.style.opacity = '0';
+        
+        gtDesignDesMobile.style.display = 'none';
+        gtDesignImgMobile.style.display = 'none';
+        gtDesignImgMobile.style.transform = 'translateY(100%)';
+        
+        gtDesignDesMobile.style.opacity = '0';
+        gtDesignImgMobile.style.opacity = '0';
+
+        gtScDesMobile.style.display = 'none';
+        gtScImgMobile.style.display = 'none';
+        gtScImgMobile.style.transform = 'translateY(100%)';
+
+        gtScDesMobile.style.opacity = '0';
+        gtScImgMobile.style.opacity = '0';
+
+        gtTransportDesMobile.style.display = 'none';
+        gtTransportImgMobile.style.display = 'none';
+        gtTransportImgMobile.style.transform = 'translateY(100%)';
+
+        gtTransportDesMobile.style.opacity = '0';
+        gtTransportImgMobile.style.opacity = '0';
+
+
+        document.getElementById('indicator1Mobile').style.opacity='0'; 
+        document.getElementById('indicator2Mobile').style.opacity='0';
+        document.getElementById('indicator3Mobile').style.opacity='0';
+        document.getElementById('indicator4Mobile').style.opacity='1';
+        document.getElementById('indicator5Mobile').style.opacity='0';
+
+        document.getElementById('cgtcMobile').style.color = 'black';
+        document.getElementById('cgteMobile').style.color = 'black';
+        document.getElementById('cgtdMobile').style.color = 'black';  
+        document.getElementById('cgtscMobile').style.color = '#0f9d58';
+        document.getElementById('cgttMobile').style.color = 'black';
+        
+        gtScDesMobile.style.display = 'block';
+        gtScImgMobile.style.display = 'block';
+
+        setTimeout(function(){
+            gtScImgMobile.style.transform = 'translateY(0)';
+            gtScDesMobile.style.opacity = '1';
+            gtScImgMobile.style.opacity = '1';
+        },100);  
+    }
+}, false);
+
+
+gt5.addEventListener("click", function( event ) {
+    if (window.innerWidth < 500 ) {
+        document.querySelector('.indexHomePage').style.display = 'none';
+        document.querySelector('.indexCompanyPage').style.display = 'none';
+        document.querySelector('.indexCompanyPageMobile').style.display = 'block';
+
+        gtCorporationDesMobile.style.display = 'none';
+        gtCorporationImgMobile.style.display = 'none';
+        gtCorporationImgMobile.style.transform = 'translateY(100%)';
+
+        gtCorporationDesMobile.style.opacity = '0';
+        gtCorporationImgMobile.style.opacity = '0';
+
+        gtEximDesMobile.style.display = 'none';
+        gtEximImgMobile.style.display = 'none';
+        gtEximImgMobile.style.transform = 'translateY(100%)';
+
+        gtEximDesMobile.style.opacity = '0';
+        gtEximImgMobile.style.opacity = '0';
+        
+        gtDesignDesMobile.style.display = 'none';
+        gtDesignImgMobile.style.display = 'none';
+        gtDesignImgMobile.style.transform = 'translateY(100%)';
+        
+        gtDesignDesMobile.style.opacity = '0';
+        gtDesignImgMobile.style.opacity = '0';
+
+        gtScDesMobile.style.display = 'none';
+        gtScImgMobile.style.display = 'none';
+        gtScImgMobile.style.transform = 'translateY(100%)';
+
+        gtScDesMobile.style.opacity = '0';
+        gtScImgMobile.style.opacity = '0';
+
+        gtTransportDesMobile.style.display = 'none';
+        gtTransportImgMobile.style.display = 'none';
+        gtTransportImgMobile.style.transform = 'translateY(100%)';
+
+        gtTransportDesMobile.style.opacity = '0';
+        gtTransportImgMobile.style.opacity = '0';
+
+    
+        document.getElementById('indicator1Mobile').style.opacity='0';
+        document.getElementById('indicator2Mobile').style.opacity='0';
+        document.getElementById('indicator3Mobile').style.opacity='0';
+        document.getElementById('indicator4Mobile').style.opacity='0';
+        document.getElementById('indicator5Mobile').style.opacity='1';
+
+        document.getElementById('cgtcMobile').style.color = 'black';
+        document.getElementById('cgteMobile').style.color = 'black';
+        document.getElementById('cgtdMobile').style.color = 'black';  
+        document.getElementById('cgtscMobile').style.color = 'black';
+        document.getElementById('cgttMobile').style.color = '#0f9d58';   
+
+        gtTransportDesMobile.style.display = 'block';
+        gtTransportImgMobile.style.display = 'block';
+
+        setTimeout(function(){
+            gtTransportImgMobile.style.transform = 'translateY(0)';
+            gtTransportDesMobile.style.opacity = '1';
+            gtTransportImgMobile.style.opacity = '1';
+        },100);   
+    }
+}, false);

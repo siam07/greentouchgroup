@@ -939,6 +939,14 @@ body{
     overflow-y: visible;
     overflow-x: hidden;
 }
+.indexCompanyPageMobile{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background:#f0f0f0;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
 /*<----Home Page Ends---->*/
 
 
@@ -1309,6 +1317,42 @@ body{
 
 
 /*<----About Page Starts---->*/
+.AboutNav::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    bottom: 0%; 
+    left: 0%;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+
+
+.rowAbout{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+.contentTxtAbout{
+    position: relative;
+    left: 25vw;
+    
+}
+.contentTxtAbout p{
+    position: relative;
+    text-align: justify;
+    padding: .3vw;
+    font-family: express;
+    font-size: 1.1vw;
+    overflow: hidden;
+    top: 20vh;
+    width: 70vw;
+}
 
 
 
@@ -1316,6 +1360,30 @@ body{
 
 
 
-
+.sidebarAbout{
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    background: white;
+}
+.companiesNameAbout{
+    position: relative;
+    color: black;
+    top: 30vh;
+    left: 0;
+    padding-left:15px;
+    
+}
+.companiesNameAbout li{
+    list-style: none;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-family: express;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.companiesNameAbout p{
+    margin-left: 2rem;
+}
 
 /*<----About Page Ends---->*/
