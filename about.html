@@ -32,7 +32,7 @@
 						<a class="nav-link nav-link2 homePage2" href="Home">Home</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link nav-link2" data-toggle="dropdown" data-target="dropdown_target" href="companies">Companies</a>
+						<a class="nav-link nav-link2" href="companies">Companies</a>
 					</li>
 
 					<li class="nav-item">
@@ -50,6 +50,68 @@
 	</nav>
 
 
+
+
+
+
+
+
+	<nav class="hamburgerContainer">
+		<div class="hamburger">
+			<a class="navbar-brand" href="Home"><img class="logoCompanies homePage2" src="photos/logo.png"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<ul class="nav-links">
+			<li class="nav-item">
+				<a class="nav-link nav-link2 homePage2" href="Home">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link nav-link2" href="companies">Companies</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="loginform.html">Accomplishments</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="#contact">Contact</a>
+			</li>
+		</ul>
+    </nav>
+
+		<div class="container-fluid sidebarAboutMobile">
+			  <!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper companiesNameAboutMobile">
+					<div class="swiper-slide"><li id="chairMobile"><div id="indicator1Mobile"></div><p id="namesAbout"><strong>Chairman</strong><br></p></li></div>
+					<div class="swiper-slide"><li id="adviserMobile"><div id="indicator2Mobile"></div><p id="namesAbout"><strong>Adviser</strong><br></p></li></div>
+					<div class="swiper-slide"><li id="mdMobile"><div id="indicator3Mobile"></div><p id="namesAbout"><strong>Managing Director</strong><br></p></li></div>
+					<div class="swiper-slide"><li id="directorMobile"><div id="indicator4Mobile"></div><p id="namesAbout"><strong>Director</strong><br><l1>Finance & Accounts</l1><br><l1>Purchase</l1><br><l1>Inventory</l1></p></li></div>
+					<div class="swiper-slide"><li id="directorFBAMobile"><div id="indicator5Mobile"></div><p id="namesAbout"><strong>Director</strong><br><l1>Planning</l1><br><l1>Foreign Business Affairs</l1></p></li></div>
+					<div class="swiper-slide"><li id="cooMobile"><div id="indicator6Mobile"></div><p id="namesAbout"><strong>Chief Operating Officer</strong><br><l1>Marketting</l1><br><l1>Human Resources</l1><br><l1>Admin</l1></p></li></div>
+				</div>
+			</div>
+
+			<!-- Swiper JS -->
+			<script src="scripts/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+			  slidesPerView: 3,
+			  spaceBetween: 10,
+			  freeMode: true,
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			});
+			</script>
+		</div>
 	<div class="container-fluid row rowAbout">
 		<div class="col-md-4 sidebarAbout">
 			<ul class="companiesNameAbout">
@@ -62,7 +124,7 @@
 			</ul>
 		</div>
 
-		<div class="col-sm-9 contentTxtAbout gtCorporation" id="gtCorporationDes">
+		<div class="col-sm-9 contentTxtAbout contentTxtAbout gtCorporation" id="gtCorporationDes">
 			<p>Since its creation in 2003, Greentouch Group has earned an excellent reputation, based on high standards of business ethics and conduct. We have built an ethical culture by doing business in an open and honest way and taking the right steps to deliver results in a responsible, ethical manner.
 			Our dedication to maintaining our core values and using them to guide decision making is critically important.<br>
 			Our clients are the most valued for us. It applies to every individual who works for the Greentouch Group or represents us. This mutual understanding is a reminder to keep us working toward a common goal to behave ethically and in accordance with our Core Values and applicable laws with our respected clients. It is a representation of our commitment to our clients and suppliers to act ethically in our conduct.<br>
@@ -132,7 +194,6 @@
 			Shipping Facilities</strong></p>
 		</div>
 	</div>
-
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
   	<script src="scripts/about.js"></script>
