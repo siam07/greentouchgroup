@@ -271,7 +271,7 @@ body{
         position: fixed;
         height: 8.9vh;
         width: 100vw;
-        background: #0f9d58;
+        background: transparent;
         z-index: 5;
     }
 
@@ -296,8 +296,8 @@ body{
         height: calc(var(--vh1, 1vh)*100);
         width: 100vw;
         flex-direction: column;
-        clip-path: circle(100px at 110% -10%);
-        -webkit-clip-path: circle(100px at 110% -10%);
+        clip-path: circle(100px at 150% -10%);
+        -webkit-clip-path: circle(100px at 150% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
         z-index: 2;
