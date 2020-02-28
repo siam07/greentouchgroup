@@ -45,6 +45,7 @@ $(function(){
         }
         },500);
         setTimeout(function(){
+            document.querySelector('.indexHamburger').style.opacity = '1';
             document.querySelector('.itm1').style.transform = 'translateY(0)';
             document.querySelector('.itm2').style.transform = 'translateY(0)';
             document.querySelector('.itm3').style.transform = 'translateY(0)';

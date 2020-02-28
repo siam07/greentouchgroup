@@ -13,6 +13,35 @@
   let sec3 = document.getElementById("sec3");
   let sec4 = document.getElementById("sec4");
   let sec5 = document.getElementById("sec5");
+
+
+
+
+
+
+  const hamburger = document.querySelector(".indexHamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const line1 = document.querySelector(".line1");
+  const line2 = document.querySelector(".line2");
+  const line3 = document.querySelector(".line3");
+  const links = document.querySelectorAll(".nav-links li");
+  
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("crossed");
+    line1.classList.toggle("open");
+    line2.classList.toggle("open");
+    line3.classList.toggle("open");
+  
+  });
+  
+
+
+
+
+
+
+
 for(var i = 0; i < homePage.length; i++){
     if(window.innerWidth > 500){
         homePage[i].addEventListener("click", function( event ) {
