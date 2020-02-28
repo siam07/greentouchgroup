@@ -2,6 +2,8 @@ var body = document.getElementsByTagName("BODY")[0];
 let homePagem = document.querySelectorAll('.homePage');
 
 
+
+
 $(function(){
     if(window.innerWidth < 500){
         document.querySelector('.mvo').style.display = 'none';
@@ -73,6 +75,12 @@ document.querySelector('.indexCompanyPage').style.display = 'none';
 for(var i = 0; i < homePagem.length; i++){
   if(window.innerWidth < 500){
       homePagem[i].addEventListener("click", function( event ) {
+        navLinks.classList.toggle("open");
+        hamburger.classList.toggle("crossed");
+        line1.classList.toggle("open");
+        line2.classList.toggle("open");
+        line3.classList.toggle("open");
+        document.querySelector('.indexHamburger').style.opacity = '0';
           document.querySelector('.scrolltostart').style.transform = 'translateY(100%)';
           document.querySelector('.scrolltostart').style.transitionDelay = '0s';
           
@@ -154,6 +162,7 @@ for(var i = 0; i < homePagem.length; i++){
                   document.querySelector('.paragraph1').style.transform = 'translateY(0)';
                   document.querySelector('.heading1').style.opacity = '1';
                   document.querySelector('.paragraph1').style.opacity = '1';
+                  document.querySelector('.indexHamburger').style.opacity = '1';
 
                   setTimeout(function(){
                       document.querySelector('.transitionp1').style.display = 'none';
