@@ -5,7 +5,8 @@
   let sec = document.getElementById("sec");
   let sec1 = document.getElementById("sec1");
   let homePage = document.querySelectorAll('.homePage');
-
+  let vh = window.innerHeight * 0.01;
+  
   let companyPage = document.getElementById("companyPage");
   document.querySelector('.indexHomePage').style.display = 'block';
   document.querySelector('.indexCompanyPage').style.display = 'none';
@@ -28,6 +29,7 @@
   
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
+    navLinks.style.setProperty('--vh1',`${vh}px`);
     hamburger.classList.toggle("crossed");
     line1.classList.toggle("open");
     line2.classList.toggle("open");

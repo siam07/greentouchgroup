@@ -222,6 +222,7 @@ body{
     .indexHamburger img{
         height: 10vw;
         top: 5vw;
+        z-index: 3;
     }
     .line {
         width: 40px;
@@ -292,7 +293,7 @@ body{
         display: flex;
         background: #0f9d58;
         color: white;
-        height: 100vh;
+        height: calc(var(--vh1, 1vh)*100);
         width: 100vw;
         flex-direction: column;
         clip-path: circle(100px at 110% -10%);
