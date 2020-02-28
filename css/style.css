@@ -253,7 +253,7 @@ body{
         display: block;
         height: 8.9vh;
         width: 100vw;
-        background: #0f9d58;
+        background: transparent;
         z-index: 5;
     }
 
@@ -1460,7 +1460,7 @@ body{
 
     }
     .swiper-container {
-        position: absolute;
+        position: fixed;
         width:100vw;
         height: 30vh;
 
