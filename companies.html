@@ -47,8 +47,64 @@
 	</nav>
 
 
-	<div class="container-fluid row">
-		<div class="col-md-3 sidebar">
+	<nav class="hamburgerContainer">
+		<div class="hamburger">
+			<a class="navbar-brand" href="Home"><img class="logoCompanies" src="photos/logo.png"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<ul class="nav-links">
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="Home">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link nav-link2" href="companies">Companies</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="loginform.html">Accomplishments</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="#contact">Contact</a>
+			</li>
+		</ul>
+    </nav>
+
+
+		<div class="container-fluid sidebarAboutMobile">
+			  <!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper companiesNameAboutMobile">
+					<div class="swiper-slide"><li id="chair"><div id="indicator1"></div><p id="namesAbout"><strong>Corporation</strong><br></p></li></div>
+					<div class="swiper-slide"><li id="adviser"><div id="indicator2"></div><p id="namesAbout"><strong>EXIM</strong><br></p></li></div>
+					<div class="swiper-slide"><li id="director"><div id="indicator3"></div><p id="namesAbout"><strong>Design</strong></p></div>
+					<div class="swiper-slide"><li id="directorFBA"><div id="indicator4"></div><p id="namesAbout"><strong>Stone Crusher</strong></p></div>
+					<div class="swiper-slide"><li id="coo"><div id="indicator5"></div><p id="namesAbout"><strong>Transport</strong></p></div>
+				</div>
+			</div>
+
+			<!-- Swiper JS -->
+			<script src="scripts/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+			  slidesPerView: 3,
+			  spaceBetween: 10,
+			  freeMode: true,
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			});
+			</script>
+		</div>
+	<div class="container-fluid row rowAbout">
+		<div class="col-md-3 sidebarAbout">
 			<ul class="companiesName">
 				<li id="cgtc"><div id="indicator1"></div><p>Greentouch Corporation</p></li>
 				<li id="cgte"><div id="indicator2"></div><p>Greentouch EXIM</p></li>
