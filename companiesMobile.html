@@ -11,14 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 		if (screen.width <=768) {
-		document.location = "Companies";
+		document.location = "indexmobile.html";
 		}
-		if (screen.width >768) {
-		document.location = "companies";
-		}
-	</script>
+	</script> -->
 
 </head>
 <body class="companiesContainer">
@@ -76,10 +73,37 @@
 		</ul>
     </nav>
 
+	<div class="container-fluid sidebarCompaniesMobile">
+		  <!-- Swiper -->
+		<div class="swiper-container swiper-containerCompaniesName">
+			<div class="swiper-wrapper companiesNameAboutMobile">
+				<div class="swiper-slide"><li id="chairMobile"><div id="indicator1Mobile"></div><p id="namesAbout"><strong>Corporation</strong></p></li></div>
+				<div class="swiper-slide"><li id="mdMobile"><div id="indicator3Mobile"></div><p id="namesAbout"><strong>EXIM</strong></p></li></div>
+				<div class="swiper-slide"><li id="directorMobile"><div id="indicator4Mobile"></div><p id="namesAbout"><strong>Design</strong></p></li></div>
+				<div class="swiper-slide"><li id="directorFBAMobile"><div id="indicator5Mobile"></div><p id="namesAbout"><strong>Stone Crusher</strong></p></li></div>
+				<div class="swiper-slide"><li id="cooMobile"><div id="indicator6Mobile"></div><p id="namesAbout"><strong>Transport</strong></p></li></div>
+			</div>
+		</div>
 
+		<!-- Swiper JS -->
+		<script src="scripts/swiper.min.js"></script>
 
-	<div class="container-fluid row rowAbout">
-		<div class="col-md-3 sidebar">
+		<!-- Initialize Swiper -->
+		<script>
+		var swiperN = new Swiper('.swiper-containerCompaniesName', {
+		  slidesPerView: 3,
+		  spaceBetween: 10,
+		  freeMode: true,
+		  pagination: {
+		    el: '.swiper-pagination',
+		    clickable: true,
+		  },
+		});
+		</script>
+	</div>
+
+	<div class="container-fluid rowCompanies">
+		<div style="display: none;">
 			<ul class="companiesName">
 				<li id="cgtc"><div id="indicator1"></div><p>Greentouch Corporation</p></li>
 				<li id="cgte"><div id="indicator2"></div><p>Greentouch EXIM</p></li>
@@ -88,15 +112,14 @@
 				<li id="cgtt"><div id="indicator5"></div><p>Greentouch Transport</p></li>
 			</ul>
 		</div>
-
-		<div class="col-sm-4 contentTxtCompanies gtCorporation" id="gtCorporationDes">
+		<div class="contentTxtCompanies gtCorporation" id="gtCorporationDes">
 			<h1>Greentouch Corporation</h1>
 			<p>Greentouch Corporation Ltd. is a strategic business unit and has carved a distinct niche for itself as a multidimensional, multifaceted development conglomerate in Bangladesh. Greentouch Corporation Ltd. focuses completely on innovative activities through stone innovations that are taking place all over the world and so to make our country also proud. Also to generate avenues for the employment of thousands of people and services that will bring happiness in the lives of thousands of people. We are assisted and maintained with proper planning, analytical thinking, and contemporary technological advancement. Our deep insight and understanding of environmental responsibility aid us to accomplish this level of superiority. We believe in a high level of creativity, integrity, responsibility and understanding the need of the world in a way that touches the very heart and soul of the people strengthening long term relations. Our vision is to exemplify the core values in the sector we operate and become the leading company as a trade business, who buys and sells different types of products.</p>
 		</div>
 
 
 		<!-- Swiper -->
-		<div class="swiper-container swiper-containerCompanies s1 col-sm-5 contentImgCompanies gtCorporation" id="gtCorporationImg">
+		<div class="swiper-container swiper-containerCompanies s1 contentImgCompanies gtCorporation" id="gtCorporationImg">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="photos/company/gtc.jpg"></div>
 				<div class="swiper-slide">Slide 2</div>
@@ -116,11 +139,11 @@
 			<div class="swiper-button-prev swiper-button-prev1"></div>
 		</div>
 
-<!-- 		<div class="col-sm-5 contentImgCompanies gtCorporation" id="gtCorporationImg">
+<!-- 		<div class="contentImgCompanies gtCorporation" id="gtCorporationImg">
 			<img src="photos/company/gtc.jpg">
 		</div> -->
 
-		<div class="col-sm-4 contentTxtCompanies" id="gtEximDes">
+		<div class="contentTxtCompanies" id="gtEximDes">
 			<h1>Greentouch EXIM</h1>
 			<p>Export-Import is also one of the fastest-growing business segments of Greentouch Group. Our core expertise is in producing or outsourcing the most suitable quality products as per the requirements of the customer at the best possible price. Delivering personal service through coordinated teamwork is the backbone of our sales commitment.<br>
 			Our stong purchase, R&D and quality control team assure delivery of the right product at the right time. Our range of products includes:<br><br>
@@ -131,7 +154,7 @@
 			Export - Garments</p>
 		</div>
 				<!-- Swiper -->
-		<div class="swiper-container swiper-containerCompanies s2 col-sm-5 contentImgCompanies gtExim" id="gtEximImg">
+		<div class="swiper-container swiper-containerCompanies s2 contentImgCompanies gtExim" id="gtEximImg">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="photos/company/gte.jpg"></div>
 				<div class="swiper-slide">Slide 2</div>
@@ -152,12 +175,12 @@
 		</div>
 
 
-		<div class="col-sm-4 contentTxtCompanies gtDesign" id="gtDesignDes">
+		<div class="contentTxtCompanies gtDesign" id="gtDesignDes">
 			<h1>Greentouch Desingn</h1>
 			<p>Behind every engineering feat, there is an idea, an architectural design, an interior design, a construction, and a development project. When a project is conceived, we can help make the plans a reality by ensuring processes run effectively. Our construction sites are safe and reliable materials are used.</p>
 		</div>
 						<!-- Swiper -->
-		<div class="swiper-container swiper-containerCompanies s3 col-sm-5 contentImgCompanies gtDesign" id="gtDesignImg">
+		<div class="swiper-container swiper-containerCompanies s3 contentImgCompanies gtDesign" id="gtDesignImg">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="photos/company/gtd.jpg"></div>
 				<div class="swiper-slide">Slide 2</div>
@@ -176,13 +199,13 @@
 			<div class="swiper-button-next swiper-button-next3"></div>
 			<div class="swiper-button-prev swiper-button-prev3"></div>
 		</div>
-<!-- 		<div class="col-sm-5 contentImgCompanies gtDesign" id="gtDesignImg">
+<!-- 		<div class="contentImgCompanies gtDesign" id="gtDesignImg">
 			<img src="photos/company/gtd.jpg">
 		</div> -->
 
 
 
-		<div class="col-sm-4 contentTxtCompanies gtStoneCrusher"  id="gtScDes">
+		<div class="contentTxtCompanies gtStoneCrusher"  id="gtScDes">
 			<h1>Greentouch Stone Crusher</h1>
 			<p>Housing is a basic need of society. Hence it is receiving increased focus. All the building constructions whether it is housing or industrial constriction activities require a crushed stone. Crushed stones are also required for cement based products like RCC pipes, PSC poles, cement concrete hollow blocks, precast cement concrete slabs, we ting, window & door frames and road laying. The demand for crushed stones will continue to grow with the growth of its user industry, better than the best services regarding stone crushing. We crush different stones in different shapes according to customers' requirements in our own mills. We usually provide crushing services of the following stones such as:<br><br><strong>
 			Volagonj Bolder Stone<br>
@@ -191,7 +214,7 @@
 			Sharpin Bolder Stone</strong></p>
 		</div>
 								<!-- Swiper -->
-		<div class="swiper-container swiper-containerCompanies s4 col-sm-5 contentImgCompanies gtStoneCrusher" id="gtScImg">
+		<div class="swiper-container swiper-containerCompanies s4 contentImgCompanies gtStoneCrusher" id="gtScImg">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="photos/company/gtsc.jpg"></div>
 				<div class="swiper-slide">Slide 2</div>
@@ -210,20 +233,20 @@
 			<div class="swiper-button-next swiper-button-next4"></div>
 			<div class="swiper-button-prev swiper-button-prev4"></div>
 		</div>
-<!-- 		<div class="col-sm-5 contentImgCompanies gtStoneCrusher" id="gtScImg">
+<!-- 		<div class="contentImgCompanies gtStoneCrusher" id="gtScImg">
 			<img src="photos/company/gtsc.jpg">
 		</div> -->
 
 
 
-		<div class="col-sm-4 contentTxtCompanies gtTransport" id="gtTransportDes">
+		<div class="contentTxtCompanies gtTransport" id="gtTransportDes">
 			<h1>Greentouch Transport</h1>
 			<p>Greentouch Transport is a transport equipment provider dedicated to the customers to provide them with quality services regarding transportation in terms of safety and reliability. We are well acquainted with providing service in time as per our customers' demands. Greentouch Transport is well established with its own transportation. Our transportation equipment and vehicles are also rented contractually on payment besides serving our won purpose. Our specifications are as follows:<br>
 			<strong>Road<br>Transport<br>Facilities<br>
 			Shipping Facilities</strong></p>
 		</div>
 										<!-- Swiper -->
-		<div class="swiper-container swiper-containerCompanies s5 col-sm-5 contentImgCompanies gtTransport" id="gtTransportImg">
+		<div class="swiper-container swiper-containerCompanies s5 contentImgCompanies gtTransport" id="gtTransportImg">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="photos/company/gtt.jpg"></div>
 				<div class="swiper-slide">Slide 2</div>
@@ -328,7 +351,7 @@
 		  },
 		});
 		</script>
-<!-- 		<div class="col-sm-5 contentImgCompanies gtTransport" id="gtTransportImg">
+<!-- 		<div class="contentImgCompanies gtTransport" id="gtTransportImg">
 			<img src="photos/company/gtt.jpg">
 		</div> -->
 
@@ -337,6 +360,7 @@
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
   	<script src="scripts/companies.js"></script>
+  	  	<script src="scripts/companiesMobile.js"></script>
 </body>
 
 </html>

@@ -4,5 +4,6 @@ RewriteEngine on
 
 RewriteRule ^Home?$ index.html
 RewriteRule ^companies?$ companies.html
+RewriteRule ^Companies?$ companiesMobile.html
 RewriteRule ^about?$ about.html
 

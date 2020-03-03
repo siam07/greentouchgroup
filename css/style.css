@@ -1297,7 +1297,7 @@ body{
 
 
 
-.swiper-container {
+.swiper-containerCompanies {
     position: fixed;
     left: 56vw;
     top: 30vh;
@@ -1421,72 +1421,6 @@ body{
 
 
 
-@media screen and (max-width: 768px) {
-    .contentTxtCompanies{
-        position: absolute;
-        left: 5vw;
-        width: 90vw;
-        height: 10vh;
-        
-    }
-    .contentTxtCompanies h1{
-        position: relative;
-        font-family: express;
-        font-size: 2.5vw;
-        color: #0f9d58;
-        width: 90vw;
-        top: 20vh;
-    }
-    .contentTxtCompanies p{
-        position: relative;
-        text-align: justify;
-        font-family: express;
-        font-size: 3vw;
-        top: 30vh;
-        width: 85vw;
-    }
-
-
-    .contentImgCompanies img{
-        height: 15vh;
-    }
-
-
-    .rowAbout{
-        position: absolute;
-        height: 100vh;
-        width: 90vw;
-
-
-    }
-    .swiper-container {
-        position: fixed;
-        width:100vw;
-        height: 30vh;
-
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      width: 20vw;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-
-}
 
 
 
@@ -1620,7 +1554,9 @@ body{
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-family: vitro;
+  font-weight: bold;
+  font-size: 6vw;
 }
 
 
@@ -1706,12 +1642,13 @@ body{
 
     .nav-links {
         position: fixed;
-        display: flex;
+        display: block;
         background: #0f9d58;
         color: white;
         height: calc(var(--vh1, 1vh)*100);
         width: 100vw;
-        flex-direction: column;
+        padding-top: 50%;
+        text-align: center;
         clip-path: circle(100px at 110% -10%);
         -webkit-clip-path: circle(100px at 110% -10%);
         transition: all 1s ease-out;
@@ -1731,11 +1668,13 @@ body{
 
 
 
-    .swiper-container {
-        top: 9vh;
+    .swiper-containerAbout {
+        position: fixed;
+        top: 5vh;
         left: 0;
+        padding-top: 5vh;
         width: 100%;
-        height: 15vh;
+        height: 20vh;
         background: white;
     }
     .swiper-slide {
@@ -1764,10 +1703,6 @@ body{
 
 
 
-    .sidebarAboutMobile{
-        width: 100vw;
-        height: 20vh;
-    }
     .companiesNameAboutMobile{
 
     
@@ -1787,7 +1722,7 @@ body{
       font-size: 3vw;
       cursor: default;
     }
-    #namesAbout:hover{
+    .namesAboutMobile:hover{
         transform: scale(1.05);  
         transition: .5s;
     }
@@ -1796,25 +1731,45 @@ body{
 
     .rowAbout{
         position: relative;
-        height: 100vh;
         width: 100vw;
 
 
     }
     .contentTxtAbout{
-        position: relative;
         left: 5vw;
-        height: 10vh;
         
     }
     .contentTxtAbout p{
-        position: relative;
+        position: absolute;
         text-align: justify;
         font-family: express;
         font-size: 3.8vw;
-        top: 5vh;
+        top: 30vh;
         width: 85vw;
+        height: 120vh;
     }    
+    #gtDesignDes{
+        display: none;
+        opacity: 0;
+        height: 150vh;
+        overflow: hidden;
+        transition: .5s;
+    }
+    #gtScDes{
+        display: none;
+        opacity: 0;
+        height: 120vh;
+        overflow: hidden;
+        transition: .5s;
+    }
+    #gtTransportDes{
+        display: none;
+        opacity: 0;
+        height: 100vh;
+        overflow: hidden;
+        transition: .5s;
+    }
+
 
     #indicator1Mobile{
         opacity: 0;
@@ -1893,6 +1848,173 @@ body{
 
 
 
+
+
+
+
+
+
+    /*<----Companies Page Starts---->*/
+
+
+    .companiesContainer{
+        height: 100vh;
+        width: 100vw;
+        background:#f0f0f0;
+        overflow-y: visible;
+        overflow-x: hidden;
+
+    }
+
+
+
+    .logoCompanies{
+        position: fixed;
+        top: 2rem;
+        left: 8vw;
+        height: 8vh;
+        border-radius: 10px;
+        background-color: transparent;
+        transition: .3s;
+        overflow: hidden;
+    }
+
+    .logoCompanies:hover{
+        transform: scale(1.3);
+        background: white;
+
+    }
+
+
+    .navbar-dark .navbar-nav .nav-link2 {
+        color: black;
+        text-shadow: 5px 5px 20px transparent;
+    }
+
+    .nav-link2::after{
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: black;
+        bottom: 0%; left: 50%;
+        border-radius: 10px;
+        transition: all .5s ease;
+    } 
+    .nav-link2:hover::after {
+        left: 0%; 
+        width: 100%;
+    } 
+    .navbar-dark .navbar-nav .nav-link2:hover {
+       color: grey;
+       transition: .3s;
+    } 
+
+    .companiesNav::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: black;
+        bottom: 0%; 
+        left: 0%;
+        border-radius: 10px;
+        transition: all .5s ease;
+    }
+
+
+
+
+
+    .sidebar{
+        width: 20vw;
+        height: 100vh;
+        top: 0;
+        background: white;
+    }
+
+
+    .sidebarCompaniesMobile{
+        width: 100vw;
+        height: 20vh;
+    }
+    .companiesName{
+        position: relative;
+        color: black;
+        top: 30vh;
+        left: 0;
+        padding-left:15px;
+        
+    }
+    .companiesName li{
+        list-style: none;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        font-family: express;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+    .companiesName p{
+        margin-left: 2rem;
+    }
+
+    .rowCompanies{
+        width: 100vw;
+        height: 150vh;
+        overflow-y: visible;
+        transition: .5s;
+    }
+
+    .contentTxtCompanies h1{
+        position: relative;
+        font-family: express;
+        font-size: 8vw;
+        color: #0f9d58;
+        top: 40vh;
+    }
+    .contentTxtCompanies p{
+        position: absolute;
+        text-align: justify;
+        padding: .3vw;
+        font-family: express;
+        font-size: 6vw;
+        width: 94vw;
+        top: 68vh;
+    }
+
+
+    .swiper-containerCompaniesName {
+        position: fixed;
+        top: 8.5vh;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        background: white;
+
+    }
+
+
+    .swiper-containerCompanies {
+        left: 0vw;
+        top: 18vh;
+        width:100vw;
+        height: 30vh;
+
+    }
+    .contentImgCompanies img{
+        height: 30vh;
+    }
+
+    #gtTransportImg{
+        height: 30vh;
+    }
+
+
+
+
+
+
+    /*<----Companies Page End---->*/
 }
 
 

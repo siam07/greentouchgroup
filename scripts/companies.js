@@ -18,7 +18,22 @@ let gtScImg = document.getElementById("gtScImg");
 
 let gtTransportDes = document.getElementById("gtTransportDes");
 let gtTransportImg = document.getElementById("gtTransportImg");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const line1 = document.querySelector(".line1");
+const line2 = document.querySelector(".line2");
+const line3 = document.querySelector(".line3");
+const links = document.querySelectorAll(".nav-links li");
+let vh = window.innerHeight * 0.01;
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  navLinks.style.setProperty('--vh1',`${vh}px`);
+  hamburger.classList.toggle("crossed");
+  line1.classList.toggle("open");
+  line2.classList.toggle("open");
+  line3.classList.toggle("open");
 
+});
 
 $(function(){
     document.getElementById('indicator1').style.opacity='1';  

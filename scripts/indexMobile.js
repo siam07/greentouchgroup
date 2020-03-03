@@ -1896,8 +1896,15 @@ scrollclick.addEventListener("click", function( event ) {
             document.querySelector('.transitionp1').style.display = 'block';
             document.querySelector('.transitionp2').style.display = 'block';
             setTimeout(function(){
-                document.querySelector('.transitionp1').style.transform = 'translateY(0)';
-                document.querySelector('.transitionp2').style.transform = 'translateY(0)';
+                document.querySelector('.transitionp1').style.transform = 'translateX(0)';
+                document.querySelector('.transitionp2').style.transform = 'translateX(0)';
+
+                
+                document.querySelector('.section1').style.transform = 'translateY(100%)';
+                document.querySelector('.section2').style.transform = 'translateY(100%)';
+                document.querySelector('.section3').style.transform = 'translateY(100%)';
+                document.querySelector('.section4').style.transform = 'translateY(100%)';
+                document.querySelector('.section5').style.transform = 'translateY(100%)';
 
                 setTimeout(function(){
                     document.querySelector('.indicatorOn2').style.display = 'none';
@@ -1906,13 +1913,22 @@ scrollclick.addEventListener("click", function( event ) {
                     document.querySelector('.indicatorOn5').style.display = 'none';
                     
                     document.querySelector('.pageIndication').style.display = 'block';
+
+                    document.querySelector('.indicatorOn2').style.display = 'none';
+                    document.querySelector('.indicatorOn3').style.display = 'none';
+                    document.querySelector('.indicatorOn4').style.display = 'none';
+                    document.querySelector('.indicatorOn5').style.display = 'none';
+
+                    
+                    
                     document.querySelector('.indicatorOn1').style.display = 'inline-block';
 
                     body.style.backgroundImage = 'url(photos/gtcbg.jpg)';
                     document.getElementById('sec1').style.display = 'block';
                     document.querySelector('.caption1').style.display = 'none';
-                    document.querySelector('.transitionp1').style.transform = 'translateY(100%)';
-                    document.querySelector('.transitionp2').style.transform = 'translateY(-100%)';
+                    document.querySelector('.section1').style.display = 'block';
+                    document.querySelector('.transitionp1').style.transform = 'translateX(100%)';
+                    document.querySelector('.transitionp2').style.transform = 'translateX(-100%)';
                     setTimeout(function(){
                         document.getElementById('sec').style.display = 'none';
                         document.querySelector('.transitionp1').style.display = 'none';
@@ -1920,6 +1936,7 @@ scrollclick.addEventListener("click", function( event ) {
                     },600);
                 },800);
                 setTimeout(function(){
+                    document.querySelector('.section1').style.opacity = '1';
                     document.querySelector('.section1').style.transform = 'translateY(0)';
 
                     setTimeout(function(){
@@ -1930,7 +1947,7 @@ scrollclick.addEventListener("click", function( event ) {
                     },700);
                 },1500);
             },200);
-        },500);
+        },500); 
     }
 }, false);
 
