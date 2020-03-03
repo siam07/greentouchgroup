@@ -1554,8 +1554,7 @@ body{
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-family: vitro;
-  font-weight: bold;
+  font-family: express;
   font-size: 6vw;
 }
 
@@ -1647,7 +1646,7 @@ body{
         color: white;
         height: calc(var(--vh1, 1vh)*100);
         width: 100vw;
-        padding-top: 50%;
+        padding-top: 20vh;
         text-align: center;
         clip-path: circle(100px at 110% -10%);
         -webkit-clip-path: circle(100px at 110% -10%);
@@ -1674,7 +1673,7 @@ body{
         left: 0;
         padding-top: 5vh;
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         background: white;
     }
     .swiper-slide {
@@ -1744,10 +1743,17 @@ body{
         text-align: justify;
         font-family: express;
         font-size: 3.8vw;
-        top: 30vh;
+        top: 33vh;
         width: 85vw;
         height: 120vh;
-    }    
+    } 
+    #gtCorporationDes{
+        display: none;
+        opacity: 0;
+        height: 130vh;
+        overflow: hidden;
+        transition: .5s;
+    }   
     #gtDesignDes{
         display: none;
         opacity: 0;
@@ -1975,11 +1981,11 @@ body{
     .contentTxtCompanies p{
         position: absolute;
         text-align: justify;
-        padding: .3vw;
+        padding: 1.5vw;
         font-family: express;
-        font-size: 6vw;
+        font-size: 4vw;
         width: 94vw;
-        top: 68vh;
+        top: 70vh;
     }
 
 

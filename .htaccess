@@ -6,4 +6,4 @@ RewriteRule ^Home?$ index.html
 RewriteRule ^companies?$ companies.html
 RewriteRule ^Companies?$ companiesMobile.html
 RewriteRule ^about?$ about.html
-
+RewriteRule ^contact?$ contact.html

@@ -206,8 +206,7 @@ body{
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-family: vitro;
-  font-weight: bold;
+  font-family: express;
   font-size: 6vw;
 }
 
@@ -298,10 +297,10 @@ body{
         color: white;
         height: calc(var(--vh1, 1vh)*100);
         width: 100vw;
-        padding-top: 50%;
+        padding-top: 20vh;
         text-align: center;
-        clip-path: circle(100px at 110% -10%);
-        -webkit-clip-path: circle(100px at 110% -10%);
+        clip-path: circle(100px at 150% -10%);
+        -webkit-clip-path: circle(100px at 150% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
         z-index: 5;
