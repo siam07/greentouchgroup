@@ -909,6 +909,10 @@ body{
 
 
 
+
+
+
+
 .companydecriptionH{
     padding: 3vw;
     padding-bottom: 1vw;
@@ -1305,6 +1309,14 @@ body{
     height: 22vw;
 
 }
+.contentImgCompanies {
+    position: fixed;
+    left: 56vw;
+    top: 30vh;
+    width:39vw;
+    height: 22vw;
+
+}
 
 .contentImgCompanies img{
     height: 22vw;
@@ -1557,6 +1569,316 @@ body{
   font-family: express;
   font-size: 6vw;
 }
+
+
+
+
+
+
+/*<----About Page Ends---->*/
+
+
+
+
+
+
+
+
+
+
+
+/*<----Contact Page Starts---->*/
+
+
+
+
+
+
+
+.navbar-darkContact {
+
+    text-shadow: 5px 5px 20px black;
+    transition: 400ms ease; 
+    background-color: transparent; 
+} 
+.navbar-darkContact.scrolled {
+    top: -2vh;
+    text-shadow: 0px 0px 0px transparent;  
+    background-color: #36a353; 
+} 
+
+
+.nav-link2 {
+    color: black; 
+    text-shadow: 5px 5px 20px transparent;
+}
+.nav-link2.scrolled {
+    color: white; 
+    text-shadow: 5px 5px 20px transparent;
+    transition: .3s;
+}
+.navbar-darkContact .navbar-nav .nav-link2:hover {
+   color: grey;
+   transition: .3s;
+} 
+.logoContact{
+    position: fixed;
+    top: 2vh;
+    left: 8vw;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.logoContact:hover{
+    transform: scale(1.3);
+    background: white;
+
+}
+
+.logoContact.scrolled{
+    position: fixed;
+    top: 1.8vh;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: white;
+    transition: .3s;
+    overflow: hidden;
+}
+.logoContact.scrolled:hover{
+    transform: scale(1.3);
+
+}
+
+.ContactNav::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    bottom: 0%; 
+    left: 0%;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.ContactNav.scrolled::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0%; 
+    left: 0%;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
+.contactContainer{
+    overflow-x: hidden;
+    background: #ededed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.map{
+    position: relative;
+    margin-left: 20vw;
+    height: 50vh;
+    width: 60vw;
+    z-index: 2;
+}
+
+.email{
+    position: relative;
+    background: white;
+    left: 10vw;
+    width: 80vw;
+    top: 15vh;
+
+    padding: 5vh 0;
+    font-family: express;
+    z-index: 2;
+}
+
+.email p1{
+    margin-top: 5vh; 
+    padding-left: 2vw;
+    color: #737373;
+    font-size: 1.5vw;
+}
+.email h1{
+    font-size: 2.5vw;
+    position: relative;
+    color: #0f9d58;
+    font-family: express;
+    padding: 0 8vw;
+    margin-top: 5vh;
+    text-align: left;
+}
+
+.headerContactParagraph{
+    position: relative;
+    color: #737373;
+    margin-top: 5vh;
+    font-size: 1.5vw;
+    padding:0vw 8vw; 
+    text-align: left;
+
+}
+.email form{
+    padding-top: 15vh;
+}
+.rowContact{
+    padding-top: 5vh;
+    width: 82vw;
+}
+.nameNumber{
+    font-family: express;
+    text-align: center;
+}
+.nameNumber1 p{
+    font-family: express;
+    text-align: left;
+    margin-left: 5vw;
+    width: 37vw;
+    font-size: 1.2vw;
+    color: #3b3b3b;
+
+}
+.nameNumber1 input{
+    margin-left: 5vw;
+    width: 35vw;
+    height: 7vh;
+}
+.nameNumber2 p{
+    font-family: express;
+    text-align: left;
+    padding-right: 5vw;
+    width: 37vw;
+    font-size: 1.2vw;
+    color: #3b3b3b;
+
+}
+.nameNumber2 input{
+    margin-right: 5vw;
+    width: 35vw;
+    height: 7vh;
+}
+.formParagraph{
+    
+margin-top: 5vh;
+
+}
+.formParagraph p{
+    font-family: express;
+    text-align: left;
+    margin-left: 5vw;
+    width: 37vw;
+    font-size: 1.2vw;
+    color: #3b3b3b;
+
+}
+.formParagraph textarea{
+
+    margin-left: 5vw;
+    width: 71vw;
+    height: 60vh;
+
+}
+
+.sendButton{
+    margin-left: 5vw;
+    margin-top: 5vh; 
+    position: relative;
+    width: 15vw;
+    height: 8vh;
+    color: white;
+    border: 2px solid #0f9d58;
+    border-radius: 5px;
+    background-color: #0f9d58;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.sendButton:hover{
+    transform: scale(1.07);
+    transition: all 0.5s;
+}
+
+.map{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    top: 30vh;
+    width: 100vw;
+    height: 70vh;
+    background: white;
+}
+
+.map iframe{
+    position: relative;
+    top: 5vh;
+    width: 80vw;
+}
+
+.errorMessage{
+    text-align: center;
+    font-size: 5vw;
+    color: #0f9d58;
+    transition: all 2s;
+}
+
+
+/*footer*/
+
+.footer{
+    position: relative;
+    top: 30vh;
+    width: 100vw;
+    background-color: #505962;
+    padding: 1rem 2rem;
+    color: white;
+    cursor: default;
+    z-index: 1;
+}
+
+.footerlogo{
+  text-align: center;
+}
+.footerlogo img{
+    height: 6vh;
+}
+.txt1 , .txt2{
+  padding-left: 8vw;
+}
+.txt2{
+  text-align: right;
+  padding-right: 8vw;
+  padding-top: 2vw;
+}
+
+
+
+
+
+
+
+
+/*<----Contact Page End---->*/
+
+
+
+
+
+
+
 
 
 
@@ -2021,6 +2343,82 @@ body{
 
 
     /*<----Companies Page End---->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<----Contact Page Starts---->*/
+    .contactContainer{
+        overflow-x: hidden;
+        background: white;
+        height: 100vh;
+        width: 100vw;
+    }
+    .map{
+        position: relative;
+        margin-left: 20vw;
+        height: 50vh;
+        width: 60vw;
+        z-index: 2;
+    }
+
+    .email{
+        position: relative;
+        display: inline-block;
+        left: 10vw;
+        width: 80vw;
+        top: 25vh;
+        height: 50vh;
+        font-family: express;
+        z-index: 2;
+    }
+    .email h1{
+        position: relative;
+        text-align: center;
+        font-size: 8vw;
+    }
+    .email p{
+        position: relative;
+        margin-top: 5vh;
+        padding:0vw 10vw;
+        font-size:6vw;
+
+    }
+    .email input{
+        position: relative;
+        border: 2px solid #0f9d58;
+        border-radius: 5px;
+        width: 60vw;
+        height: 6vh;
+    }
+    .email textarea{
+        position: relative;
+        border: 2px solid #0f9d58;
+        border-radius: 5px;
+        width: 60vw;
+        height: 30vh;
+    }
+
+    .sendButton{
+        position: relative;
+        left: 10vw;
+        width: 60vw;
+        height: 5vh;
+        color: white;
+        border: 2px solid #0f9d58;
+        border-radius: 5px;
+        background-color: #0f9d58;
+        cursor: pointer;
+    }
 }
 
 

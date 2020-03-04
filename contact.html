@@ -12,24 +12,152 @@
 	<link id="styleSheet" rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 <body>
-	<div class="email">
-		<h1>SEND AN E-MAIL</h1>
-		<form class="emailForm" action="php/contactform.php" method="post">
-			<input type="text" name="name" placeholder="Full Name">
-			<input type="text" name="mail" placeholder="Ypur e-mail">
-			<input type="text" name="subject" placeholder="Subject">
-			<textarea name="message" placeholder="Message"></textarea>
-			<button type="submit" name="submit">Send</button>
+	<nav class="navbar navbar-darkContact navbar-expand-md fixed-top">
+		<a class="navbar-brand" href="Home"><img class="logoContact" src="photos/logo.png"></a>
+		<div class="container-fluid">
+			<a class="navbar-brand" href=""><img id="logo" src=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link nav-link2" href="Home">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link nav-link2" href="companies">Companies</a>
+					</li>
 
-		</form>
+					<li class="nav-item">
+						<a class="nav-link nav-link2" href="loginform.html">Accomplishments</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link2" href="about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link2 ContactNav" href="contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="hamburgerContainer">
+		<div class="hamburger">
+			<a class="navbar-brand" href="Home"><img class="logoCompanies" src="photos/logo.png"></a>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<ul class="nav-links">
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="Home">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link nav-link2" href="companies">Companies</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="loginform.html">Accomplishments</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="about">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-link2" href="contact">Contact</a>
+			</li>
+		</ul>
+    </nav>
+	<div class="contactContainer">
+		<div class="email">
+			<p1>GET IN TOUCH</p1>
+			<h1 class="headerContact">Interested to know more about Greentouch Group?</h1>
+			<p class="headerContactParagraph">We welcome your queries and feedback. Fill in the contact form below and a representative of Greentouch Group will be in touch.</p>
+			<form id="form" class="emailForm" action="php/contactform.php" method="post">
+				<div class="row rowContact">
+					<div class="nameNumber nameNumber1 col-md-6">
+						<p>Full Name</p>
+						<input id="name" type="text" name="name" required>
+					</div>
+					<div class="nameNumber nameNumber2 col-md-6">
+						<p>Phone Number</p>
+						<input id="phone" type="text" name="phone" required>
+					</div>
+				</div>
+				<div class="row rowContact">
+					<div class="nameNumber nameNumber1 col-md-6">
+						<p>Your E-mail Address</p>
+						<input id="mail" type="text" name="mail" required>
+					</div>
+					<div class="nameNumber nameNumber2 col-md-6">
+						<p>E-mail Subject</p>
+						<input type="text" name="subject" required>
+					</div>
+				</div>
+				
+				<div class="formParagraph">
+					<p>Message</p>
+					<textarea id="message" name="message" required></textarea>
+					<button class="sendButton" type="submit" name="submit">Send Message<i style="margin-left: 10px;" class="fa fa-envelope"></i></button>
+				</div>
+			</form>
+			<div id="error">
+				<p id='errorMessage'></p>
+			</div>
+		</div>
+
+
+
+		<div  class ="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.3018576231052!2d90.39877941621813!3d23.86471923856131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d69a62ad69%3A0x7a7e5a4b6025d2e1!2sGreentouch%20Group!5e0!3m2!1sen!2sbd!4v1583267769170!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>	
+		</div>
+
+
+		<div class="container-fluid footer">
+			<div class="footerlogo"><img src="photos/logo.png"></div>
+			<div class="row">
+				<div class="col-md-6 txt1">
+					<h1>Greentouch Corporation Ltd.</h1>
+					<p>Place, Dhaka-postalcode, Bangladesh<br><i class="fa fa-phone"></i> +880-0-00000000   |    <i class="fa fa-fax"></i> Fax: +880-0-00000000<br><i class="fa fa-envelope"></i> name@name.com</p>
+				</div>
+				<div class="col-md-6 txt2">
+					<p>Developed & Maintained by GT Office, DHAKA<br>© 2020 Greentouch Corporation Ltd. All rights reserved.</p>
+				</div>
+			</div>
+		
+		</div>
 	</div>
 
-
-
-
-
-
-
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script>
+		$('div').scroll(function(){
+			$('.navbar-darkContact').toggleClass('scrolled',$(this).scrollTop() > 40);
+		});
+		$('div').scroll(function(){
+			$('.nav-link2').toggleClass('scrolled',$(this).scrollTop() > 40);
+		});
+		$('div').scroll(function(){
+			$('.logoContact').toggleClass('scrolled',$(this).scrollTop() > 40);
+		});
+		$('div').scroll(function(){
+			$('.ContactNav').toggleClass('scrolled',$(this).scrollTop() > 40);
+		});
+  	</script>
+	<script src="scripts/contact.js"></script>
+<!-- <script type="text/javascript">
+	function initMap(){
+		var location = {lat: -25.363, lng: 131.044};
+		var map = new google.maps.Map(document.getElementById("map"),{
+			zoom : 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position : location,
+			map: map
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFCCSnpjV10z4iLvjn0N6GhVehO0yfHCI&callback=initMap"></script> -->
 
 </body>
 </html>
