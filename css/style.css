@@ -1688,13 +1688,7 @@ body{
     width: 100vw;
 }
 
-.map{
-    position: relative;
-    margin-left: 20vw;
-    height: 50vh;
-    width: 60vw;
-    z-index: 2;
-}
+
 
 .email{
     position: relative;
@@ -1774,7 +1768,7 @@ body{
 }
 .formParagraph{
     
-margin-top: 5vh;
+    margin-top: 5vh;
 
 }
 .formParagraph p{
@@ -2357,68 +2351,202 @@ margin-top: 5vh;
 
 
     /*<----Contact Page Starts---->*/
+
+
+
+
+
+
+
+
+
+
     .contactContainer{
         overflow-x: hidden;
-        background: white;
+        background: #ededed;
         height: 100vh;
         width: 100vw;
     }
-    .map{
-        position: relative;
-        margin-left: 20vw;
-        height: 50vh;
-        width: 60vw;
-        z-index: 2;
-    }
+
+
 
     .email{
         position: relative;
-        display: inline-block;
-        left: 10vw;
-        width: 80vw;
-        top: 25vh;
-        height: 50vh;
+        background: white;
+        left: 5vw;
+        width: 90vw;
+        top: 15vh;
+        text-align: center;
+        padding: 5vh 0;
         font-family: express;
         z-index: 2;
     }
-    .email h1{
-        position: relative;
+
+    .email p1{
         text-align: center;
-        font-size: 8vw;
+        margin-top: 3vh; 
+        color: #737373;
+        font-size: 3vw;
     }
-    .email p{
-        position: relative;
-        margin-top: 5vh;
-        padding:0vw 10vw;
-        font-size:6vw;
+    .email h1{
+        text-align: center;
+        font-size: 6vw;
+        color: #0f9d58;
+        font-family: express;
+        margin-top: 2vh;
+    }
+
+    .headerContactParagraph{
+        text-align: center;
+        color: #737373;
+        margin-top: 2vh;
+        font-size: 4.5vw;
 
     }
-    .email input{
-        position: relative;
-        border: 2px solid #0f9d58;
-        border-radius: 5px;
-        width: 60vw;
-        height: 6vh;
+    .email form{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-top: 8vh;
     }
-    .email textarea{
-        position: relative;
-        border: 2px solid #0f9d58;
-        border-radius: 5px;
-        width: 60vw;
+    .rowContact{
+        padding-top: 5vh;
+        width: 82vw;
+    }
+    .nameNumber{
+        display: flex;
+        flex-direction: column;
+        font-family: express;
+        text-align: center;
+    }
+
+    .nameNumber1 p{
+        font-family: express;
+        text-align: left;
+        width: 37vw;
+        font-size: 4.5vw;
+        color: #3b3b3b;
+
+    }
+    .nameNumber1 input{
+        
+        width: 70vw;
+        height: 7vh;
+    }
+    .nameNumber2 p{
+        margin-left: 5vw;
+        font-family: express;
+        padding-top: 3vh; 
+        text-align: left;
+        width: 80vw;
+        font-size: 4.5vw;
+        color: #3b3b3b;
+
+    }
+    .nameNumber2 input{
+        margin-left: 5vw;
+        margin-top: 1vh;
+        width: 70vw;
+        height: 7vh;
+    }
+    .formParagraph{
+        text-align: left;
+        margin-top: 5vh;
+        width: 82vw;
+    }
+
+    .formParagraph p{
+        font-family: express;
+        width: 50vw;
+        font-size: 4.5vw;
+        color: #3b3b3b;
+
+    }
+    .formParagraph textarea{
+        width: 70vw;
         height: 30vh;
+
     }
 
     .sendButton{
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 5vh; 
         position: relative;
-        left: 10vw;
-        width: 60vw;
-        height: 5vh;
+        width: 45vw;
+        height: 6vh;
         color: white;
         border: 2px solid #0f9d58;
         border-radius: 5px;
         background-color: #0f9d58;
+        font-size: 5vw;
         cursor: pointer;
     }
+    .sendButton:hover{
+        transform: scale(1.07);
+        transition: all 0.5s;
+    }
+
+    .map{
+        position: relative;
+        text-align: center;
+        margin: 0;
+        top: 30vh;
+        width: 100vw;
+        height: 70vh;
+        background: white;
+    }
+
+    .map iframe{
+        position: relative;
+        top: 5vh;
+        width: 80vw;
+    }
+
+    .errorMessage{
+        text-align: center;
+        font-size: 5vw;
+        color: #0f9d58;
+        transition: all 2s;
+    }
+
+
+    /*footer*/
+
+    .footer{
+        position: relative;
+        top: 30vh;
+        width: 100vw;
+        background-color: #505962;
+        padding: 1rem 2rem;
+        color: white;
+        cursor: default;
+        z-index: 1;
+    }
+
+    .footerlogo{
+      text-align: center;
+    }
+    .footerlogo img{
+        height: 6vh;
+    }
+    .txt1 , .txt2{
+      padding-left: 8vw;
+    }
+    .txt2{
+      text-align: right;
+      padding-right: 8vw;
+      padding-top: 2vw;
+    }
+
+
+
+
+
+
+
+
+    /*<----Contact Page End---->*/
 }
 
 
