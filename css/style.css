@@ -1749,9 +1749,16 @@ body{
 }
 .nameNumber1 input{
     margin-left: 5vw;
+    font-size: 1.5vw;
     width: 35vw;
     height: 7vh;
 }
+.email::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+
 .nameNumber2 p{
     font-family: express;
     text-align: left;
@@ -1763,6 +1770,7 @@ body{
 }
 .nameNumber2 input{
     margin-right: 5vw;
+    font-size: 1.5vw;
     width: 35vw;
     height: 7vh;
 }
@@ -1781,6 +1789,7 @@ body{
 
 }
 .formParagraph textarea{
+    font-size: 1.5vw;
 
     margin-left: 5vw;
     width: 71vw;
@@ -1869,12 +1878,46 @@ body{
 
 
 
+/*<----Accomplishment Page Starts---->*/
+
+.imgContainer{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.imgContainer img{
+
+    margin-top: 2.5vh;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.imgContainer h1{
+    margin-bottom: 2.5vh;
+}
+
+.rowAccomplishment{
+    padding-left: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
 
 
 
 
 
 
+
+
+
+
+
+/*<----Accomplishment Page Ends---->*/
 
 @media screen and (max-width: 768px) {
 
@@ -2218,7 +2261,7 @@ body{
         content: '';
         width: 0%;
         height: 2px;
-        background: black;
+        background: white;
         bottom: 0%; left: 50%;
         border-radius: 10px;
         transition: all .5s ease;
